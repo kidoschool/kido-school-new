@@ -2,6 +2,7 @@ import React from 'react';
 import {withRouter, NavLink} from "react-router-dom";
 import logo from '../../assets/kido-logo.jpg'
 
+
 function Header(props){
 
     return(
@@ -17,25 +18,25 @@ function Header(props){
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav mr-auto w-100 justify-content-end clearfix">
               <li className="nav-item">
-                <NavLink className="nav-link pl-4" activeclassname="selected" to="/ourcentres">our centers</NavLink>
+                <NavLink className="nav-link pl-4" activeclassname="selected" to="/ourcentres">Find a nursery</NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link pl-4" to="/about-us">about us</NavLink>
+                <NavLink className="nav-link pl-4" to="/about-us">About Us</NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link pl-4" to="/programs">our programs</NavLink>
+                <NavLink className="nav-link pl-4" to="/programs">Our Programs</NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link pl-4" to="/kido-home">kido home</NavLink>
+                <NavLink className="nav-link pl-4" to="/kido-home">Kido Home</NavLink>
               </li>
               <li className="nav-item">
                 <NavLink className="nav-link pl-4" to="/contact-us">Contact</NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link pl-4" to="/carrers">careers</NavLink>
+                <NavLink className="nav-link pl-4" to="/carrers">Careers</NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link pl-4" to="/news-events">blog</NavLink>
+                <NavLink className="nav-link pl-4" to="/news-events">Blog</NavLink>
               </li>
             </ul>
           </div>

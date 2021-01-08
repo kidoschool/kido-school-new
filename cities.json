@@ -1,0 +1,57 @@
+{"cities" : [
+    {
+        "id": 6863,
+        "name": "India",
+        "lng": 77.71052598953247,
+        "lat": 20.98319890043328,
+        "country": "India",
+        "order": "5",
+        "centresCount": 17
+    },
+    {
+        "id": 6324,
+        "name": "Hong Kong",
+        "lng": 114.1970443725586,
+        "lat": 22.237147675042344,
+        "country": "Hong Kong",
+        "order": "6",
+        "centresCount": 2
+    },
+    {
+        "id": 6107,
+        "name": "Dubai",
+        "lng": 55.2707828,
+        "lat": 25.2048493,
+        "country": "United Arab Emirates",
+        "order": "4",
+        "centresCount": 3
+    },
+    {
+        "id": 5848,
+        "name": "Greater London",
+        "lng": -0.45428574085235596,
+        "lat": 51.470074581523804,
+        "country": "United Kingdom",
+        "order": "3",
+        "centresCount": 8
+    },
+    {
+        "id": 5481,
+        "name": "Austin",
+        "lng": -97.744399,
+        "lat": 30.266636,
+        "country": "United States of America",
+        "order": "1",
+        "centresCount": 1
+    },
+    {
+        "id": 3345,
+        "name": "Houston",
+        "lng": -95.414041,
+        "lat": 29.7252042,
+        "country": "United States of America",
+        "order": "2",
+        "centresCount": 1
+    }
+]
+}
