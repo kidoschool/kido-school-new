@@ -6,12 +6,14 @@ import SearchFilter from '../../components/SearchFilter';
 import MapUpdate from "../../components/Map/MapUpdate";
 import {Link} from "react-router-dom";
 
+
 function OurCenters(props) {
 
   const [centerContents, setCenterContents] = useState({});
   const [selectedOption, setSelectedOption] = useState("everyone");
   const todosPerPage = 5;
   const [ activePage, setCurrentPage ] = useState( 1 );
+
 
   useEffect(() => {
     getCentersData();
@@ -27,6 +29,7 @@ function OurCenters(props) {
     })
     .catch((error) => console.log(error));
 };
+
 
 // Logic for displaying current todos
 const indexOfLastTodo  = activePage * todosPerPage;
@@ -140,10 +143,10 @@ const handleOnChange = (e) => {
        
            <div className="col-lg-5">
               <div className="map">
-              {/* <Maps/> */}
-            <MapUpdate
-            // center1={center}
-            />
+                  <MapUpdate
+
+                  centerContents = {centerContents}
+              />
               </div>
            </div>
        </div>

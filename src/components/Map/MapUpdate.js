@@ -2,9 +2,10 @@ import React, { Component } from 'react';
 import Maps from './Maps';
 import $ from 'jquery';
 
-const GOOGLE_API_KEY = "AIzaSyCIJkPLyzo5XZODdhxAa_XYbk2ESQpJyZw";
+const GOOGLE_API_KEY = "AIzaSyBRMLmGwB29gMHS8ii1tktv-6LD4kCo6bc";
 
-const centersLocation = JSON.parse(localStorage.getItem("centres"));
+// const centersLocation = JSON.parse(localStorage.getItem("centres"));
+// const {centerContents} = props;
 
 class MapUpdate extends Component {
     constructor(props) {
@@ -22,7 +23,7 @@ class MapUpdate extends Component {
       let cityId = parseInt($("#search_filter").val());
       var latt = 0;
       var long = 0;
-      $.each(centersLocation.data, function(k, v) {
+      $.each(this.props.centerContents, function(k, v) {
         if(v.city == cityId){latt = v.lat;long = v.lng;console.log(v.city);return;}
       });
       // console.log(centersLocation.data);
@@ -40,7 +41,7 @@ class MapUpdate extends Component {
             <input onClick={this.handleClick} type="button" id="update_map" data-tag="Update" />
           </div>
           <div style={{ width: "100%", height: "100%" }}>
-            <Maps center={center} zoom={9} size={{width:300,height:300}}/>
+            <Maps center={center} zoom={9} size={{width:300,height:300}} centerContents={this.props.centerContents}/>
             
          </div>
         </div>
