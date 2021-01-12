@@ -4,16 +4,23 @@ import Pagination from "react-js-pagination";
 import $ from 'jquery';
 import SearchFilter from '../../components/SearchFilter';
 import MapUpdate from "../../components/Map/MapUpdate";
+import Map3 from "../../components/Map/Map3";
 import {Link} from "react-router-dom";
 
 
 function OurCenters(props) {
 
   const [centerContents, setCenterContents] = useState({});
+  const [allCentres, setallCentres] = useState({});
   const [selectedOption, setSelectedOption] = useState("everyone");
   const todosPerPage = 5;
   const [ activePage, setCurrentPage ] = useState( 1 );
 
+  const [ map_zoom, setMap_zoom ] = useState( 1 );
+  const [ map_centre, setMap_centre ] = useState({lat: 51.571037,lng: -0.192});
+  
+
+  // var map_zoom = 1;
 
   useEffect(() => {
     getCentersData();
@@ -26,6 +33,7 @@ function OurCenters(props) {
       // console.log(response);
       localStorage.setItem("centres",JSON.stringify(response));
       setCenterContents(response.data);
+      setallCentres(response.data);
     })
     .catch((error) => console.log(error));
 };
@@ -36,7 +44,6 @@ const indexOfLastTodo  = activePage * todosPerPage;
 const indexOfFirstTodo = indexOfLastTodo - todosPerPage;
 
 var filteredOptions = [];
-
 var centresList = Object.entries(centerContents);
 
 if(selectedOption){
@@ -57,14 +64,21 @@ if(filteredOptions.length){
 // console.log(filteredOptions,"--------------------FO");
 
 const handlePageChange = ( pageNumber ) => {
-  console.log( `active page is ${ pageNumber }` );
+  // console.log( `active page is ${ pageNumber }` );
   setCurrentPage( pageNumber )
 };
 
 const handleOnChange = (e) => {
-  setSelectedOption(e.target.value)
-  setCurrentPage(1)
-  $("#update_map").click();
+  var latt = 19 , long = 10 ,mapZoom = 10;
+  // console.log(v.city == parseInt(e.target.value));
+  $.each(allCentres, function (k, v) {
+    if(v.city == parseInt(e.target.value)){latt = v.lat;long = v.lng;}
+    if(parseInt(e.target.value) == 5848){latt = 51.571037;long = -0.29;}
+    if(parseInt(e.target.value) == 6863){mapZoom = 5;latt = 19;long = 79;}
+  });
+  setMap_centre({lat: latt,lng: long});setSelectedOption(e.target.value) ;setCurrentPage(1);
+  setMap_zoom(mapZoom);
+  // $("#update_map").click();
 };
 
  function printCentres(centreList) {
@@ -142,11 +156,14 @@ const handleOnChange = (e) => {
           </div>
        
            <div className="col-lg-5">
-              <div className="map">
-                  <MapUpdate
-
+              <div className="map" >
+              {/* <MapUpdate
                   centerContents = {centerContents}
-              />
+              /> */}
+              {/* <h3 onClick={testFn}>Test</h3>
+              <div id="map-canvas" style={{width:"500px",height:"500px"}}  ></div> */}
+              <Map3 centerContents={centerContents} map_zoom={map_zoom} map_centre={map_centre}  />
+
               </div>
            </div>
        </div>
