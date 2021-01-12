@@ -69,7 +69,7 @@ const handleOnChange = (e) => {
 
  function printCentres(centreList) {
 
-   const renderTodos = centreList.map((item,k) => {
+   const renderCentersList = centreList.map((item,k) => {
     return (
     <div className="find-our-centers" key={item[0]}>
       <div className="card mb-3">
@@ -80,20 +80,20 @@ const handleOnChange = (e) => {
           </div>
           <div className="col-md-8">
             <div className="card-body">
-              <p className="card-title name"><Link to={item[1].url}>{item[1].name}</Link></p>
+              <p className="card-title name"><Link to={{ pathname: "/our-centres/" + ($("#search_filter > option[value="+item[1].city+"]").text()).toLowerCase().split(' ').join('-') +"/"+ item[1].slug +"/"}}>{item[1].name}</Link></p>
               <div className="row justify-content-center">
                 <div className="col-lg-4 col-4 text-center">
-                  <div className="card-icon1 py-2"><img src={'/'+(item[1].features[0].feature.slug) +".svg"} className="img-fluid" width="25"/></div>
+                  <div className="card-icon1 py-2"><img src={'/images/'+(item[1].features[0].feature.slug) +".svg"} className="img-fluid" width="25"/></div>
                   <p className="card-text sch-config-text">{item[1].features[0].feature.description}</p>
                   <p className="card-text"><small className="text-muted">{item[1].features[0]["feature_information"]}</small></p>
                 </div>
                 <div className="col-lg-4 col-4 text-center">
-                  <div className="card-icon2 py-2"><img src={'/'+(item[1].features[1].feature.slug) +".svg"} className="img-fluid" width="25"/></div>
+                  <div className="card-icon2 py-2"><img src={'/images/'+(item[1].features[1].feature.slug) +".svg"} className="img-fluid" width="25"/></div>
                   <p className="card-text sch-config-text">{item[1].features[1].feature.description}</p>
                   <p className="card-text"><small className="text-muted">{item[1].features[1]["feature_information"]}</small></p>
                 </div>
                 <div className="col-lg-4 col-4 text-center">
-                  <div className="card-icon2 py-2"><img src={'/'+(item[1].features[2].feature.slug) +".svg"} className="img-fluid" width="25"/></div>
+                  <div className="card-icon2 py-2"><img src={'/images/'+(item[1].features[2].feature.slug) +".svg"} className="img-fluid" width="25"/></div>
                   <p className="card-text sch-config-text">{item[1].features[2].feature.description}</p>
                   <p className="card-text"><small className="text-muted">{item[1].features[2]["feature_information"]}</small></p>
                 </div>
@@ -106,7 +106,7 @@ const handleOnChange = (e) => {
   
       )
       })
-      return renderTodos;
+      return renderCentersList;
  }
 
   return(
