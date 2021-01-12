@@ -289,3 +289,7 @@ a.btn-banner {
 } 
    
 }
+
+a[rel="noopener"],.gmnoprint{
+  visibility: hidden;
+}
