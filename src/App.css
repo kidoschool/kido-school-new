@@ -427,3 +427,13 @@ a.btn-banner {
 a[rel="noopener"],.gmnoprint{
   visibility: hidden;
 }
+
+
+.card-img-top{
+  /* background-image: url("assets/centers-img1.jpg"); */
+  background-repeat: no-repeat;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  height: 200px;
+}

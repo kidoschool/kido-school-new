@@ -3,7 +3,7 @@ import Axios from 'axios';
 import $ from 'jquery';
 import parse from 'html-react-parser';
 import {Link} from "react-router-dom";
-import MapUpdate from "../../components/Map/MapUpdate";
+import Map3 from "../../components/Map/Map3";
 import iconInfo from '../../assets/centerareaaccentorangeoption2.svg';
 import testiProfile from '../../assets/testiprofile1.jpg';
 // import centerInfo1 from '/center-info-img1.jpg';
@@ -11,9 +11,14 @@ const centerContents = JSON.parse(localStorage.getItem("centres"));
 
 function OurCentersInfo(props) {
     
-
   const name = props.match.params.slug;
-  console.log(name);
+  var selectCentre = {};
+  $.each(centerContents.data, function (k, v) {
+    if(name == v.slug){
+      return selectCentre = v;
+    }
+  });
+  const [ map_centre, setMap_centre ] = useState({lat: selectCentre.lat,lng:selectCentre.lng});
 
   // function Hparser(string) {
   //   var elem = $($.parseHTML('<div>'+string+'</div>'));
@@ -31,15 +36,15 @@ function OurCentersInfo(props) {
         <div className="row justify-content-center">
         <div id="carouselExampleControls" className="carousel slide" data-ride="carousel">
           <div className="carousel-inner">
-          {Object.entries(centerContents.data).filter(center => center[1].slug === name).map((item,k) => {
+          {/* {Object.entries(centerContents.data).filter(center => center[1].slug === name).map((item,k) => {
               return( 
-                <>
+                <> */}
                   <div className="carousel-item active">
-                    <div className="info-banner-img d-block" style={{backgroundImage: `url(${item[1].img})`}} alt="First slide"></div>
+                    <div className="info-banner-img d-block" style={{backgroundImage: `url(${selectCentre.img})`}} alt="First slide"></div>
                   </div>
-                </>
+                {/* </>
                 )
-          })}
+          })} */}
           </div>
           <a className="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
             <span className="sr-only">Previous</span>
@@ -56,29 +61,29 @@ function OurCentersInfo(props) {
       <div className="container">
         <div className="row">
             <div className="col-lg-7">
-            {Object.entries(centerContents.data).filter(center => center[1].slug === name).map((item,k) => {
+            {/* {Object.entries(centerContents.data).filter(center => center[1].slug === name).map((item,k) => {
                 return( 
-                        <>
+                        <> */}
                         <div className="center-info">
-                              <h3 className="title-features">{item[1].name}</h3>
+                              <h3 className="title-features">{selectCentre.name}</h3>
                               <div className="d-flex pt-3 small-nav">
                                   <Link className="pr-4" to="/">Overview</Link>
                                   <Link to="/">Team</Link>
                               </div>
                               <div className="row py-5">
-                                {Object.entries(item[1].features.slice(0, 4)).map((feat,k1) => {
+                                {Object.entries(selectCentre.features.slice(0, 4)).map((feat,k1) => {
                                     return( <>
                                   {/* console.log(feat[1].feature.description,feat[1].feature_information); */}
                                   <div className="col-lg-3 col-6 text-center"><img src={iconInfo} width="30"/><p className="img-title-paragraph img-paragraph pt-3">{feat[1].feature.description}</p><p className="img-paragraph">{feat[1].feature_information}</p></div>
                                 </>)})}
-                                  {/* <div className="col-lg-3 col-6 text-center"><img src={iconInfo} width="30"/><p className="img-title-paragraph img-paragraph pt-3">{item[1].features[0].feature.description}</p><p className="img-paragraph">{item[1].features[0]["feature_information"]}</p></div>
-                                  <div className="col-lg-3 col-6 text-center"><img src={iconInfo} width="30"/><p className="img-title-paragraph img-paragraph pt-3">{item[1].features[1].feature.description}</p><p className="img-paragraph">{item[1].features[1]["feature_information"]}</p></div>
-                                  <div className="col-lg-3 col-6 text-center"><img src={iconInfo} width="30"/><p className="img-title-paragraph img-paragraph pt-3">{item[1].features[2].feature.description}</p><p className="img-paragraph">{item[1].features[2]["feature_information"]}</p></div>
-                                  <div className="col-lg-3 col-6 text-center"><img src={iconInfo} width="30"/><p className="img-title-paragraph img-paragraph pt-3">{item[1].features[3].feature.description}</p><p className="img-paragraph">{item[1].features[3]["feature_information"]}</p></div> */}
+                                  {/* <div className="col-lg-3 col-6 text-center"><img src={iconInfo} width="30"/><p className="img-title-paragraph img-paragraph pt-3">{selectCentre.features[0].feature.description}</p><p className="img-paragraph">{selectCentre.features[0]["feature_information"]}</p></div>
+                                  <div className="col-lg-3 col-6 text-center"><img src={iconInfo} width="30"/><p className="img-title-paragraph img-paragraph pt-3">{selectCentre.features[1].feature.description}</p><p className="img-paragraph">{selectCentre.features[1]["feature_information"]}</p></div>
+                                  <div className="col-lg-3 col-6 text-center"><img src={iconInfo} width="30"/><p className="img-title-paragraph img-paragraph pt-3">{selectCentre.features[2].feature.description}</p><p className="img-paragraph">{selectCentre.features[2]["feature_information"]}</p></div>
+                                  <div className="col-lg-3 col-6 text-center"><img src={iconInfo} width="30"/><p className="img-title-paragraph img-paragraph pt-3">{selectCentre.features[3].feature.description}</p><p className="img-paragraph">{selectCentre.features[3]["feature_information"]}</p></div> */}
                               </div>
                               <h2 className="welcome-subtitle text-align-left pb-3">Welcome to Kïdo India</h2>
                               <div className="paragraph pb-3">
-                                  <p>{ parse((item[1].introduction).replaceAll("\r\n\r\n", "<br></br>"))}</p>
+                                  <p>{ parse((selectCentre.introduction).replaceAll("\r\n\r\n", "<br></br>"))}</p>
                               </div>
 
                               <div className="basics basics-border-bottom">
@@ -90,18 +95,18 @@ function OurCentersInfo(props) {
                                   <p className="basics-title-paragraph">Outdoor Space<span className="basics-answer-paragraph"> Yes</span></p>
                               </div>
                               </div>
-                                </>)
+                                {/* </>)
                             })
-                          }
+                          } */}
                 <hr/>
             </div>
             
             <div className="offset-lg-1 col-lg-4">
-            {Object.entries(centerContents.data).filter(center => center[1].slug === name).map((item,k) => {
+            {/* {Object.entries(centerContents.data).filter(center => center[1].slug === name).map((item,k) => {
                 return( 
-                 <>
+                 <> */}
                 <div className="cont-form border shadow px-4 py-5 mt-5 text-center">
-                  <h1>Contact {item[1].name}</h1>
+                  <h1>Contact {selectCentre.name}</h1>
                   <div className="send-msg pt-4">
                   <button className="contact-button no-padding" id="send-message-btn"><i className="fas fa-envelope pr-3"></i>Send a message</button>
                   <button className="contact-button no-padding" id="give-call-btn"><i className="fas fa-phone pr-3"></i>Give us a call</button>
@@ -109,9 +114,9 @@ function OurCentersInfo(props) {
                   <button className="contact-button no-padding" id="instagram-btn"><i className="fab fa-instagram pr-3"></i>Instagram</button>
                   </div>
                 </div>
-                </>)
+                {/* </>)
                 })
-              }
+              } */}
             </div>
         
         </div>
@@ -196,13 +201,56 @@ function OurCentersInfo(props) {
             <div className="row">
               <div className="col-lg-12">
                   <div className="map">
-                      <MapUpdate
-                      centerContents = {centerContents}
-                  />
+                  <Map3 map_centre={{lat: selectCentre.lat,lng: selectCentre.lng}} centerContents={[selectCentre]} map_zoom={13}   />
                   </div>
               </div>
             </div>
           </div>
+
+
+
+          <div className="related_centers py-4" id="related-centers">
+            <h2 className="basics-subtitle text-align-left pb-3"><i class="fas fa-th-list pr-3"></i>Related centers</h2>
+            <div className="row">
+              <div className="card-deck">
+                {Object.entries(centerContents.data).map((item, k) => {
+                  console.log(item)
+                  return (
+                    <>
+                      <div className="col-lg-3">
+                        <div class="card">
+                          <div style={{ backgroundImage: `url(${item[1].img})` }} className="card-img-top"></div>
+                          <div className="label">{$("#search_filter > option[value=" + item[1].city + "]").text()}</div>
+                          <div class="card-body">
+                            <p class="card-title name"><Link to={{ pathname: "/our-centres/" + ($("#search_filter > option[value=" + item[1].city + "]").text()).toLowerCase().split(' ').join('-') + "/" + item[1].slug + "/" }}>{item[1].name}</Link></p>
+                            <div className="row justify-content-center">
+                              <div className="col-lg-6 col-4 text-center">
+                                <div className="card-icon1 py-2"><img src={'/images/' + (item[1].features[0].feature.slug) + ".svg"} className="img-fluid" width="25" /></div>
+                                <p className="card-text sch-config-text">{item[1].features[0].feature.description}</p>
+                                <p className="card-text"><small className="text-muted">{item[1].features[0]["feature_information"]}</small></p>
+                              </div>
+                              <div className="col-lg-6 col-4 text-center">
+                                <div className="card-icon2 py-2"><img src={'/images/' + (item[1].features[1].feature.slug) + ".svg"} className="img-fluid" width="25" /></div>
+                                <p className="card-text sch-config-text">{item[1].features[1].feature.description}</p>
+                                <p className="card-text"><small className="text-muted">{item[1].features[1]["feature_information"]}</small></p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </>)
+                })
+                }
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+
       
       </div>
     </section>
