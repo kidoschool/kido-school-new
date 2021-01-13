@@ -6,6 +6,9 @@ import {Link} from "react-router-dom";
 import Map3 from "../../components/Map/Map3";
 import iconInfo from '../../assets/centerareaaccentorangeoption2.svg';
 import testiProfile from '../../assets/testiprofile1.jpg';
+import Pagination from "react-js-pagination";
+
+
 // import centerInfo1 from '/center-info-img1.jpg';
 
 function OurCentersInfo(props) {
@@ -18,7 +21,22 @@ function OurCentersInfo(props) {
       return selectCentre = v;
     }
   });
-  // const [ map_centre, setMap_centre ] = useState({lat: selectCentre.lat,lng:selectCentre.lng});
+  // const [ map_centre, setMap_centre ] = useState({lat: selectCentre.lat,lng:selectCentre.lng});\
+
+  const todosPerPage = 4;
+  const [ activePage, setCurrentPage ] = useState( 1 );
+
+  // Logic for displaying current todos
+  const indexOfLastTodo  = activePage * todosPerPage;
+  const indexOfFirstTodo = indexOfLastTodo - todosPerPage;
+  const currentTodos     = centerContents.data.slice( indexOfFirstTodo, indexOfLastTodo );
+
+
+  const handlePageChange1 = ( pageNumber ) => {
+    // console.log( `active page is ${ pageNumber }` );
+    setCurrentPage( pageNumber )
+ };
+
 
   return(
     <>
@@ -56,13 +74,13 @@ function OurCentersInfo(props) {
                     <div className="row py-5">
                       {Object.entries(selectCentre.features.slice(0, 4)).map((feat,k1) => {
                         return( <>
-                          <div className="col-lg-3 col-6 text-center"><img src={iconInfo} width="30"/><p className="img-title-paragraph img-paragraph pt-3">{feat[1].feature.description}</p><p className="img-paragraph">{feat[1].feature_information}</p></div>
+                          <div className="col-lg-3 col-6 text-center" key={feat[0]}><img src={iconInfo} width="30"/><p className="img-title-paragraph img-paragraph pt-3">{feat[1].feature.description}</p><p className="img-paragraph">{feat[1].feature_information}</p></div>
                         </>)
                       })}
                     </div>
                     <h2 className="welcome-subtitle text-align-left pb-3">Welcome to Kïdo India</h2>
                     <div className="paragraph pb-3">
-                        <p>{ parse((selectCentre.introduction).replaceAll("\r\n\r\n", "<br></br>"))}</p>
+                        <div className="p-color">{ parse((selectCentre.introduction).replaceAll("\r\n\r\n", "<br></br>"))}</div>
                     </div>
 
                     <div className="basics basics-border-bottom">
@@ -182,24 +200,24 @@ function OurCentersInfo(props) {
           <div className="related_centers py-4" id="related-centers">
             <h2 className="basics-subtitle text-align-left pb-3"><i class="fas fa-th-list pr-3"></i>Related centers</h2>
             <div className="row">
+              <div className="col-lg-12">
               <div className="card-deck">
-                {Object.entries(centerContents.data).map((item, k) => {
-                  console.log(item)
+                {Object.entries(currentTodos).map((item, k) => {
+                  // console.log(item)
                   return (
                     <>
-                      <div className="col-lg-3">
-                        <div class="card">
+                        <div class="card" key={item[0]}>
                           <div style={{ backgroundImage: `url(${item[1].img})` }} className="card-img-top"></div>
                           <div className="label">{$("#search_filter > option[value=" + item[1].city + "]").text()}</div>
                           <div class="card-body">
                             <p class="card-title name"><Link to={{ pathname: "/our-centres/" + ($("#search_filter > option[value=" + item[1].city + "]").text()).toLowerCase().split(' ').join('-') + "/" + item[1].slug + "/" }}>{item[1].name}</Link></p>
                             <div className="row justify-content-center">
-                              <div className="col-lg-6 col-4 text-center">
+                              <div className="col-lg-6 col-6 text-center">
                                 <div className="card-icon1 py-2"><img src={'/images/' + (item[1].features[0].feature.slug) + ".svg"} className="img-fluid" width="25" /></div>
                                 <p className="card-text sch-config-text">{item[1].features[0].feature.description}</p>
                                 <p className="card-text"><small className="text-muted">{item[1].features[0]["feature_information"]}</small></p>
                               </div>
-                              <div className="col-lg-6 col-4 text-center">
+                              <div className="col-lg-6 col-6 text-center">
                                 <div className="card-icon2 py-2"><img src={'/images/' + (item[1].features[1].feature.slug) + ".svg"} className="img-fluid" width="25" /></div>
                                 <p className="card-text sch-config-text">{item[1].features[1].feature.description}</p>
                                 <p className="card-text"><small className="text-muted">{item[1].features[1]["feature_information"]}</small></p>
@@ -207,11 +225,20 @@ function OurCentersInfo(props) {
                             </div>
                           </div>
                         </div>
-                      </div>
                     </>)
                 })
                 }
               </div>
+              <div className="pagination pt-3">
+                <Pagination
+                  activePage={ activePage }
+                  itemsCountPerPage={ 4 }
+                  totalItemsCount={ centerContents.data.length }
+                  pageRangeDisplayed={ 4 }
+                  onChange={ handlePageChange1 }
+                />
+            </div>
+            </div>
             </div>
           </div>
 

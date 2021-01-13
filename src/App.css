@@ -326,6 +326,10 @@ a.is-transition{
     background: #bd5319;
     color: #fff;
   } 
+
+  .p-color{
+      color: #444;
+  }
   
   @media screen and (max-width: 990px){
     .testimonial{
