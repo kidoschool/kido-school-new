@@ -7,9 +7,9 @@ import Map3 from "../../components/Map/Map3";
 import iconInfo from '../../assets/centerareaaccentorangeoption2.svg';
 import testiProfile from '../../assets/testiprofile1.jpg';
 // import centerInfo1 from '/center-info-img1.jpg';
-const centerContents = JSON.parse(localStorage.getItem("centres"));
 
 function OurCentersInfo(props) {
+  const centerContents = JSON.parse(localStorage.getItem("centres"));
     
   const name = props.match.params.slug;
   var selectCentre = {};
@@ -18,15 +18,7 @@ function OurCentersInfo(props) {
       return selectCentre = v;
     }
   });
-  const [ map_centre, setMap_centre ] = useState({lat: selectCentre.lat,lng:selectCentre.lng});
-
-  // function Hparser(string) {
-  //   var elem = $($.parseHTML('<div>'+string+'</div>'));
-  //   // var elem = string;
-  //   // var elem = $.parseHTML(string);
-  //   console.log(elem);
-  //   return elem;
-  // }
+  // const [ map_centre, setMap_centre ] = useState({lat: selectCentre.lat,lng:selectCentre.lng});
 
   return(
     <>
@@ -36,15 +28,9 @@ function OurCentersInfo(props) {
         <div className="row justify-content-center">
         <div id="carouselExampleControls" className="carousel slide" data-ride="carousel">
           <div className="carousel-inner">
-          {/* {Object.entries(centerContents.data).filter(center => center[1].slug === name).map((item,k) => {
-              return( 
-                <> */}
-                  <div className="carousel-item active">
-                    <div className="info-banner-img d-block" style={{backgroundImage: `url(${selectCentre.img})`}} alt="First slide"></div>
-                  </div>
-                {/* </>
-                )
-          })} */}
+              <div className="carousel-item active">
+                <div className="info-banner-img d-block" style={{backgroundImage: `url(${selectCentre.img})`}} alt="First slide"></div>
+              </div>
           </div>
           <a className="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
             <span className="sr-only">Previous</span>
@@ -61,50 +47,37 @@ function OurCentersInfo(props) {
       <div className="container">
         <div className="row">
             <div className="col-lg-7">
-            {/* {Object.entries(centerContents.data).filter(center => center[1].slug === name).map((item,k) => {
-                return( 
-                        <> */}
-                        <div className="center-info">
-                              <h3 className="title-features">{selectCentre.name}</h3>
-                              <div className="d-flex pt-3 small-nav">
-                                  <Link className="pr-4" to="/">Overview</Link>
-                                  <Link to="/">Team</Link>
-                              </div>
-                              <div className="row py-5">
-                                {Object.entries(selectCentre.features.slice(0, 4)).map((feat,k1) => {
-                                    return( <>
-                                  {/* console.log(feat[1].feature.description,feat[1].feature_information); */}
-                                  <div className="col-lg-3 col-6 text-center"><img src={iconInfo} width="30"/><p className="img-title-paragraph img-paragraph pt-3">{feat[1].feature.description}</p><p className="img-paragraph">{feat[1].feature_information}</p></div>
-                                </>)})}
-                                  {/* <div className="col-lg-3 col-6 text-center"><img src={iconInfo} width="30"/><p className="img-title-paragraph img-paragraph pt-3">{selectCentre.features[0].feature.description}</p><p className="img-paragraph">{selectCentre.features[0]["feature_information"]}</p></div>
-                                  <div className="col-lg-3 col-6 text-center"><img src={iconInfo} width="30"/><p className="img-title-paragraph img-paragraph pt-3">{selectCentre.features[1].feature.description}</p><p className="img-paragraph">{selectCentre.features[1]["feature_information"]}</p></div>
-                                  <div className="col-lg-3 col-6 text-center"><img src={iconInfo} width="30"/><p className="img-title-paragraph img-paragraph pt-3">{selectCentre.features[2].feature.description}</p><p className="img-paragraph">{selectCentre.features[2]["feature_information"]}</p></div>
-                                  <div className="col-lg-3 col-6 text-center"><img src={iconInfo} width="30"/><p className="img-title-paragraph img-paragraph pt-3">{selectCentre.features[3].feature.description}</p><p className="img-paragraph">{selectCentre.features[3]["feature_information"]}</p></div> */}
-                              </div>
-                              <h2 className="welcome-subtitle text-align-left pb-3">Welcome to Kïdo India</h2>
-                              <div className="paragraph pb-3">
-                                  <p>{ parse((selectCentre.introduction).replaceAll("\r\n\r\n", "<br></br>"))}</p>
-                              </div>
+              <div className="center-info">
+                    <h3 className="title-features">{selectCentre.name}</h3>
+                    <div className="d-flex pt-3 small-nav">
+                        <Link className="pr-4" to="/">Overview</Link>
+                        <Link to="/">Team</Link>
+                    </div>
+                    <div className="row py-5">
+                      {Object.entries(selectCentre.features.slice(0, 4)).map((feat,k1) => {
+                        return( <>
+                          <div className="col-lg-3 col-6 text-center"><img src={iconInfo} width="30"/><p className="img-title-paragraph img-paragraph pt-3">{feat[1].feature.description}</p><p className="img-paragraph">{feat[1].feature_information}</p></div>
+                        </>)
+                      })}
+                    </div>
+                    <h2 className="welcome-subtitle text-align-left pb-3">Welcome to Kïdo India</h2>
+                    <div className="paragraph pb-3">
+                        <p>{ parse((selectCentre.introduction).replaceAll("\r\n\r\n", "<br></br>"))}</p>
+                    </div>
 
-                              <div className="basics basics-border-bottom">
-                                  <h2 className="basics-subtitle text-align-left pb-3">School details</h2>
-                                  <p className="basics-title-paragraph">Curriculum<span className="basics-answer-paragraph"> EYFS, Kïdo</span></p>
-                                  <p className="basics-title-paragraph">Hours<span className="basics-answer-paragraph"> 9:00am to 7:00 pm</span></p>
-                                  <p className="basics-title-paragraph">Schedule<span className="basics-answer-paragraph"> Full Day and Half Day</span></p>
-                                  <p className="basics-title-paragraph">Nutrition<span className="basics-answer-paragraph"> No</span></p>
-                                  <p className="basics-title-paragraph">Outdoor Space<span className="basics-answer-paragraph"> Yes</span></p>
-                              </div>
-                              </div>
-                                {/* </>)
-                            })
-                          } */}
+                    <div className="basics basics-border-bottom">
+                        <h2 className="basics-subtitle text-align-left pb-3">School details</h2>
+                        <p className="basics-title-paragraph">Curriculum<span className="basics-answer-paragraph"> EYFS, Kïdo</span></p>
+                        <p className="basics-title-paragraph">Hours<span className="basics-answer-paragraph"> 9:00am to 7:00 pm</span></p>
+                        <p className="basics-title-paragraph">Schedule<span className="basics-answer-paragraph"> Full Day and Half Day</span></p>
+                        <p className="basics-title-paragraph">Nutrition<span className="basics-answer-paragraph"> No</span></p>
+                        <p className="basics-title-paragraph">Outdoor Space<span className="basics-answer-paragraph"> Yes</span></p>
+                    </div>
+                    </div>
                 <hr/>
             </div>
             
             <div className="offset-lg-1 col-lg-4">
-            {/* {Object.entries(centerContents.data).filter(center => center[1].slug === name).map((item,k) => {
-                return( 
-                 <> */}
                 <div className="cont-form border shadow px-4 py-5 mt-5 text-center">
                   <h1>Contact {selectCentre.name}</h1>
                   <div className="send-msg pt-4">
@@ -114,9 +87,6 @@ function OurCentersInfo(props) {
                   <button className="contact-button no-padding" id="instagram-btn"><i className="fab fa-instagram pr-3"></i>Instagram</button>
                   </div>
                 </div>
-                {/* </>)
-                })
-              } */}
             </div>
         
         </div>
