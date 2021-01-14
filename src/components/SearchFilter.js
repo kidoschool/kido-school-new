@@ -3,23 +3,24 @@ import Axios from 'axios';
 
 function SearchFilter(props){
 
-  const [citiesContents, setCitiesContents] = useState({});
+  // const [citiesContents, setCitiesContents] = useState({});
   const { selectedOption, onChange} = props;
+  const citiesContents = (JSON.parse(localStorage.getItem("cities")));
 
-  useEffect(() => {
-    getCitiesData();
-}, []);
+//   useEffect(() => {
+//     getCitiesData();
+// }, []);
 
 
-const getCitiesData = () => {
-  Axios
-  .get(`https://kido-school-new-default-rtdb.firebaseio.com/cities.json`)
-  .then((response) => {
-    // console.log(response);
-    setCitiesContents(response.data);
-  })
-  .catch((error) => console.log(error));
-};
+// const getCitiesData = () => {
+//   Axios
+//   .get(`https://kido-school-new-default-rtdb.firebaseio.com/cities.json`)
+//   .then((response) => {
+//     localStorage.setItem("cities",JSON.stringify(response));
+//     setCitiesContents(response.data);
+//   })
+//   .catch((error) => console.log(error));
+// };
 
     return(
       <>
