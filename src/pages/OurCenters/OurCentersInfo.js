@@ -13,27 +13,31 @@ import Pagination from "react-js-pagination";
 
 function OurCentersInfo(props) {
   const centerContents = JSON.parse(localStorage.getItem("centres"));
-    
+  const allCities = JSON.parse(localStorage.getItem("cities"));
+
+  var cityNames = {};
+  $.each(allCities, function (k, v) {
+    cityNames[v.id] = v.name;
+  });
+  
+
   const name = props.match.params.slug;
   var selectCentre = {};
-  $.each(centerContents.data, function (k, v) {
+  $.each(centerContents, function (k, v) {
     if(name == v.slug){
       return selectCentre = v;
     }
   });
-  // const [ map_centre, setMap_centre ] = useState({lat: selectCentre.lat,lng:selectCentre.lng});\
-
+  
   const todosPerPage = 4;
   const [ activePage, setCurrentPage ] = useState( 1 );
 
-  // Logic for displaying current todos
   const indexOfLastTodo  = activePage * todosPerPage;
   const indexOfFirstTodo = indexOfLastTodo - todosPerPage;
-  const currentTodos     = centerContents.data.slice( indexOfFirstTodo, indexOfLastTodo );
+  const currentTodos     = centerContents.slice( indexOfFirstTodo, indexOfLastTodo );
 
 
   const handlePageChange1 = ( pageNumber ) => {
-    // console.log( `active page is ${ pageNumber }` );
     setCurrentPage( pageNumber )
  };
 
@@ -189,7 +193,7 @@ function OurCentersInfo(props) {
             <div className="row">
               <div className="col-lg-12">
                   <div className="map">
-                  <Map3 map_centre={{lat: selectCentre.lat,lng: selectCentre.lng}} centerContents={[selectCentre]} map_zoom={13}   />
+                  <Map3 map_centre={{lat: selectCentre.lat,lng: selectCentre.lng}} centerContents1={[selectCentre]} map_zoom={13}   />
                   </div>
               </div>
             </div>
@@ -208,9 +212,9 @@ function OurCentersInfo(props) {
                     <>
                         <div class="card" key={item[0]}>
                           <div style={{ backgroundImage: `url(${item[1].img})` }} className="card-img-top"></div>
-                          <div className="label">{$("#search_filter > option[value=" + item[1].city + "]").text()}</div>
+                          <div className="label">{cityNames[item[1].city]}</div>
                           <div class="card-body">
-                            <p class="card-title name"><Link to={{ pathname: "/our-centres/" + ($("#search_filter > option[value=" + item[1].city + "]").text()).toLowerCase().split(' ').join('-') + "/" + item[1].slug + "/" }}>{item[1].name}</Link></p>
+                            <p class="card-title name"><Link to={{ pathname: "/our-centres/" + (cityNames[item[1].city]).toLowerCase().split(' ').join('-') + "/" + item[1].slug + "/" }}>{item[1].name}</Link></p>
                             <div className="row justify-content-center">
                               <div className="col-lg-6 col-6 text-center">
                                 <div className="card-icon1 py-2"><img src={'/images/' + (item[1].features[0].feature.slug) + ".svg"} className="img-fluid" width="25" /></div>
@@ -233,7 +237,7 @@ function OurCentersInfo(props) {
                 <Pagination
                   activePage={ activePage }
                   itemsCountPerPage={ 4 }
-                  totalItemsCount={ centerContents.data.length }
+                  totalItemsCount={ centerContents.length }
                   pageRangeDisplayed={ 4 }
                   onChange={ handlePageChange1 }
                 />

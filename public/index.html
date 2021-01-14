@@ -16,6 +16,22 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/css/bootstrap-datepicker.min.css" />
     <title>kido-school</title>
+    <script>
+      // console.log(localStorage.getItem("centres") == null);
+      if (localStorage.getItem("centres") == null) {
+        var request = new XMLHttpRequest();
+        request.open('GET', 'https://kido-school-new-default-rtdb.firebaseio.com/centers.json', false);  // `false` makes the request synchronous
+        request.send(null);
+        request.status === 200 ? localStorage.setItem("centres",request.responseText) : false;
+      }
+      if (localStorage.getItem("cities") == null) {
+        var request = new XMLHttpRequest();
+        request.open('GET', 'https://kido-school-new-default-rtdb.firebaseio.com/cities.json', false);  // `false` makes the request synchronous
+        request.send(null);
+        request.status === 200 ? localStorage.setItem("cities",request.responseText) : false;
+      }
+
+    </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
