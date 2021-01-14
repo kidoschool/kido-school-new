@@ -17,8 +17,9 @@ function KidoHome(props) {
             <h1>Kido Home</h1>
        </div>
       </div>
-     
     </section>
+
+   
   
     </>
   );

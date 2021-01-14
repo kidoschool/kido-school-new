@@ -20,7 +20,7 @@ h3, .h3 {font-size: 1.15em;}
 h4, .h4 {font-size: 1.1em;}
 h5, h6, .h5, .h6{font-size: 1em; }
 
-p,li {color: #444; font-size: 1em;}
+p,li {color: #666; font-size: 1em;}
 a {color: #444; text-decoration: none;  transition: 0.3s;}
 
 #myBtn {
@@ -98,6 +98,44 @@ a.btn-banner {
   background: #bd5319;
   color: #fff;
 } 
+
+.subtitle-smaller {
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+.subtitle {
+  font-weight: 600;
+  line-height: 128%;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+.centres .town {
+  height: 40px;
+  width: 100%;
+  font-size: 1.4em;
+  letter-spacing: .58px;
+  line-height: 128%;
+  font-weight: 500;
+  background-color: #fff;
+  border: 1px solid #00356b;
+  color: #00356b;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.btn-outline-primary{
+  color: #00356b!important;
+  width: 155px;
+  font-size: 15px;
+}
+
+.btn-outline-primary:hover {
+  color: #bd5319!important;
+  background-color: transparent!important;
+  border-color: #bd5319;
+}
 
 
 
@@ -327,9 +365,60 @@ a.is-transition{
     color: #fff;
   } 
 
+
+.card-img-top{
+  /* background-image: url("assets/centers-img1.jpg"); */
+  background-repeat: no-repeat;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  height: 200px;
+}
+
   .p-color{
       color: #444;
   }
+
+
+
+  .map-label {
+    border: 1px solid #c5d3db;
+    border-radius: 5px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 5px;
+    position: absolute;
+    z-index: 2;
+    background-color: #fff;
+    top: 1%;
+    left: 2%;
+}
+
+.map-label h1{
+  padding-right: 80px;
+  padding-left: 20px;
+  margin: 0;
+  color: #000;
+  font-size: 17px;
+}
+
+.map-label a{
+text-decoration: none;
+color: #a1aeb7;
+}
+
+.map-label p, .map-label address {
+  padding-right: 80px;
+  padding-left: 20px;
+  margin: 0;
+  max-width: 415px;
+  color: #a1aeb7;
+  text-align: left;
+  float: none !important;
+  font-size: 15px;
+  line-height: 30px;
+  width: 100%;
+}
   
   @media screen and (max-width: 990px){
     .testimonial{
@@ -424,7 +513,20 @@ a.btn-banner {
 
 .footer-area{
   text-align: center;
-} 
+}
+
+.address-map {
+  position: absolute;
+  top: 3437px;
+  left: 11px;
+  /* width: 100%; */
+}
+
+
+#vid{
+  width: 100%;
+}
+
    
 }
 
@@ -432,12 +534,3 @@ a[rel="noopener"],.gmnoprint{
   visibility: hidden;
 }
 
-
-.card-img-top{
-  /* background-image: url("assets/centers-img1.jpg"); */
-  background-repeat: no-repeat;
-  width: 100%;
-  background-position: center;
-  background-size: cover;
-  height: 200px;
-}

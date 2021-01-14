@@ -12,7 +12,9 @@ import Pagination from "react-js-pagination";
 // import centerInfo1 from '/center-info-img1.jpg';
 
 function OurCentersInfo(props) {
+  
   const centerContents = JSON.parse(localStorage.getItem("centres"));
+  // console.log(centerContents)
     
   const name = props.match.params.slug;
   var selectCentre = {};
@@ -21,6 +23,8 @@ function OurCentersInfo(props) {
       return selectCentre = v;
     }
   });
+
+  // console.log(selectCentre);
   // const [ map_centre, setMap_centre ] = useState({lat: selectCentre.lat,lng:selectCentre.lng});\
 
   const todosPerPage = 4;
@@ -188,18 +192,20 @@ function OurCentersInfo(props) {
           <h2 className="basics-subtitle text-align-left pb-3"><i class="fas fa-th-list pr-3"></i>Location</h2>
             <div className="row">
               <div className="col-lg-12">
+                  <div className="map-label">
+                      <span>{parse(selectCentre.intro)}</span>
+                  </div>
                   <div className="map">
                   <Map3 map_centre={{lat: selectCentre.lat,lng: selectCentre.lng}} centerContents={[selectCentre]} map_zoom={13}   />
                   </div>
               </div>
             </div>
           </div>
-
-
+          
 
           <div className="related_centers py-4" id="related-centers">
             <h2 className="basics-subtitle text-align-left pb-3"><i class="fas fa-th-list pr-3"></i>Related centers</h2>
-            <div className="row">
+            <div className="find-our-centers row">
               <div className="col-lg-12">
               <div className="card-deck">
                 {Object.entries(currentTodos).map((item, k) => {
@@ -242,13 +248,6 @@ function OurCentersInfo(props) {
             </div>
           </div>
 
-
-
-
-
-
-
-      
       </div>
     </section>
   
