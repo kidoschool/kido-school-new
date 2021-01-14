@@ -50,8 +50,8 @@ if(selectedOption){
 if(filteredOptions.length){
   centresList = filteredOptions;
 }
-//  const currentCenters   = centresList.slice( indexOfFirstTodo, indexOfLastTodo );
- const currentCenters   = centresList;
+ const currentCenters   = centresList.slice( indexOfFirstTodo, indexOfLastTodo );
+//  const currentCenters   = centresList;
 // console.log(currentCenters,"--------------------FO");
 
 const handlePageChange = ( pageNumber ) => {
@@ -64,8 +64,10 @@ const handleOnChange = (e) => {
   // console.log(v.city == parseInt(e.target.value));
   $.each(allCentres, function (k, v) {
     if(v.city == parseInt(e.target.value)){latt = v.lat;long = v.lng;}
-    if(parseInt(e.target.value) == 5848){latt = 51.571037;long = -0.29;}
-    if(parseInt(e.target.value) == 6863){mapZoom = 5;latt = 19;long = 79;}
+   if(parseInt(e.target.value) == 5848){mapZoom = 9;latt = 51.571037;long = -0.29;}  //--------UK
+   if(parseInt(e.target.value) == 6863){mapZoom = 5;latt = 19;long = 79;} //-------INDIA
+   if(isNaN(parseInt(e.target.value))){mapZoom = 1;} //-------EveryWhere
+
   });
   setMap_centre({lat: latt,lng: long});setSelectedOption(e.target.value) ;setCurrentPage(1);
   setMap_zoom(mapZoom);
@@ -85,7 +87,7 @@ const handleOnChange = (e) => {
           </div>
           <div className="col-md-8">
             <div className="card-body">
-              <p className="card-title name"><Link to={{ pathname: "/our-centres/" + (cityNames[item.city]).toLowerCase().split(' ').join('-') +"/"+ item.slug +"/"}}>{item.name}</Link></p>
+              <div className="card-title name"><Link to={{ pathname: "/our-centres/" + (cityNames[item.city]).toLowerCase().split(' ').join('-') +"/"+ item.slug +"/"}}>{item.name}</Link></div>
               <div className="row justify-content-center">
                 <div className="col-lg-4 col-4 text-center">
                   <div className="card-icon1 py-2"><img src={'/images/'+(item.features[0].feature.slug) +".svg"} className="img-fluid" width="25"/></div>
