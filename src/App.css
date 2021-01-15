@@ -126,15 +126,103 @@ a.btn-banner {
 }
 
 .btn-outline-primary{
-  color: #00356b!important;
+  color: #00356b;
+  border-color: #00356b;
   width: 155px;
   font-size: 15px;
 }
 
 .btn-outline-primary:hover {
-  color: #bd5319!important;
-  background-color: transparent!important;
+  color: #bd5319;
+  background-color: transparent;
   border-color: #bd5319;
+}
+
+/* .centres .my-btn {
+  padding: 12.5px 60px;
+  font-size: 1.4em;
+  line-height: 128%;
+  margin-bottom: 20px;
+} */
+
+a.my-btn {
+  background-color: #00356b;
+    color: #fff;
+    border: none;
+    font-size: 0.8em;
+    border-radius: 25px;
+    letter-spacing: .28px;
+    font-weight: bold;
+    padding: 12px 60px;
+    line-height: 128%;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+a.my-btn:hover {
+  background-color: #bd5319;
+    color: #fff;
+}
+
+.parent_testimonial .pics{
+  width: 30%;
+  float: left;
+  margin-right: 15px;
+  position: relative;
+}
+.parent_testimonial .pics img{
+  width: 100%;
+  height: auto;
+}
+.parent_testimonial .parent_testimonial-content{
+  padding: 6% 0;
+  display: table;
+}
+.parent_testimonial .description{
+  font-size: 20px;
+  color: #000;
+  line-height: 26px;
+}
+.parent_testimonial .description:before{
+  content: "\f10d";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 25px;
+  color: #00356b;
+  margin: 0 10px;
+}
+.parent_testimonial .parent_testimonial-title{
+  font-size: 19px;
+  color: #333;
+  text-transform: capitalize;
+  margin: 10px 0 0 0;
+  float: right;
+}
+.parent_testimonial .post{
+  font-size: 16px;
+  color: #000;
+  display: block;
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 480px){
+  .parent_testimonial{
+      margin: 0 10px;
+  }
+  .parent_testimonial .pic{
+      float: none;
+      width: 50%;
+      margin: 0 auto;
+  }
+}
+
+
+.latest-news-text-blue h1{
+  color: #337ab7;
+}
+
+.latest-news-text-blue p{
+  color: #337ab7;
 }
 
 
@@ -178,7 +266,7 @@ a.btn-banner {
 }
 
 .find-our-centers .name {
-  font-size: 1.4em;
+  font-size: 1.2em;
   line-height: 150%;
   font-weight: 600;
   padding: 0 0 20px;
@@ -186,7 +274,7 @@ a.btn-banner {
 
 .name a{
   text-decoration: none;
-  color: #444;
+  color: #000;
 }
 
 .find-our-centers .card {
@@ -327,21 +415,8 @@ a.is-transition{
   }
 
   .carousel-indicators li {
-    box-sizing: content-box;
-    -ms-flex: 0 1 auto;
-    flex: 0 1 auto;
-    width: 30px;
-    height: 3px;
-    margin-right: 3px;
-    margin-left: 3px;
-    text-indent: -999px;
-    cursor: pointer;
     background-color: #00356b !important;
-    background-clip: padding-box;
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    opacity: .5;
-    transition: opacity .6s }
+ }
 
     .cont-form{
       border-radius: 20px;
@@ -366,20 +441,28 @@ a.is-transition{
   } 
 
 
-.card-img-top{
+.card-img-top1{
   /* background-image: url("assets/centers-img1.jpg"); */
   background-repeat: no-repeat;
   width: 100%;
   background-position: center;
   background-size: cover;
-  height: 200px;
+  height: 150px;
 }
 
   .p-color{
       color: #444;
   }
 
-
+  .name-info {
+    font-size: 1em;
+    font-weight: 600;
+  }
+  
+  .name-info a{
+    text-decoration: none;
+    color: #444;
+  }
 
   .map-label {
     border: 1px solid #c5d3db;
@@ -525,6 +608,10 @@ a.btn-banner {
 
 #vid{
   width: 100%;
+}
+
+.getlocation-btn{
+  overflow-x: auto;
 }
 
    

@@ -4,23 +4,13 @@ import $ from 'jquery';
 import parse from 'html-react-parser';
 import {Link} from "react-router-dom";
 import Map3 from "../../components/Map/Map3";
+import RelatedCenters from "../../components/RelatedCenters";
 import iconInfo from '../../assets/centerareaaccentorangeoption2.svg';
 import testiProfile from '../../assets/testiprofile1.jpg';
-import Pagination from "react-js-pagination";
-
-
-// import centerInfo1 from '/center-info-img1.jpg';
 
 function OurCentersInfo(props) {
   
   const centerContents = JSON.parse(localStorage.getItem("centres"));
-  const allCities = JSON.parse(localStorage.getItem("cities"));
-
-  var cityNames = {};
-  $.each(allCities, function (k, v) {
-    cityNames[v.id] = v.name;
-  });
-  
 
   const name = props.match.params.slug;
   var selectCentre = {};
@@ -30,19 +20,6 @@ function OurCentersInfo(props) {
     }
   });
   
-  const todosPerPage = 4;
-  const [ activePage, setCurrentPage ] = useState( 1 );
-
-  const indexOfLastTodo  = activePage * todosPerPage;
-  const indexOfFirstTodo = indexOfLastTodo - todosPerPage;
-  const currentTodos     = centerContents.slice( indexOfFirstTodo, indexOfLastTodo );
-
-
-  const handlePageChange1 = ( pageNumber ) => {
-    setCurrentPage( pageNumber )
- };
-
-
   return(
     <>
     
@@ -83,7 +60,7 @@ function OurCentersInfo(props) {
                         </>)
                       })}
                     </div>
-                    <h2 className="welcome-subtitle text-align-left pb-3">Welcome to Kïdo India</h2>
+                    <h2 className="welcome-subtitle text-align-left pb-3">Welcome to {(selectCentre.name).split(' ').slice(0,2).join(' ').replaceAll("Safari Kid", "India")}</h2>
                     <div className="paragraph pb-3">
                         <div className="p-color">{ parse((selectCentre.introduction).replaceAll("\r\n\r\n", "<br></br>"))}</div>
                     </div>
@@ -208,45 +185,9 @@ function OurCentersInfo(props) {
             <h2 className="basics-subtitle text-align-left pb-3"><i class="fas fa-th-list pr-3"></i>Related centers</h2>
             <div className="find-our-centers row">
               <div className="col-lg-12">
-              <div className="card-deck">
-                {Object.entries(currentTodos).map((item, k) => {
-                  // console.log(item)
-                  return (
-                    <>
-                        <div class="card" key={item[0]}>
-                          <div style={{ backgroundImage: `url(${item[1].img})` }} className="card-img-top"></div>
-                          <div className="label">{cityNames[item[1].city]}</div>
-                          <div class="card-body">
-                            <p class="card-title name"><Link to={{ pathname: "/our-centres/" + (cityNames[item[1].city]).toLowerCase().split(' ').join('-') + "/" + item[1].slug + "/" }}>{item[1].name}</Link></p>
-                            <div className="row justify-content-center">
-                              <div className="col-lg-6 col-6 text-center">
-                                <div className="card-icon1 py-2"><img src={'/images/' + (item[1].features[0].feature.slug) + ".svg"} className="img-fluid" width="25" /></div>
-                                <p className="card-text sch-config-text">{item[1].features[0].feature.description}</p>
-                                <p className="card-text"><small className="text-muted">{item[1].features[0]["feature_information"]}</small></p>
-                              </div>
-                              <div className="col-lg-6 col-6 text-center">
-                                <div className="card-icon2 py-2"><img src={'/images/' + (item[1].features[1].feature.slug) + ".svg"} className="img-fluid" width="25" /></div>
-                                <p className="card-text sch-config-text">{item[1].features[1].feature.description}</p>
-                                <p className="card-text"><small className="text-muted">{item[1].features[1]["feature_information"]}</small></p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                    </>)
-                })
-                }
-              </div>
-              <div className="pagination pt-3">
-                <Pagination
-                  activePage={ activePage }
-                  itemsCountPerPage={ 4 }
-                  totalItemsCount={ centerContents.length }
-                  pageRangeDisplayed={ 4 }
-                  onChange={ handlePageChange1 }
-                />
+                  <RelatedCenters/>
             </div>
-            </div>
-            </div>
+          </div>
           </div>
 
       </div>
