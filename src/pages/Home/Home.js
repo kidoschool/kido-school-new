@@ -14,6 +14,7 @@ import TestiParent1 from '../../assets/Parent-Testimonial-1.jpg';
 import TestiParent2 from '../../assets/Parent-Testimonial-2.jpg';
 import LatestNews1 from '../../assets/latest-news-pic1.jpg';
 import LatestNews2 from '../../assets/latest-news-pic2.jpg';
+import {Link} from "react-router-dom";
 import $ from 'jquery';
 
 function Home(props) {
@@ -28,55 +29,55 @@ function Home(props) {
           <div className="carousel-inner">
             <div className="carousel-item active">
               <div className="banner-tarea"><h2 className="banner-text">early years, reimagined</h2>
-                <a href="#" className="btn-banner">Find a center near you</a>
+                <Link to="ourcentres" className="btn-banner">Find a center near you</Link>
               </div>
               <img className="main-banner-img d-block w-100" src={Banner1} alt="First slide"/>
             </div>
             <div className="carousel-item">
                 <div className="banner-tarea"><h2 className="banner-text">early years, reimagined</h2>
-                  <a href="#" className="btn-banner">Find a center near you</a>
+                  <Link to="ourcentres" className="btn-banner">Find a center near you</Link>
                 </div>
               <img className="main-banner-img d-block w-100" src={Banner2} alt="Second slide"/>
             </div>
             <div className="carousel-item">
                 <div className="banner-tarea"><h2 className="banner-text">early years, reimagined</h2>
-                  <a href="#" className="btn-banner">Find a center near you</a>
+                  <Link to="ourcentres" className="btn-banner">Find a center near you</Link>
                 </div>
               <img className="main-banner-img d-block w-100" src={Banner3} alt="Third slide"/>
             </div>
             <div className="carousel-item">
                 <div className="banner-tarea"><h2 className="banner-text">early years, reimagined</h2>
-                  <a href="#" className="btn-banner">Find a center near you</a>
+                  <Link to="ourcentres" className="btn-banner">Find a center near you</Link>
                 </div>
               <img className="main-banner-img d-block w-100" src={Banner4} alt="Fourth slide"/>
             </div>
             <div className="carousel-item">
                 <div className="banner-tarea"><h2 className="banner-text">early years, reimagined</h2>
-                  <a href="#" className="btn-banner">Find a center near you</a>
+                  <Link to="ourcentres" className="btn-banner">Find a center near you</Link>
                 </div>
               <img className="main-banner-img d-block w-100" src={Banner5} alt="Fifth slide"/>
             </div>
             <div className="carousel-item">
                 <div className="banner-tarea"><h2 className="banner-text">early years, reimagined</h2>
-                  <a href="#" className="btn-banner">Find a center near you</a>
+                  <Link to="ourcentres" className="btn-banner">Find a center near you</Link>
                 </div>
               <img className="main-banner-img d-block w-100" src={Banner6} alt="Sixth slide"/>
             </div>
             <div className="carousel-item">
                 <div className="banner-tarea"><h2 className="banner-text">early years, reimagined</h2>
-                  <a href="#" className="btn-banner">Find a center near you</a>
+                  <Link to="ourcentres" className="btn-banner">Find a center near you</Link>
                 </div>
               <img className="main-banner-img d-block w-100" src={Banner7} alt="Seventh slide"/>
             </div>
             <div className="carousel-item">
                 <div className="banner-tarea"><h2 className="banner-text">early years, reimagined</h2>
-                  <a href="#" className="btn-banner">Find a center near you</a>
+                  <Link to="ourcentres" className="btn-banner">Find a center near you</Link>
                 </div>
               <img className="main-banner-img d-block w-100" src={Banner8} alt="Eight slide"/>
             </div>
             <div className="carousel-item">
                 <div className="banner-tarea"><h2 className="banner-text">early years, reimagined</h2>
-                  <a href="#" className="btn-banner">Find a center near you</a>
+                  <Link to="ourcentres" className="btn-banner">Find a center near you</Link>
                 </div>
               <img className="main-banner-img d-block w-100" src={Banner9} alt="Nine slide"/>
             </div>
@@ -142,9 +143,11 @@ function Home(props) {
               <li className="list-inline-item"><a className="btn btn-outline-primary" onclick="getLocalization(30.266636, -97.744399 )" href="https://kido.school/en/ourcentres/">Hong kong</a></li>
             </ul>
             </div>
+            <div className="find-our-centers">
             <RelatedCenters/>
+            </div>
             <div className="text-center pt-5">
-            <a href="https://kido.school/?page_id=5643" className="my-btn center">Find a centre</a>
+            <Link to="ourcentres" className="my-btn center">Find a centre</Link>
             </div>
           </div>
        </div>

@@ -39,6 +39,7 @@ $.each(allCities, function (k, v) {
 
 
 
+
 if(selectedOption){
   $.each(centresList, function (k, v) {
     if(v.city == parseInt(selectedOption)){
