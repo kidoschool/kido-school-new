@@ -205,6 +205,15 @@ a.my-btn:hover {
   margin-top: 10px;
 }
 
+.card-img-top-khome{
+  width: 100%;
+  height: 250px;
+}
+
+.khome-card{
+  height: 450px;
+}
+
 @media only screen and (max-width: 480px){
   .parent_testimonial{
       margin: 0 10px;
