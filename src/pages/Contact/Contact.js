@@ -111,7 +111,7 @@ function Contact(props) {
     </section>
 
     
-      <section className="related_centers py-4" id="related-centers">
+      <section className="related_centers bg-light py-5" id="related-centers">
         <div className="container">
           <h4 className="basics-subtitle text-align-left pb-3">Other centres you may love</h4>
           <div className="find-our-centers row">
