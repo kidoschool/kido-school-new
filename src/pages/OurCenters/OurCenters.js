@@ -9,20 +9,46 @@ import {Link} from "react-router-dom";
 
 
 function OurCenters(props) {
-
   // const [centerContents1, setcenterContents1] = useState({});
   // const [allCentres, setallCentres] = useState({});
+  const centerContents1 = (JSON.parse(localStorage.getItem("centres")));
+  const allCentres = JSON.parse(localStorage.getItem("centres"));
+  const allCities = JSON.parse(localStorage.getItem("cities"));
+
+  var cityNames = {};
+  $.each(allCities, function (k, v) {
+    cityNames[v.id] = v.name;
+  });
+//----------------------------------------IF URL SRCH PARAM --------------------
+let url = new URL(window.location.href);
+let searchParams = new URLSearchParams(url.search);
+var srch_trm =  searchParams.get('srch-trm');
+var srchCityId = 0,defZoom = 1 , defCentre = {lat: 51.571037,lng: -0.192};
+
+if(srch_trm){
+  $.each(cityNames, function (k, v) {
+    if(srch_trm == v.replace(/\s+/g, '-').toLowerCase()){
+      srchCityId = parseInt(k);
+    }
+  });
+  $.each(allCentres, function (k, v) {
+
+    console.log(srchCityId,"---------",v.city);
+    defZoom = 10;
+    if(v.city == srchCityId){defCentre.lat = v.lat;defCentre.lng = v.lng;}
+    if(srchCityId == 5848){defCentre.lat = 51.571037;defCentre.lng = -0.29;}
+    if(srchCityId == 6863){defZoom = 5;defCentre.lat = 19;defCentre.lng = 79;}
+  });
+}
+console.log(defZoom);
+
   const [selectedOption, setSelectedOption] = useState("everyone");
   const todosPerPage = 5;
   const [ activePage, setCurrentPage ] = useState( 1 );
 
-  const [ map_zoom, setMap_zoom ] = useState( 1 );
-  const [ map_centre, setMap_centre ] = useState({lat: 51.571037,lng: -0.192});
+  const [ map_zoom, setMap_zoom ] = useState( defZoom );
+  const [ map_centre, setMap_centre ] = useState(defCentre);
   
-
-  const centerContents1 = (JSON.parse(localStorage.getItem("centres")));
-  const allCentres = JSON.parse(localStorage.getItem("centres"));
-  const allCities = JSON.parse(localStorage.getItem("cities"));
 
 // Logic for displaying current todos
 const indexOfLastTodo  = activePage * todosPerPage;
@@ -32,17 +58,23 @@ var filteredOptions = [];
 // var centresList = Object.entries(centerContents1);
 var centresList = centerContents1;
 
-var cityNames = {};
-$.each(allCities, function (k, v) {
-  cityNames[v.id] = v.name;
-});
+
+const handleOnChange1 = (e) => {
+  var latt = 19 , long = 10 ,mapZoom = 10;
+  $.each(allCentres, function (k, v) {
+    if(v.city == srchCityId){latt = v.lat;long = v.lng;}
+    if(srchCityId == 5848){latt = 51.571037;long = -0.29;}
+    if(srchCityId == 6863){mapZoom = 5;latt = 19;long = 79;}
+  });
+  setMap_centre({lat: latt,lng: long});
+  setSelectedOption(srchCityId) ;setCurrentPage(1);
+  setMap_zoom(mapZoom);
+}
 
 
-
-
-if(selectedOption){
+if(selectedOption || srchCityId){
   $.each(centresList, function (k, v) {
-    if(v.city == parseInt(selectedOption)){
+    if(v.city == parseInt(selectedOption) || v.city == srchCityId){
       filteredOptions.push(v);
     }
   });
@@ -52,11 +84,10 @@ if(filteredOptions.length){
   centresList = filteredOptions;
 }
  const currentCenters   = centresList.slice( indexOfFirstTodo, indexOfLastTodo );
-//  const currentCenters   = centresList;
+// const currentCenters   = centresList;
 // console.log(currentCenters,"--------------------FO");
 
 const handlePageChange = ( pageNumber ) => {
-  // console.log( `active page is ${ pageNumber }` );
   setCurrentPage( pageNumber )
 };
 

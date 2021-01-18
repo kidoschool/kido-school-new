@@ -1,11 +1,8 @@
 import React from 'react';
+import {Link} from "react-router-dom";
 
 
 function Footer(props) {
-
-  
- 
-
   return(
     
     <>
@@ -28,7 +25,7 @@ function Footer(props) {
                                   <li><a href="#">Greater London</a></li>
                                   <li><a href="#">Houston</a></li>
                                   <li><a href="#">Austin</a></li>
-                                  <li><a href="#">Hong Kong</a></li>
+                                  <li><Link to="/ourcentres?srch-trm=hong-kong">Hong Kong</Link></li>
                                   <li><a href="#">India</a></li>
                                 </ul>
                             </div>
