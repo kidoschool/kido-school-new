@@ -32,23 +32,24 @@ if(srch_trm){
     }
   });
   $.each(allCentres, function (k, v) {
-
-    console.log(srchCityId,"---------",v.city);
+    // console.log(srchCityId,"---------",v.city);
     defZoom = 10;
     if(v.city == srchCityId){defCentre.lat = v.lat;defCentre.lng = v.lng;}
     if(srchCityId == 5848){defCentre.lat = 51.571037;defCentre.lng = -0.29;}
     if(srchCityId == 6863){defZoom = 5;defCentre.lat = 19;defCentre.lng = 79;}
   });
+  // $("#search_filter").val("-");
+  console.log($("#search_filter").val(),"defCentre");
 }
-console.log(defZoom);
 
   const [selectedOption, setSelectedOption] = useState("everyone");
   const todosPerPage = 5;
   const [ activePage, setCurrentPage ] = useState( 1 );
 
   const [ map_zoom, setMap_zoom ] = useState( defZoom );
-  const [ map_centre, setMap_centre ] = useState(defCentre);
+  var [ map_centre, setMap_centre ] = useState(defCentre);
   
+// console.log(map_centre,"map_centre");
 
 // Logic for displaying current todos
 const indexOfLastTodo  = activePage * todosPerPage;
@@ -73,8 +74,12 @@ const handleOnChange1 = (e) => {
 
 
 if(selectedOption || srchCityId){
+  var ListOpt = parseInt(selectedOption);
+  if(srchCityId > 0) {ListOpt = 0;}
+  if(ListOpt > 0) {srchCityId = 0;}
+
   $.each(centresList, function (k, v) {
-    if(v.city == parseInt(selectedOption) || v.city == srchCityId){
+    if(v.city == ListOpt || v.city == srchCityId){
       filteredOptions.push(v);
     }
   });
@@ -91,9 +96,39 @@ const handlePageChange = ( pageNumber ) => {
   setCurrentPage( pageNumber )
 };
 
+function updateUrlParameter(uri, key, value) {
+  // remove the hash part before operating on the uri
+  var i = uri.indexOf('#');
+  var hash = i === -1 ? ''  : uri.substr(i);
+       uri = i === -1 ? uri : uri.substr(0, i);
+
+  var re = new RegExp("([?&])" + key + "=.*?(&|$)", "i");
+  var separator = uri.indexOf('?') !== -1 ? "&" : "?";
+  if (uri.match(re)) {
+      uri = uri.replace(re, '$1' + key + "=" + value + '$2');
+  } else {
+      uri = uri + separator + key + "=" + value;
+  }
+  return uri + hash;  // finally append the hash as well
+}
+
+
+
 const handleOnChange = (e) => {
   var latt = 19 , long = 10 ,mapZoom = 10;
   // console.log(v.city == parseInt(e.target.value));
+  // let url = new URL(window.location.href);
+  // let searchParams = new URLSearchParams(url.search);
+  // var srch_trm =  searchParams.get('srch-trm');
+  if(srch_trm){
+    // searchParams.set('srch-trm','');
+    // var updted = updateUrlParameter(url.toString(),'srch-trm','hi');
+    window.history.pushState('page2', 'Title', '/en/ourcentres');
+    // window.location.href = updted;
+    // console.log(updted);
+    // updateUrlParameter()
+  }
+
   $.each(allCentres, function (k, v) {
     if(v.city == parseInt(e.target.value)){latt = v.lat;long = v.lng;}
    if(parseInt(e.target.value) == 5848){mapZoom = 9;latt = 51.571037;long = -0.29;}  //--------UK
@@ -101,6 +136,7 @@ const handleOnChange = (e) => {
    if(isNaN(parseInt(e.target.value))){mapZoom = 1;} //-------EveryWhere
 
   });
+  // console.log(window.location.href);
   setMap_centre({lat: latt,lng: long});setSelectedOption(e.target.value) ;setCurrentPage(1);
   setMap_zoom(mapZoom);
   // $("#update_map").click();
