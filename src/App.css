@@ -14,7 +14,7 @@ h1,h2,h3,h4,h5,h6 {
     text-transform: capitalize;
     color: #000;
 }
-h1, .h1 {font-size: 1.75em;}
+h1, .h1 {font-size: 1.9em;}
 h2, .h2 {font-size: 1.7em;}
 h3, .h3 {font-size: 1.15em;}
 h4, .h4 {font-size: 1.1em;}
@@ -32,7 +32,8 @@ a {color: #444; text-decoration: none;  transition: 0.3s;}
     font-size: 18px;
     border: none;
     outline: none;
-    background-color: #3face4;
+    background-color: #00356b;
+    color: #fff;
     cursor: pointer;
   }
   .topbtn button:hover{
@@ -137,13 +138,6 @@ a.btn-banner {
   background-color: transparent;
   border-color: #bd5319;
 }
-
-/* .centres .my-btn {
-  padding: 12.5px 60px;
-  font-size: 1.4em;
-  line-height: 128%;
-  margin-bottom: 20px;
-} */
 
 a.my-btn {
   background-color: #00356b;
@@ -252,7 +246,6 @@ a.my-btn:hover {
 }
 
 .card-img{
-  /* background-image: url("assets/centers-img1.jpg"); */
   background-repeat: no-repeat;
   width: 100%;
   background-position: center;
@@ -334,22 +327,14 @@ iframe{
 }
 
 .pagination li:hover:not(.active) {background-color: #ddd; border-radius: 5px;}
-/* 
-.filter-search{
-  position: absolute;
-  top: 10px;
-  left: 10px;
-} */
-#update_map{
-/* visibility: hidden; */
-display: none;
-}
 
+#update_map{
+  display: none;
+}
 
 /*--------our centers info start---------*/
 
 .info-banner-img {
-  /* background-image: url("assets/center-info-img1.jpg"); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -451,7 +436,6 @@ a.is-transition{
 
 
 .card-img-top1{
-  /* background-image: url("assets/centers-img1.jpg"); */
   background-repeat: no-repeat;
   width: 100%;
   background-position: center;
@@ -560,6 +544,10 @@ color: #a1aeb7;
   border-bottom: 1px solid #bfc4db;
 }
 
+a[rel="noopener"],.gmnoprint{
+  visibility: hidden;
+}
+
 /*--------footer-area end---------*/
 
 @media screen and (max-width: 600px){
@@ -611,9 +599,7 @@ a.btn-banner {
   position: absolute;
   top: 3437px;
   left: 11px;
-  /* width: 100%; */
 }
-
 
 #vid{
   width: 100%;
@@ -626,7 +612,4 @@ a.btn-banner {
    
 }
 
-a[rel="noopener"],.gmnoprint{
-  visibility: hidden;
-}
 

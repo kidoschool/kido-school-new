@@ -11,12 +11,15 @@ import Contact from "./pages/Contact/Contact";
 import Carrers from "./pages/Carrers/Carrers";
 import Blog from "./pages/Blog/Blog";
 import Footer from "./components/Footer/Footer";
+import ScrollToTop from "./ScrollToTop"
 import './App.css';
 
 function App() {
+  
   return (
   <>
        <Router basename={'/en'}>
+       <ScrollToTop>
         <Header />
         <Switch>
           <Route exact path="/"  component={Home} />
@@ -30,6 +33,7 @@ function App() {
           <Route path='/news-events' component={Blog} />
         </Switch>
         <Footer />
+        </ScrollToTop>
       </Router>
 </>
   );

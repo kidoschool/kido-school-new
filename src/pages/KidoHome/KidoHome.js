@@ -1,5 +1,4 @@
-import React, {useState} from 'react';
-import {Link} from "react-router-dom";
+import React from 'react';
 import KidoBanner from '../../assets/kido-home-banner.jpg';
 import kido_home_video from '../../assets/KidoHome-video.mp4';
 import KidoCard1 from '../../assets/kido-home-card-img1.jpg';
@@ -8,10 +7,6 @@ import KidoCard3 from '../../assets/kido-home-card-img3.jpg';
 import KidoCard4 from '../../assets/kido-home-card-img4.jpg';
 import KidoCard5 from '../../assets/kido-home-card-img5.jpg';
 import KidoCard6 from '../../assets/kido-home-card-img6.jpg';
-
-
-
-
 
 function KidoHome(props) {
 
@@ -33,7 +28,7 @@ function KidoHome(props) {
             <p className="subtitle subtitle-smaller">Customised preschool, for everyone, everywhere</p>
             <p className="description">Kïdo Home is our virtual preschool and kindergarten program, where we deliver our curriculum, international network of teachers and multiple languages to children anywhere in the world. All at a fraction of the price of a regular preschool. High quality pedagogy and teaching, accessible to anyone, without the need for a physical presence. Available initially in four timezones - USA, the UAE, India and Hong Kong. Visit the Kïdo Home website to learn more, and book a free trial class!</p>
             <div className="kido-home-website text-center pt-5">
-              <a href="https://www.kidohome.net/" className="my-btn center">Visit Kido Home Website</a>
+              <a href="https://www.kidohome.net/" target='_blank' rel="noreferrer" className="my-btn center">Visit Kido Home Website</a>
             </div>
             </div>
        </div>
@@ -74,7 +69,7 @@ function KidoHome(props) {
             <div className="row pt-5">
               <div className="col-lg-4">
                 <div className="card khome-card">
-                  <img className="card-img-top-khome img-fluid" src={KidoCard1} alt="Card image cap"/>
+                  <img className="card-img-top-khome img-fluid" src={KidoCard1} alt="kido highlights"/>
                   <div className="card-body">
                     <h4 className="card-title pb-2">Small Groups</h4>
                     <p className="card-text">Ratios 1:6 or 1:8 for live interactive video sessions ensure engagement and personal attention</p>
@@ -83,7 +78,7 @@ function KidoHome(props) {
               </div>
               <div className="col-lg-4">
                 <div className="card khome-card">
-                  <img className="card-img-top-khome img-fluid" src={KidoCard2} alt="Card image cap"/>
+                  <img className="card-img-top-khome img-fluid" src={KidoCard2} alt="kido highlights"/>
                   <div className="card-body">
                     <h4 className="card-title pb-2">Touchscreen Interactive</h4>
                     <p className="card-text">Literacy and math modules taught via interactive touchscreen technology, with a teacher present at all times</p>
@@ -92,7 +87,7 @@ function KidoHome(props) {
               </div>
               <div className="col-lg-4">
                 <div className="card khome-card">
-                  <img className="card-img-top-khome img-fluid" src={KidoCard3} alt="Card image cap"/>
+                  <img className="card-img-top-khome img-fluid" src={KidoCard3} alt="kido highlights"/>
                   <div className="card-body">
                     <h4 className="card-title pb-2">Complete Program</h4>
                     <p className="card-text">Encompassing literacy, math, art, STEM, physical development and life skills, so children are more than school ready</p>
@@ -101,7 +96,7 @@ function KidoHome(props) {
               </div>
               <div className="col-lg-4  py-4">
                 <div className="card khome-card">
-                  <img className="card-img-top-khome img-fluid" src={KidoCard4} alt="Card image cap"/>
+                  <img className="card-img-top-khome img-fluid" src={KidoCard4} alt="kido highlights"/>
                   <div className="card-body">
                     <h4 className="card-title pb-2">International Teachers</h4>
                     <p className="card-text">Our global teacher network ensures best in class teaching and language support</p>
@@ -110,7 +105,7 @@ function KidoHome(props) {
               </div>
               <div className="col-lg-4  py-4">
                 <div className="card khome-card">
-                  <img className="card-img-top-khome img-fluid" src={KidoCard5} alt="Card image cap"/>
+                  <img className="card-img-top-khome img-fluid" src={KidoCard5} alt="kido highlights"/>
                   <div className="card-body">
                     <h4 className="card-title pb-2">Home Activities</h4>
                     <p className="card-text">Monthly engagement kits and video based lesson plans for home activities to complement the online learning.</p>
@@ -119,7 +114,7 @@ function KidoHome(props) {
               </div>
               <div className="col-lg-4  py-4">
                 <div className="card khome-card">
-                  <img className="card-img-top-khome img-fluid" src={KidoCard6} alt="Card image cap"/>
+                  <img className="card-img-top-khome img-fluid" src={KidoCard6} alt="kido highlights"/>
                   <div className="card-body">
                     <h4 className="card-title pb-2">And More</h4>
                     <p className="card-text">Specialist, yoga, mindfulness, music and other classes. Onsite add ons for project based learning and more</p>

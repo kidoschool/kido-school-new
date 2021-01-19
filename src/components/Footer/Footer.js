@@ -21,12 +21,12 @@ function Footer(props) {
                             <div className="footer-widget footer-info">
                                 <h4 className="widget-title pb-3">CENTRES</h4>
                                 <ul className="list-unstyled">
-                                  <li><a href="#">Dubai</a></li>
-                                  <li><a href="#">Greater London</a></li>
-                                  <li><a href="#">Houston</a></li>
-                                  <li><a href="#">Austin</a></li>
+                                  <li><Link to="/ourcentres?srch-trm=dubai">Dubai</Link></li>
+                                  <li><Link to="/ourcentres?srch-trm=greater-london">Greater London</Link></li>
+                                  <li><Link to="/ourcentres?srch-trm=houston">Houston</Link></li>
+                                  <li><Link to="/ourcentres?srch-trm=austin">Austin</Link></li>
                                   <li><Link to="/ourcentres?srch-trm=hong-kong">Hong Kong</Link></li>
-                                  <li><a href="#">India</a></li>
+                                  <li><Link to="/ourcentres?srch-trm=india">India</Link></li>
                                 </ul>
                             </div>
                         </div>

@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {Link} from "react-router-dom";
 import AboutBanner from '../../assets/About-banner.jpg';
 import Aboutperson1 from '../../assets/about-person1.jpg';
@@ -58,7 +58,7 @@ function AboutUs(props) {
             <div className="row pt-5">
               <div className="col-lg-4">
                 <div class="card" style={size}>
-                  <img class="card-img-top" src={Aboutperson1} alt="Card image cap"/>
+                  <img class="card-img-top" src={Aboutperson1} alt="pedagogical leaders"/>
                   <div class="card-body text-center">
                     <p class="card-title">Dr Robert Swartz, Advisor</p>
                   </div>
@@ -66,7 +66,7 @@ function AboutUs(props) {
               </div>
               <div className="col-lg-4">
                 <div class="card" style={size}>
-                  <img class="card-img-top" src={Aboutperson2} alt="Card image cap"/>
+                  <img class="card-img-top" src={Aboutperson2} alt="pedagogical leaders"/>
                   <div class="card-body text-center">
                     <p class="card-title">Dr Yuuko Tonkovich, Advisor</p>
                   </div>
@@ -74,7 +74,7 @@ function AboutUs(props) {
               </div>
               <div className="col-lg-4">
                 <div class="card" style={size}>
-                  <img class="card-img-top" src={Aboutperson3} alt="Card image cap"/>
+                  <img class="card-img-top" src={Aboutperson3} alt="pedagogical leaders"/>
                   <div class="card-body text-center">
                     <p class="card-title">Fruzsina Benyei, Curriculum &amp; Training, Asia</p>
                   </div>
@@ -82,7 +82,7 @@ function AboutUs(props) {
               </div>
               <div className="col-lg-4 py-4">
                 <div class="card" style={size}>
-                  <img class="card-img-top" src={Aboutperson4} alt="Card image cap"/>
+                  <img class="card-img-top" src={Aboutperson4} alt="pedagogical leaders"/>
                   <div class="card-body text-center">
                     <p class="card-title">Emma Phillips, Curriculum &amp; Operations, UK</p>
                   </div>
@@ -90,7 +90,7 @@ function AboutUs(props) {
               </div>
               <div className="col-lg-4 py-4">
                 <div class="card" style={size}>
-                  <img class="card-img-top" src={Aboutperson5} alt="Card image cap"/>
+                  <img class="card-img-top" src={Aboutperson5} alt="pedagogical leaders"/>
                   <div class="card-body text-center">
                     <p class="card-title">Azah Rahman, Curriculum Coordinator, UAE</p>
                   </div>
@@ -98,7 +98,7 @@ function AboutUs(props) {
               </div>
               <div className="col-lg-4 py-4">
                 <div class="card" style={size}>
-                  <img class="card-img-top" src={Aboutperson6} alt="Card image cap"/>
+                  <img class="card-img-top" src={Aboutperson6} alt="pedagogical leaders"/>
                   <div class="card-body text-center">
                     <p class="card-title">Karen Norris, Curriculum Coordinator, Hong Kong</p>
                   </div>
@@ -106,7 +106,7 @@ function AboutUs(props) {
               </div>
               <div className="col-lg-4">
                 <div class="card" style={size}>
-                  <img class="card-img-top" src={Aboutperson7} alt="Card image cap"/>
+                  <img class="card-img-top" src={Aboutperson7} alt="pedagogical leaders"/>
                   <div class="card-body text-center">
                     <p class="card-title">Tez Razzaq, Curriculum &amp; Training, UK</p>
                   </div>
@@ -114,7 +114,7 @@ function AboutUs(props) {
               </div>
               <div className="col-lg-4">
                 <div class="card" style={size}>
-                  <img class="card-img-top" src={Aboutperson8} alt="Card image cap"/>
+                  <img class="card-img-top" src={Aboutperson8} alt="pedagogical leaders"/>
                   <div class="card-body text-center">
                     <p class="card-title">Anjali Motiani, Curriculum Coordinator, India</p>
                   </div>

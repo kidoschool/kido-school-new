@@ -15,7 +15,6 @@ import TestiParent2 from '../../assets/Parent-Testimonial-2.jpg';
 import LatestNews1 from '../../assets/latest-news-pic1.jpg';
 import LatestNews2 from '../../assets/latest-news-pic2.jpg';
 import {Link} from "react-router-dom";
-import $ from 'jquery';
 
 function Home(props) {
 
@@ -135,12 +134,12 @@ function Home(props) {
           <div className="col-lg-12">
             <div className="getlocation-btn">
             <ul className="list-inline d-flex justify-content-center py-5">
-              <li className="list-inline-item pr-3"><a className="btn btn-outline-primary" onclick="getLocalization(30.266636, -97.744399 )" href="https://kido.school/en/ourcentres/">Austin</a></li>
-              <li className="list-inline-item pr-3"><a className="btn btn-outline-primary" onclick="getLocalization(30.266636, -97.744399 )" href="https://kido.school/en/ourcentres/">Houston</a></li>
-              <li className="list-inline-item pr-3"><a className="btn btn-outline-primary" onclick="getLocalization(30.266636, -97.744399 )" href="https://kido.school/en/ourcentres/">Greater London</a></li>
-              <li className="list-inline-item pr-3"><a className="btn btn-outline-primary" onclick="getLocalization(30.266636, -97.744399 )" href="https://kido.school/en/ourcentres/">Dubai</a></li>
-              <li className="list-inline-item pr-3"><a className="btn btn-outline-primary" onclick="getLocalization(30.266636, -97.744399 )" href="https://kido.school/en/ourcentres/">India</a></li>
-              <li className="list-inline-item"><a className="btn btn-outline-primary" onclick="getLocalization(30.266636, -97.744399 )" href="https://kido.school/en/ourcentres/">Hong kong</a></li>
+              <li className="list-inline-item pr-3"><Link className="btn btn-outline-primary" to="/ourcentres?srch-trm=austin">Austin</Link></li>
+              <li className="list-inline-item pr-3"><Link className="btn btn-outline-primary" to="/ourcentres?srch-trm=houston">Houston</Link></li>
+              <li className="list-inline-item pr-3"><Link className="btn btn-outline-primary" to="/ourcentres?srch-trm=greater-london">Greater London</Link></li>
+              <li className="list-inline-item pr-3"><Link className="btn btn-outline-primary" to="/ourcentres?srch-trm=dubai">Dubai</Link></li>
+              <li className="list-inline-item pr-3"><Link className="btn btn-outline-primary" to="/ourcentres?srch-trm=india">India</Link></li>
+              <li className="list-inline-item"><Link className="btn btn-outline-primary" to="/ourcentres?srch-trm=hong-kong">Hong kong</Link></li>
             </ul>
             </div>
             <div className="find-our-centers">
@@ -211,7 +210,7 @@ function Home(props) {
           </div>
           <div className="col-lg-4">
               <div className="card">
-                <img className="card-img-top" src={LatestNews1} alt="Card image cap"/>
+                <img className="card-img-top" src={LatestNews1} alt="latest news"/>
                 <div className="card-body">
                   <p className="card-text">March 27th</p>
                   <h5 className="card-title pb-5">Tips For Preschool Home-Schooling</h5>
@@ -221,7 +220,7 @@ function Home(props) {
           </div>
           <div className="col-lg-4">
           <div className="card">
-                <img className="card-img-top" src={LatestNews2} alt="Card image cap"/>
+                <img className="card-img-top" src={LatestNews2} alt="latest news"/>
                 <div className="card-body">
                   <p className="card-text">March 27th</p>
                   <h5 className="card-title pb-5">Supporting Children During A School Closure</h5>
