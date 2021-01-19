@@ -62,6 +62,10 @@ a {color: #444; text-decoration: none;  transition: 0.3s;}
 }
 
 /*--------section header end---------*/
+/* .banner-images{
+  height: 600px;
+} */
+
 .banner-tarea{
   position: absolute;
   top: 25%;

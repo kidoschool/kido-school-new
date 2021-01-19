@@ -10,7 +10,7 @@ function Contact(props) {
     <section className="main-banner">
       <div className="container-fluid">
         <div className="row justify-content-center">
-            <img src={ContactBanner} className="img-fluid" alt="contact-banner"/>
+            <img src={ContactBanner} className="img-fluid w-100" alt="contact-banner"/>
        </div>
       </div>
     </section>

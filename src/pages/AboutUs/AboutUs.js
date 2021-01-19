@@ -16,7 +16,7 @@ import Aboutperson8 from '../../assets/about-person8.png';
 function AboutUs(props) {
 
   const size = {
-    width:'85%',
+    width:'100%',
     height:'95%'
 }
 
@@ -26,7 +26,7 @@ function AboutUs(props) {
     <section className="about-banner">
       <div className="container-fluid">
         <div className="row justify-content-center">
-            <img src={AboutBanner} className="img-fluid" alt="about-banner"/>
+            <img src={AboutBanner} className="img-fluid w-100" alt="about-banner"/>
        </div>
       </div>
     </section>
@@ -55,8 +55,8 @@ function AboutUs(props) {
                 <p>Our curriculum is developed in house and supported by a world renowned panel of advisors. Our pedagogical leadership team has over 200 years of combined experience in early years teaching, research and pedagogy across more than ten countries, and in multiple languages.</p>
             </div>
 
-            <div className="row pt-5">
-              <div className="col-lg-4">
+            <div className="row justify-content-center pt-5">
+              <div className="col-lg-3 col-6">
                 <div class="card" style={size}>
                   <img class="card-img-top" src={Aboutperson1} alt="pedagogical leaders"/>
                   <div class="card-body text-center">
@@ -64,7 +64,7 @@ function AboutUs(props) {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-4">
+              <div className="col-lg-3 col-6">
                 <div class="card" style={size}>
                   <img class="card-img-top" src={Aboutperson2} alt="pedagogical leaders"/>
                   <div class="card-body text-center">
@@ -72,7 +72,7 @@ function AboutUs(props) {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-4">
+              <div className="col-lg-3 col-6">
                 <div class="card" style={size}>
                   <img class="card-img-top" src={Aboutperson3} alt="pedagogical leaders"/>
                   <div class="card-body text-center">
@@ -80,7 +80,7 @@ function AboutUs(props) {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-4 py-4">
+              <div className="col-lg-3 col-6">
                 <div class="card" style={size}>
                   <img class="card-img-top" src={Aboutperson4} alt="pedagogical leaders"/>
                   <div class="card-body text-center">
@@ -88,7 +88,7 @@ function AboutUs(props) {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-4 py-4">
+              <div className="col-lg-3 col-6">
                 <div class="card" style={size}>
                   <img class="card-img-top" src={Aboutperson5} alt="pedagogical leaders"/>
                   <div class="card-body text-center">
@@ -96,7 +96,7 @@ function AboutUs(props) {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-4 py-4">
+              <div className="col-lg-3 col-6">
                 <div class="card" style={size}>
                   <img class="card-img-top" src={Aboutperson6} alt="pedagogical leaders"/>
                   <div class="card-body text-center">
@@ -104,7 +104,7 @@ function AboutUs(props) {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-4">
+              <div className="col-lg-3 col-6">
                 <div class="card" style={size}>
                   <img class="card-img-top" src={Aboutperson7} alt="pedagogical leaders"/>
                   <div class="card-body text-center">
@@ -112,7 +112,7 @@ function AboutUs(props) {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-4">
+              <div className="col-lg-3 col-6">
                 <div class="card" style={size}>
                   <img class="card-img-top" src={Aboutperson8} alt="pedagogical leaders"/>
                   <div class="card-body text-center">
@@ -127,12 +127,12 @@ function AboutUs(props) {
       </div>
     </section>
 
-    <section className="our-program py-5">
+    <section className="our-program bg-light py-5">
       <div className="container">
       <h1 className="text-center">Our programs</h1>
         <div className="row justify-content-center">
-          <div className="col-lg-6 text-center">
-            <div className="about-para py-3">
+          <div className="col-lg-8 text-center">
+            <div className="about-para py-4">
                 <p>We tailor our offering to each local community that we serve. Depending on the location, we offer programs for children from six weeks to six years, rooted in our curriculum.</p>
             </div>
             <Link to="ourcentres" className="my-btn center">Find out More</Link>

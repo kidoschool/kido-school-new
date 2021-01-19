@@ -15,7 +15,7 @@ function KidoHome(props) {
      <section className="main-banner">
       <div className="container-fluid">
         <div className="row justify-content-center">
-            <img src={KidoBanner} className="k-home-banner img-fluid" alt="contact-banner"/>
+            <img src={KidoBanner} className="k-home-banner banner-images img-fluid w-100" alt="contact-banner"/>
        </div>
       </div>
     </section>
