@@ -6,8 +6,8 @@ import programCard3 from '../../assets/programs-card-img3.jpg';
 import programCard4 from '../../assets/programs-card-img4.jpg';
 import programCard5 from '../../assets/programs-card-img5.jpg';
 import programCard6 from '../../assets/programs-card-img6.jpg';
-
-
+import programIcon1 from '../../assets/programs-icon1.svg';
+import programIcon2 from '../../assets/programs-icon2.svg';
 
 
 function OurPrograms(props) {
@@ -25,7 +25,7 @@ function OurPrograms(props) {
       </div>
     </section>
 
-    <section className="days-at-kido py-5">
+    <section className="days-at-kido pt-5">
       <div className="container">
         <div className="row justify-content-center py-3">
           <div className="col-lg-10">
@@ -37,7 +37,7 @@ function OurPrograms(props) {
     </section> 
 
 
-    <section className="who-we-teach pb-5">
+    <section className="who-we-teach pt-5">
       <div className="container">
         <div className="row justify-content-center">
         <div className="col-lg-10">
@@ -107,12 +107,266 @@ function OurPrograms(props) {
         </div>
       </div>
     </section>
+
+
+    <section className="how-we-teach pt-5">
+      <div className="container">
+        <div className="row justify-content-center py-3">
+          <div className="col-lg-10">
+            <h1>How we teach</h1>
+            <p className="description pt-3">We divide our school year into six cycles, each lasting six weeks. At the end of each cycle, parents are given a portfolio of their child’s work. In the UK, the Kïdo curriculum is modified to adhere to the EYFS framework and does not offer all of the elements listed here. Discoverers enjoy their own dedicated learning system. For the other levels, weeks are divided into two different types of day:</p>
+                <div className="row justify-content-center pt-4">
+                  <div className="col-lg-6">
+                    <div className="we-teach-data bg-light border p-4">
+                        <img src={programIcon1} className="img-fluid" width="50"/>
+                        <h3 className="teact-head pt-4 pb-2">Skills Days</h3>
+                        <p>These days are dedicated to our proprietary programs in math, literacy, STEM, art and much else. We use different learning stations for each activity, and combine sensory play, guided learning and workbook activities.</p>
+                    </div>
+                  </div>
+                  <div className="col-lg-6">
+                    <div className="we-teach-data bg-light border p-4">
+                        <img src={programIcon2} className="img-fluid" width="50"/>
+                        <h3 className="teact-head pt-4 pb-2">Explorer Days</h3>
+                        <p>Children tackle adult-led project, problem and inquiry-based learning programs, which integrate the knowledge they learn during the Skills Days. Over the course of six weeks, children will develop a project through arts and crafts, math, science, literacy or music-related activities.</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </section> 
+
+
+    <section className="what-we-teach py-5">
+      <div className="container">
+        <div className="row justify-content-center py-3">
+          <div className="col-lg-10">
+            <h1>What we teach</h1>
+            <p className="description pt-3">Find out what your little ones will be learning at our schools. The majority of our learning centers utilise KEYS, our proprietary curriculum. In locations where KEYS is unavailable, we teach an equivalent curriculum that follows the relevant national framework.</p>
+
+            <div className="row justify-content-center pt-4">
+                  <div className="col-lg-6">
+                  <div class="accordion" id="accordionExample">
+                    <div class="card">
+                      <div class="card-header card-header1" id="headingOne">
+                        <h2 class="card-text mb-0">
+                          <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Studio K
+                          </button>
+                        </h2>
+                        <p className="px-3">Art is a core part of our curriculum</p>
+                      </div>
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                      <div class="card-body">
+                        <ul class="">
+                            <li className="what-we-teach-list pb-3">Art is a core part of our curriculum. Our artistic activities promote self-expression and help develop confidence, motor skills and imagination</li>
+                            <li className="what-we-teach-list pb-3">Every school features an atelier – a creative space where children can experiment and express themselves</li>
+                            <li className="what-we-teach-list pb-3">Children enjoy activities created by our teachers or a special guest contributor</li>
+                            <li className="what-we-teach-list pb-3">We take children on fun trips to art museums and age-appropriate exhibitions</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header card-header1" id="headingTwo">
+                      <h2 class="card-text mb-0">
+                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          K-Schol
+                        </button>
+                      </h2>
+                      <p className="px-3">Our exclusive English and literacy program</p>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                      <div class="card-body">
+                        <ul class="">
+                            <li className="what-we-teach-list pb-3">We use children’s literature to awaken a love of learning within our students at an early age.</li>
+                            <li className="what-we-teach-list pb-3">We encourage inquisitiveness which helps develop learning tools both inside and outside the classroom.</li>
+                            <li className="what-we-teach-list pb-3">Children give small presentations to the class to improve their self-confidence.</li>
+                            <li className="what-we-teach-list pb-3">We give the children small writing activities so they can begin writing the sounds they know – the first step towards them writing complete words and phrases.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header card-header1" id="headingThree">
+                      <h2 class="card-text mb-0">
+                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          K-Gym
+                        </button>
+                      </h2>
+                      <p className="px-3">We encourage healthy, happy students through K-Gym</p>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                      <div class="card-body">
+                        <ul class="">
+                            <li className="what-we-teach-list pb-3">We provide a range of fun, structured activities, coordinated by our staff or a guest specialist.</li>
+                            <li className="what-we-teach-list pb-3">Children develop their motor skills through dance sessions.</li>
+                            <li className="what-we-teach-list pb-3">Children engage in team sports and gymnastics to help develop coordination and balance.</li>
+                            <li className="what-we-teach-list pb-3">Days are split into three parts: Warm-up (e.g. role-play or dance games), Main Activity (e.g. obstacle course or gymnastic class) and Cool-down (e.g. yoga or meditation).</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header card-header1" id="headingFour">
+                      <h2 class="card-text mb-0">
+                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                          Arabic
+                        </button>
+                      </h2>
+                      <p className="px-3">Our Arabic program forms an integral part of the Kido Early Years program for all ages in Dubai.</p>
+                    </div>
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                      <div class="card-body">
+                        <ul class="">
+                            <li className="what-we-teach-list pb-3">The Arabic language time during the day (30-45 minutes each day in the Half-Day Program, and a further 90 minutes in the Extended Day Program) mirrors the English program in structure.</li>
+                            <li className="what-we-teach-list pb-3">Stories used during the English program are then used during Arabic time, so children can contextualise the language and learn it faster.</li>
+                            <li className="what-we-teach-list pb-3">Stress is placed on developing **social communication skills in Arabic** as well, by conducting social activities such as snack time, lunch time or part of the free play time in Arabic.</li>
+                            <li className="what-we-teach-list pb-3">Children progress from one level to the next in Arabic, as they do in our main program.</li>
+                            <li className="what-we-teach-list pb-3">These sessions include further practice in reading, writing and speaking; public speaking and confidence building modules in Arabic; math instructions in Arabic and games and activities to enhance social and emotional development, conducted in Arabic.</li>
+                            <li className="what-we-teach-list pb-3">All Kido Dubai centres integrate Arabic in the program. Age Group: 3 years and older</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header card-header1" id="headingFIve">
+                      <h2 class="card-text mb-0">
+                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        Bilingual Spanish
+                        </button>
+                      </h2>
+                      <p className="px-3">A bilingual experience in our Texas schools.</p>
+                    </div>
+                    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                      <div class="card-body">
+                        <ul class="">
+                            <li className="what-we-teach-list pb-3">Across our Texas schools, our English curriculum is mirrored in Spanish. Not only do children speak,read and write in the language, they also use it during maths, art and STEM activities</li>
+                            <li className="what-we-teach-list pb-3">Most importantly, social time is also conducted in Spanish, encouraging verbal fluency in social situations.</li>
+                            <li className="what-we-teach-list pb-3">Centres: Rice Village - Houston, River Place - Austin Age group: 6 weeks to 5 years</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                  </div>
+                  <div className="col-lg-6">
+                      <div class="accordion" id="accordionExample">
+                        <div class="card">
+                          <div class="card-header card-header1" id="headingOne1">
+                            <h2 class="card-text mb-0">
+                              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseOne1" aria-expanded="true" aria-controls="collapseOne1">
+                                Studio K
+                              </button>
+                            </h2>
+                            <p className="px-3">Art is a core part of our curriculum</p>
+                          </div>
+                        <div id="collapseOne1" class="collapse" aria-labelledby="headingOne1" data-parent="#accordionExample">
+                          <div class="card-body">
+                            <ul class="">
+                                <li className="what-we-teach-list pb-3">Art is a core part of our curriculum. Our artistic activities promote self-expression and help develop confidence, motor skills and imagination</li>
+                                <li className="what-we-teach-list pb-3">Every school features an atelier – a creative space where children can experiment and express themselves</li>
+                                <li className="what-we-teach-list pb-3">Children enjoy activities created by our teachers or a special guest contributor</li>
+                                <li className="what-we-teach-list pb-3">We take children on fun trips to art museums and age-appropriate exhibitions</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-header card-header1" id="headingTwo2">
+                          <h2 class="card-text mb-0">
+                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2">
+                              K-Schol
+                            </button>
+                          </h2>
+                          <p className="px-3">Our exclusive English and literacy program</p>
+                        </div>
+                        <div id="collapseTwo2" class="collapse" aria-labelledby="headingTwo2" data-parent="#accordionExample">
+                          <div class="card-body">
+                            <ul class="">
+                                <li className="what-we-teach-list pb-3">We use children’s literature to awaken a love of learning within our students at an early age.</li>
+                                <li className="what-we-teach-list pb-3">We encourage inquisitiveness which helps develop learning tools both inside and outside the classroom.</li>
+                                <li className="what-we-teach-list pb-3">Children give small presentations to the class to improve their self-confidence.</li>
+                                <li className="what-we-teach-list pb-3">We give the children small writing activities so they can begin writing the sounds they know – the first step towards them writing complete words and phrases.</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-header card-header1" id="headingThree3">
+                          <h2 class="card-text mb-0">
+                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree3" aria-expanded="false" aria-controls="collapseThree3">
+                              K-Gym
+                            </button>
+                          </h2>
+                          <p className="px-3">We encourage healthy, happy students through K-Gym</p>
+                        </div>
+                        <div id="collapseThree3" class="collapse" aria-labelledby="headingThree3" data-parent="#accordionExample">
+                          <div class="card-body">
+                            <ul class="">
+                                <li className="what-we-teach-list pb-3">We provide a range of fun, structured activities, coordinated by our staff or a guest specialist.</li>
+                                <li className="what-we-teach-list pb-3">Children develop their motor skills through dance sessions.</li>
+                                <li className="what-we-teach-list pb-3">Children engage in team sports and gymnastics to help develop coordination and balance.</li>
+                                <li className="what-we-teach-list pb-3">Days are split into three parts: Warm-up (e.g. role-play or dance games), Main Activity (e.g. obstacle course or gymnastic class) and Cool-down (e.g. yoga or meditation).</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-header card-header1" id="headingFour4">
+                          <h2 class="card-text mb-0">
+                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour4" aria-expanded="false" aria-controls="collapseFour4">
+                              Arabic
+                            </button>
+                          </h2>
+                          <p className="px-3">Our Arabic program forms an integral part of the Kido Early Years program for all ages in Dubai.</p>
+                        </div>
+                        <div id="collapseFour4" class="collapse" aria-labelledby="headingFour4" data-parent="#accordionExample">
+                          <div class="card-body">
+                            <ul class="">
+                                <li className="what-we-teach-list pb-3">The Arabic language time during the day (30-45 minutes each day in the Half-Day Program, and a further 90 minutes in the Extended Day Program) mirrors the English program in structure.</li>
+                                <li className="what-we-teach-list pb-3">Stories used during the English program are then used during Arabic time, so children can contextualise the language and learn it faster.</li>
+                                <li className="what-we-teach-list pb-3">Stress is placed on developing **social communication skills in Arabic** as well, by conducting social activities such as snack time, lunch time or part of the free play time in Arabic.</li>
+                                <li className="what-we-teach-list pb-3">Children progress from one level to the next in Arabic, as they do in our main program.</li>
+                                <li className="what-we-teach-list pb-3">These sessions include further practice in reading, writing and speaking; public speaking and confidence building modules in Arabic; math instructions in Arabic and games and activities to enhance social and emotional development, conducted in Arabic.</li>
+                                <li className="what-we-teach-list pb-3">All Kido Dubai centres integrate Arabic in the program. Age Group: 3 years and older</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-header card-header1" id="headingFIve5">
+                          <h2 class="card-text mb-0">
+                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            Bilingual Spanish
+                            </button>
+                          </h2>
+                          <p className="px-3">A bilingual experience in our Texas schools.</p>
+                        </div>
+                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive5" data-parent="#accordionExample">
+                          <div class="card-body">
+                            <ul class="">
+                                <li className="what-we-teach-list pb-3">Across our Texas schools, our English curriculum is mirrored in Spanish. Not only do children speak,read and write in the language, they also use it during maths, art and STEM activities</li>
+                                <li className="what-we-teach-list pb-3">Most importantly, social time is also conducted in Spanish, encouraging verbal fluency in social situations.</li>
+                                <li className="what-we-teach-list pb-3">Centres: Rice Village - Houston, River Place - Austin Age group: 6 weeks to 5 years</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+          </div>
+
+       </div>
+      </div>
+    </section> 
   
     </>
   );
 
   
 
-}
+} 
 
 export default OurPrograms;

@@ -84,7 +84,7 @@ a {color: #444; text-decoration: none;  transition: 0.3s;}
 }
 
 .main-banner-img{
-  height: 100vh;
+  height: 75vh;
 }
 
 a.btn-banner {
@@ -232,7 +232,57 @@ a.my-btn:hover {
   color: #337ab7;
 }
 
+.we-teach-data{
+  height: 100%;
+}
 
+.card-header{
+  /* background-color: #fff; */
+  padding: 10px 20px;
+  font-weight: 400;
+  position: relative;
+  width: 100%;
+  border: 0;
+}
+
+.btn-link {
+  font-weight: 600;
+  color: #000;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.btn-link:hover{
+  color: #000;
+  text-decoration: none;
+}
+
+.btn-link.focus, .btn-link:focus {
+  text-decoration: none;
+  box-shadow: none;
+}
+
+.card-header1 button:after{
+  font-family: "FontAwesome";
+  /* content: "\f068"; */
+  content:"\2212";
+  position: absolute;
+  right: 20px;
+  font-size: 25px;
+  top: 45%;
+  line-height: 1;
+  margin-top: -10px;
+  text-align: center;
+}
+
+.card-header1 button.collapsed:after {
+  /* content: "\f067"; */
+  content:"\2b";
+}
+
+/* li.what-we-teach-list:before{
+  content: "\002A";
+} */
 
 /*--------our centers area start---------*/
 
