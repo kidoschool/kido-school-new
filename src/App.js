@@ -10,6 +10,7 @@ import KidoHome from "./pages/KidoHome/KidoHome";
 import Contact from "./pages/Contact/Contact";
 import Carrers from "./pages/Carrers/Carrers";
 import Blog from "./pages/Blog/Blog";
+import Faq from "./pages/Faq/Faq";
 import Footer from "./components/Footer/Footer";
 import ScrollToTop from "./ScrollToTop"
 import './App.css';
@@ -31,6 +32,7 @@ function App() {
           <Route path='/contact-us' component={Contact} />
           <Route path='/carrers' component={Carrers} />
           <Route path='/news-events' component={Blog} />
+          <Route path='/faq' component={Faq} />
         </Switch>
         <Footer />
         </ScrollToTop>

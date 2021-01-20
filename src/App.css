@@ -55,7 +55,22 @@ a {color: #444; text-decoration: none;  transition: 0.3s;}
 .nav-link{color: #fff!important; font-size: 0.8em; font-family: 'Montserrat', sans-serif; font-weight: 600;}
 .bg-color{background: #00356b!important; }
 
+.dropdown-item{color: #00356b!important; font-size: 0.8em; font-family: 'Montserrat', sans-serif; font-weight: 600;}
+
+.dropdown-item.active, .dropdown-item:active {
+  color: #fff!important;
+  text-decoration: none;
+  background-color: #00356b
+}
+
 #search select {font-size: 14px;}
+
+@media all and (min-width: 992px) {
+	.navbar .nav-item .dropdown-menu{ display: none; }
+	.navbar .nav-item:hover .nav-link{ color: #fff;  }
+	.navbar .nav-item:hover .dropdown-menu{ display: block; }
+	.navbar .nav-item .dropdown-menu{ margin-top:0; }
+}	
 
 @media screen and (max-width: 480px) {
     .home_nav{padding-left: 8px;}
@@ -237,7 +252,7 @@ a.my-btn:hover {
 }
 
 .card-header{
-  /* background-color: #fff; */
+  background-color: #fff;
   padding: 10px 20px;
   font-weight: 400;
   position: relative;
@@ -283,6 +298,12 @@ a.my-btn:hover {
 /* li.what-we-teach-list:before{
   content: "\002A";
 } */
+
+a.faq-link{
+ text-decoration: none;
+ color: #1d73c9;
+ font-weight: 600;
+}
 
 /*--------our centers area start---------*/
 

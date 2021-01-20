@@ -20,23 +20,22 @@ function Header(props){
               <li className="nav-item">
                 <NavLink className="nav-link pl-4" activeclassname="selected" to="/ourcentres">Find a nursery</NavLink>
               </li>
-              <li className="nav-item">
-                <NavLink className="nav-link pl-4" to="/about-us">About Us</NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink className="nav-link pl-4" to="/programs">Our Programs</NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink className="nav-link pl-4" to="/kido-home">Kido Home</NavLink>
+              <li className="nav-item dropdown">
+                <NavLink className="nav-link pl-4 dropdown-toggle" to="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                About Us
+                </NavLink>
+                <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <NavLink className="dropdown-item" to="/about-us">About Us</NavLink>
+                  <NavLink className="dropdown-item" to="/kido-home">Kido Home</NavLink>
+                  <NavLink className="dropdown-item" to="/programs">Our Programs</NavLink>
+                  <NavLink className="dropdown-item" to="/news-events">Blog</NavLink>
+                </div>
               </li>
               <li className="nav-item">
                 <NavLink className="nav-link pl-4" to="/contact-us">Contact</NavLink>
               </li>
               <li className="nav-item">
                 <NavLink className="nav-link pl-4" to="/carrers">Careers</NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink className="nav-link pl-4" to="/news-events">Blog</NavLink>
               </li>
             </ul>
           </div>
