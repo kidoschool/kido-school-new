@@ -17,6 +17,7 @@ import LatestNews2 from '../../assets/latest-news-pic2.jpg';
 import {Link} from "react-router-dom";
 
 function Home(props) {
+  
 
 
   return(
@@ -210,21 +211,21 @@ function Home(props) {
           </div>
           <div className="col-lg-4">
               <div className="card">
-                <img className="card-img-top" src={LatestNews1} alt="latest news"/>
+                <img className="card-img-top blog-img" src={LatestNews1} alt="latest news"/>
                 <div className="card-body">
                   <p className="card-text">March 27th</p>
                   <h5 className="card-title pb-5">Tips For Preschool Home-Schooling</h5>
-                  <a href="#" className="btn btn-outline-primary">Read more</a>
+                  <a href="http://localhost:3000/en/news/tips-for-preschool-home-schooling/" className="btn btn-outline-primary">Read more</a>
                 </div>
               </div>
           </div>
           <div className="col-lg-4">
           <div className="card">
-                <img className="card-img-top" src={LatestNews2} alt="latest news"/>
+                <img className="card-img-top blog-img" src={LatestNews2} alt="latest news"/>
                 <div className="card-body">
                   <p className="card-text">March 27th</p>
                   <h5 className="card-title pb-5">Supporting Children During A School Closure</h5>
-                  <a href="#" className="btn btn-outline-primary">Read more</a>
+                  <a href="http://localhost:3000/en/news/supporting-children-during-a-school-closure/" className="btn btn-outline-primary">Read more</a>
                 </div>
               </div>
           </div>

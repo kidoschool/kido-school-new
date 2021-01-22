@@ -14,6 +14,8 @@ function RelatedCenters(props) {
       cityNames[v.id] = v.name;
     });
 
+    console.log(cityNames);
+
     const todosPerPage = 4;
     const [ activePage, setCurrentPage ] = useState( 1 );
   

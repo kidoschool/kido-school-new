@@ -34,10 +34,12 @@ function Footer(props) {
                             <div className="footer-widget footer-info">
                             <h4 className="widget-title pb-3">ABOUT KIDO</h4>
                                 <ul className="list-unstyled">
-                                <li><a href="#">Corporate</a></li>
-                                  <li><a href="#">Kido Home</a></li>
+                                  <li><a href="https://www.kidoholdings.com/" target="_blank" rel="noreferrer">Corporate</a></li>
+                                  <li><Link to="/kido-home">Kido Home</Link></li>
                                   <li><Link to="/faq">FAQ</Link></li>
-                                  <li><a href="#">Franchise</a></li>
+                                  <li><a href="https://www.kidofranchise.com/" target="_blank" rel="noreferrer">Franchise</a></li>
+                                  <li><Link to="/privacy-policy">Privacy Policy</Link></li>
+                                  <li><Link to="/cookie-policy">Cookie Policy</Link></li>
                                 </ul>
                             </div>
                         </div>
@@ -45,13 +47,13 @@ function Footer(props) {
                             <div className="footer-widget footer-info">
                                 <h4 className="widget-title pb-3">CONTACT</h4>
                                 <ul className="list-unstyled">
-                                  <li><a href="#">hello@kido.school</a></li>
+                                  <li><Link to="/contact-us">hello@kido.school</Link></li>
                                 </ul>
                             </div>
                             <div className="icon-info">
-                                <i className="fab fa-facebook-f pr-3"></i>
-                                <i className="fab fa-instagram pr-3"></i>
-                                <i className="fab fa-youtube"></i>
+                              <a href="https://www.facebook.com/Kidoeducation" target="_blank" rel="noreferrer"><i className="fab fa-facebook-f pr-3"></i></a>
+                              <a href="https://www.instagram.com/kidoschools/" target="_blank" rel="noreferrer"><i className="fab fa-instagram pr-3"></i></a>
+                              <a href="https://www.youtube.com/c/KidoSchools" target="_blank" rel="noreferrer"><i className="fab fa-youtube"></i></a>
                             </div>
                         </div>   
                     </div>     
@@ -61,8 +63,8 @@ function Footer(props) {
 
                 <div className="container py-3">
                   <div className="d-flex justify-content-between">
-                    <div className="terms"><a href="#">Terms and conditions</a></div>
-                    <div className="all-rights"><a href="#">Ⓒ2020 Kïdo | All rights reserved</a></div>
+                    <div className="terms"><Link to="/">Terms and conditions</Link></div>
+                    <div className="all-rights"><Link to="/">Ⓒ2020 Kïdo | All rights reserved</Link></div>
                   </div>
                 </div>
         </section>

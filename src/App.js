@@ -10,10 +10,15 @@ import KidoHome from "./pages/KidoHome/KidoHome";
 import Contact from "./pages/Contact/Contact";
 import Carrers from "./pages/Carrers/Carrers";
 import Blog from "./pages/Blog/Blog";
+import BlogInfo from "./pages/Blog/BlogInfo";
 import Faq from "./pages/Faq/Faq";
+import PrivacyPolicy from './pages/PrivacyPolicy/PrivacyPolicy';
+import CookiePolicy from './pages/CookiePolicy/CookiePolicy';
 import Footer from "./components/Footer/Footer";
 import ScrollToTop from "./ScrollToTop"
 import './App.css';
+
+
 
 function App() {
   
@@ -32,7 +37,10 @@ function App() {
           <Route path='/contact-us' component={Contact} />
           <Route path='/carrers' component={Carrers} />
           <Route path='/news-events' component={Blog} />
+          <Route path='/news/:title' component={BlogInfo} />
           <Route path='/faq' component={Faq} />
+          <Route path='/privacy-policy' component={PrivacyPolicy} />
+          <Route path='/cookie-policy' component={CookiePolicy} />
         </Switch>
         <Footer />
         </ScrollToTop>

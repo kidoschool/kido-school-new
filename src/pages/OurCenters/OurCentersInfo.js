@@ -29,7 +29,7 @@ function OurCentersInfo(props) {
         <div id="carouselExampleControls" className="carousel slide" data-ride="carousel">
           <div className="carousel-inner">
               <div className="carousel-item active">
-                <div className="info-banner-img d-block" style={{backgroundImage: `url(${selectCentre.img})`}} alt="First slide"></div>
+                <div className="info-banner-img d-block w-100" style={{backgroundImage: `url(${selectCentre.img})`}} alt="First slide"></div>
               </div>
           </div>
           <a className="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">

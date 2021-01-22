@@ -21,7 +21,7 @@ function Header(props){
                 <NavLink className="nav-link pl-4" activeclassname="selected" to="/ourcentres">Find a nursery</NavLink>
               </li>
               <li className="nav-item dropdown">
-                <NavLink className="nav-link pl-4 dropdown-toggle" to="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <NavLink className="nav-link pl-4 dropdown-toggle" to="/about-us" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 About Us
                 </NavLink>
                 <div className="dropdown-menu" aria-labelledby="navbarDropdown">

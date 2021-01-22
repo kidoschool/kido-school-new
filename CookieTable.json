@@ -1,0 +1,257 @@
+{"cookietable" : [
+    {"Necessary":{
+        "01":{
+            "Name": "__cfduid",
+            "Provider": "kido.school",
+            "Purpose": "Used by the content network, Cloudflare, to identify trusted web traffic.",
+            "Expiry": "29 days",
+            "Type": "HTTP Cookie"
+            },
+        "02":{
+            "Name": "ASP.NET_SessionId",
+            "Provider": "web-in21.mxradon.coml",
+            "Purpose": "Preserves the visitor’s session state across page requests.",
+            "Expiry": "1 day",
+            "Type": "HTTP Cookie"
+            },
+        "03":{
+            "Name": "CookieConsent",
+            "Provider": "kido.school",
+            "Purpose": "Stores the user’s cookie consent state for the current domain",
+            "Expiry": "1 year",
+            "Type": "HTTP Cookie"
+            },
+        "04":{
+            "Name": "PHPSESSID",
+            "Provider": "kido.school",
+            "Purpose": "Preserves user session state across page requests.",
+            "Expiry": "Session",
+            "Type": "HTTP Cookie"
+            }
+        }
+    },
+    {"preferences":{
+        "01":{
+            "Name": "zoom",
+            "Provider": "kido.school",
+            "Purpose": "Used in context with the website’s map integration. The cookie stores user interaction with the map in order to optimize its functionality.",
+            "Expiry": "Persistent",
+            "Type": "HTML Local Storage"
+            }
+        }
+    },
+    {"Statistics ":{
+        "01":{
+            "Name": "_ga",
+            "Provider": "kido.school",
+            "Purpose": "Registers a unique ID that is used to generate statistical data on how the visitor uses the website.",
+            "Expiry": "2 years",
+            "Type": "HTTP Cookie"
+            },
+        "02":{
+            "Name": "_ga_#",
+            "Provider": "kido.school",
+            "Purpose": "Used by Google Analytics to collect data on the number of times a user has visited the website as well as dates for the first and most recent visit.",
+            "Expiry": "2 years",
+            "Type": "HTTP Cookie"
+            },
+        "03":{
+            "Name": "_gat",
+            "Provider": "kido.school",
+            "Purpose": "Used by Google Analytics to throttle request rate",
+            "Expiry": "1 day",
+            "Type": "HTTP Cookie"
+            },
+        "04":{
+            "Name": "_gid",
+            "Provider": "kido.school",
+            "Purpose": "Registers a unique ID that is used to generate statistical data on how the visitor uses the website.",
+            "Expiry": "1 day",
+            "Type": "HTTP Cookie"
+            }
+        }
+    },
+    {"Marketing ":{
+        "01":{
+            "Name": "_fbp",
+            "Provider": "kido.school",
+            "Purpose": "Used by Facebook to deliver a series of advertisement products such as real time bidding from third party advertisers.",
+            "Expiry": "3 months",
+            "Type": "HTTP Cookie"
+            },
+        "02":{
+            "Name": "_gcl_au",
+            "Provider": "kido.school",
+            "Purpose": "Used by Google AdSense for experimenting with advertisement efficiency across websites using their services.",
+            "Expiry": "3 months",
+            "Type": "HTTP Cookie"
+            },
+        "03":{
+            "Name": "_gcl_au",
+            "Provider": "kido.school",
+            "Purpose": "Used by Google AdSense for experimenting with advertisement efficiency across websites using their services.",
+            "Expiry": "3 months",
+            "Type": "HTTP Cookie"
+            },
+        "04":{
+            "Name": "ads/ga-audiences",
+            "Provider": "google.com",
+            "Purpose": "Used by Google AdWords to re-engage visitors that are likely to convert to customers based on the visitor’s online behaviour across websites.",
+            "Expiry": "Session",
+            "Type": "Pixel Tracker"
+            },
+        "05":{
+            "Name": "fr",
+            "Provider": "facebook.com",
+            "Purpose": "Used by Facebook to deliver a series of advertisement products such as real time bidding from third party advertisers.",
+            "Expiry": "3 months",
+            "Type": "HTTP Cookie"
+            },
+        "06":{
+            "Name": "IDE",
+            "Provider": "doubleclick.net",
+            "Purpose": "Used by Google DoubleClick to register and report the website user’s actions after viewing or clicking one of the advertiser’s ads with the purpose of measuring the efficacy of an ad and to present targeted ads to the user.",
+            "Expiry": "1 year",
+            "Type": "HTTP Cookie"
+            },
+        "07":{
+            "Name": "pagead/1p-conversion/#",
+            "Provider": "google.com",
+            "Purpose": "Unclassified",
+            "Expiry": "Session",
+            "Type": "Pixel Tracker"
+            },
+        "08":{
+            "Name": "pagead/1p-user-list/#",
+            "Provider": "google.com",
+            "Purpose": "Tracks if the user has shown interest in specific products or events across multiple websites and detects how the user navigates between sites. This is used for measurement of advertisement efforts and facilitates payment of referral-fees between websites.",
+            "Expiry": "Session",
+            "Type": "Pixel Tracker"
+            },
+        "09":{
+            "Name": "pagead/landing",
+            "Provider": "doubleclick.net",
+            "Purpose": "Collects data on visitor behaviour from multiple websites, in order to present more relevant advertisement – This also allows the website to limit the number of times that they are shown the same advertisement.",
+            "Expiry": "Session",
+            "Type": "Pixel Tracker"
+            },
+        "10":{
+            "Name": "RUL",
+            "Provider": "doubleclick.net",
+            "Purpose": "Used by DoubleClick to determine whether website advertisement has been properly displayed – This is done to make their marketing efforts more efficient.",
+            "Expiry": "1 year",
+            "Type": "HTTP Cookie"
+            },
+        "11":{
+            "Name": "test_cookie",
+            "Provider": "doubleclick.net",
+            "Purpose": "Used to check if the user’s browser supports cookies.",
+            "Expiry": "1 day",
+            "Type": "HTTP Cookie"
+            },
+        "12":{
+            "Name": "tr",
+            "Provider": "facebook.com",
+            "Purpose": "Used by Facebook to deliver a series of advertisement products such as real time bidding from third party advertisers.",
+            "Expiry": "Session",
+            "Type": "Pixel Tracker"
+            },
+        "13":{
+            "Name": "VISITOR_INFO1_LIVE",
+            "Provider": "youtube.com",
+            "Purpose": "Tries to estimate the users’ bandwidth on pages with integrated YouTube videos.",
+            "Expiry": "179 days",
+            "Type": "HTTP Cookie"
+            },
+        "14":{
+            "Name": "YSC",
+            "Provider": "youtube.com",
+            "Purpose": "Registers a unique ID to keep statistics of what videos from YouTube the user has seen.",
+            "Expiry": "Session",
+            "Type": "HTTP Cookie"
+            },
+        "15":{
+            "Name": "yt-remote-cast-installed",
+            "Provider": "youtube.com",
+            "Purpose": "Stores the user’s video player preferences using embedded YouTube video",
+            "Expiry": "Session",
+            "Type": "HTML Local Storage"
+            },
+        "16":{
+            "Name": "yt-remote-connected-devices",
+            "Provider": "youtube.com",
+            "Purpose": "Stores the user’s video player preferences using embedded YouTube video",
+            "Expiry": "Persistent",
+            "Type": "HTML Local Storage"
+            },
+        "17":{
+            "Name": "yt-remote-device-id",
+            "Provider": "youtube.com",
+            "Purpose": "Stores the user’s video player preferences using embedded YouTube video",
+            "Expiry": "Persistent",
+            "Type": "HTML Local Storage"
+            },
+        "18":{
+            "Name": "yt-remote-fast-check-period",
+            "Provider": "youtube.com",
+            "Purpose": "Stores the user’s video player preferences using embedded YouTube video",
+            "Expiry": "Session",
+            "Type": "HTML Local Storage"
+            },
+        "19":{
+            "Name": "yt-remote-session-app",
+            "Provider": "youtube.com",
+            "Purpose": "Stores the user’s video player preferences using embedded YouTube video",
+            "Expiry": "Session",
+            "Type": "HTML Local Storage"
+        },
+        "20":{
+            "Name": "yt-remote-session-name",
+            "Provider": "youtube.com",
+            "Purpose": "Stores the user’s video player preferences using embedded YouTube video",
+            "Expiry": "Session",
+            "Type": "HTML Local Storage"
+        }
+        }
+    },
+    {"Unclassified ":{
+        "01":{
+            "Name": " ",
+            "Provider": "kido.school",
+            "Purpose": "Unclassified",
+            "Expiry": "Session",
+            "Type": "HTTP Cookie"
+            },
+        "02":{
+            "Name": "centresArray",
+            "Provider": "kido.school",
+            "Purpose": "Unclassified",
+            "Expiry": "Persistent",
+            "Type": "HTML Local Storage"
+            },
+        "03":{
+            "Name": "citiesArray",
+            "Provider": "kido.school",
+            "Purpose": "Unclassified",
+            "Expiry": "Persistent",
+            "Type": "HTML Local Storage"
+            },
+        "04":{
+            "Name": "ORG49973[x2]",
+            "Provider": "kido.school web-in21.mxradon.com",
+            "Purpose": "Unclassified",
+            "Expiry": "2 years",
+            "Type": "HTTP Cookie"
+            },
+        "05":{
+            "Name": "singleCentreLocalization",
+            "Provider": "kido.school",
+            "Purpose": "Unclassified",
+            "Expiry": "Persistent",
+            "Type": "HTML Local Storage"
+            }
+        }
+    }
+
+]
+}

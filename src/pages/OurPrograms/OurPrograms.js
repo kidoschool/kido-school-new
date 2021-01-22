@@ -12,9 +12,6 @@ import programIcon2 from '../../assets/programs-icon2.svg';
 
 function OurPrograms(props) {
 
-
-  
-
   return(
     <>
     <section className="main-banner">
@@ -51,8 +48,29 @@ function OurPrograms(props) {
                 <div className="card">
                   <img className="card-img-top-khome img-fluid" src={programCard1} alt="kido highlights"/>
                   <div className="card-body text-center">
-                    <h3 className="card-title pb-2">Discoverers</h3><hr/>
+                    <div className="d-flex justify-content-center">
+                    <h3 className="card-title">Discoverers</h3>
+                    <a type="button" data-toggle="modal" data-target="#exampleModalCenter">
+                      <small className="text-info pl-2"><i className="fas fa-info-circle"></i></small>
+                    </a>
+                    </div>
+                    <hr/>
                     <p className="card-text">Age range &nbsp;|&nbsp; <strong>6 - 15 months</strong></p>
+                  </div>
+                  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLongTitle">Discoverers</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <p>At Kïdo, your child’s journey begins at six weeks old. We develop their core cognitive, emotional and social skills through a combination of free and guided play, art and music, and messy play. Our physical development program helps improve their motor skills, while their confidence and social skills are enhanced with interactive learning, songs and circle time. Children discover the basic concepts of numbers, phonics, shapes, sounds and colors at a rate that suits them as an individual. Our highly trained staff coordinate with each family when deciding meal and nap times, to ensure a smooth transition from school to home and vice versa.</p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -60,8 +78,29 @@ function OurPrograms(props) {
                 <div className="card">
                   <img className="card-img-top-khome img-fluid" src={programCard2} alt="kido highlights"/>
                   <div className="card-body text-center">
-                    <h3 className="card-title pb-2">Adventurers</h3><hr/>
+                    <div className="d-flex justify-content-center">
+                      <h3 className="card-title">Adventurers</h3>
+                      <a type="button" data-toggle="modal" data-target="#exampleModalCenter2">
+                        <small className="text-info pl-2"><i className="fas fa-info-circle"></i></small>
+                      </a>
+                    </div>
+                    <hr/>
                     <p className="card-text">Age range &nbsp;|&nbsp; <strong>12 - 27 months</strong></p>
+                  </div>
+                   <div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLongTitle">Adventurers</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <p>Our Adventurers program starts as soon as your child can walk and usually finishes by the time they’re two years old – though children can move to the next stage as soon as they’re ready. Adventurers build their confidence and skills across all of the development areas in our curriculum, with their week split into three Skills Days and two Explorer Days. On their Skills Days, Adventurers will cover math, literacy, science, art and much else as part of their development. On Explorer Days, Adventurers work through a multidisciplinary project (each lasting six weeks) that enables them to gain new skills, knowledge and understanding. We also start toilet training at Adventurers, consulting with each individual family to create a process that helps their child while making them feel safe and at home.</p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -69,8 +108,29 @@ function OurPrograms(props) {
                 <div className="card">
                   <img className="card-img-top-khome img-fluid" src={programCard3} alt="kido highlights"/>
                   <div className="card-body text-center">
-                    <h3 className="card-title pb-2">Experimenters</h3><hr/>
+                    <div className="d-flex justify-content-center">
+                      <h3 className="card-title">Experimenters</h3>
+                      <a type="button" data-toggle="modal" data-target="#exampleModalCenter3">
+                        <small className="text-info pl-2"><i className="fas fa-info-circle"></i></small>
+                      </a>
+                    </div>
+                    <hr/>
                     <p className="card-text">Age range &nbsp;|&nbsp; <strong>24 - 39 months</strong></p>
+                  </div>
+                   <div class="modal fade" id="exampleModalCenter3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLongTitle">Experimenters</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <p>We build a complete understanding of every child’s ideal learning environment, and use this knowledge to create customized lesson plans for them. These personalized experiences help them become more creative, and inspire a love of learning from an early age. At four years old, our students should understand math and English at preschool (or higher) level, reaching Grade 1 (US Common Core) or Year 1 (UK national curriculum) level by the time they are five. Along the way, we also introduce coding through apps, photography, video editing, writing stories and much more. Weeks are broken into three Skills Days and two Explorer Days. Every day incorporates indoor and outdoor play, dance, music and yoga. Children typically begin preschool at two years old (though some may start earlier) and continue until the age of six through our four levels: Experimenters, Pathfinders, Seekers and Pioneers.</p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -78,8 +138,29 @@ function OurPrograms(props) {
                 <div className="card">
                   <img className="card-img-top-khome img-fluid" src={programCard4} alt="kido highlights"/>
                   <div className="card-body text-center">
-                    <h3 className="card-title pb-2">Pathfinders</h3><hr/>
+                    <div className="d-flex justify-content-center">
+                      <h3 className="card-title">Pathfinders</h3>
+                      <a type="button" data-toggle="modal" data-target="#exampleModalCenter4">
+                        <small className="text-info pl-2"><i className="fas fa-info-circle"></i></small>
+                      </a>
+                    </div>
+                    <hr/>
                     <p className="card-text">Age range &nbsp;|&nbsp; <strong>61 - 51 months</strong></p>
+                  </div>
+                   <div class="modal fade" id="exampleModalCenter4" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLongTitle">Pathfinders</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <p>We build a complete understanding of every child’s ideal learning environment, and use this knowledge to create customized lesson plans for them. These personalized experiences help them become more creative, and inspire a love of learning from an early age. At four years old, our students should understand math and English at preschool (or higher) level, reaching Grade 1 (US Common Core) or Year 1 (UK national curriculum) level by the time they are five. Along the way, we also introduce coding through apps, photography, video editing, writing stories and much more. Weeks are broken into three Skills Days and two Explorer Days. Every day incorporates indoor and outdoor play, dance, music and yoga. Children typically begin preschool at two years old (though some may start earlier) and continue until the age of six through our four levels: Experimenters, Pathfinders, Seekers and Pioneers.</p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -87,8 +168,29 @@ function OurPrograms(props) {
                 <div className="card">
                   <img className="card-img-top-khome img-fluid" src={programCard5} alt="kido highlights"/>
                   <div className="card-body text-center">
-                    <h3 className="card-title pb-2">Seekers</h3><hr/>
+                    <div className="d-flex justify-content-center">
+                        <h3 className="card-title">Seekers</h3>
+                        <a type="button" data-toggle="modal" data-target="#exampleModalCenter5">
+                          <small className="text-info pl-2"><i className="fas fa-info-circle"></i></small>
+                        </a>
+                    </div>
+                    <hr/>
                     <p className="card-text">Age range &nbsp;|&nbsp; <strong>48 - 63 months</strong></p>
+                  </div>
+                   <div class="modal fade" id="exampleModalCenter5" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLongTitle">Seekers</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <p>We build a complete understanding of every child’s ideal learning environment, and use this knowledge to create customized lesson plans for them. These personalized experiences help them become more creative, and inspire a love of learning from an early age. At four years old, our students should understand math and English at preschool (or higher) level, reaching Grade 1 (US Common Core) or Year 1 (UK national curriculum) level by the time they are five. Along the way, we also introduce coding through apps, photography, video editing, writing stories and much more. Weeks are broken into three Skills Days and two Explorer Days. Every day incorporates indoor and outdoor play, dance, music and yoga. Children typically begin preschool at two years old (though some may start earlier) and continue until the age of six through our four levels: Experimenters, Pathfinders, Seekers and Pioneers.</p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -96,8 +198,29 @@ function OurPrograms(props) {
                 <div className="card">
                   <img className="card-img-top-khome img-fluid" src={programCard6} alt="kido highlights"/>
                   <div className="card-body text-center">
-                    <h3 className="card-title pb-2">Pioneers</h3><hr/>
+                    <div className="d-flex justify-content-center">
+                      <h3 className="card-title">Pioneers</h3>
+                      <a type="button" data-toggle="modal" data-target="#exampleModalCenter7">
+                        <small className="text-info pl-2"><i className="fas fa-info-circle"></i></small>
+                      </a>
+                    </div>
+                    <hr/>
                     <p className="card-text">Age range &nbsp;|&nbsp; <strong>60 - 75 months</strong></p>
+                  </div>
+                   <div class="modal fade" id="exampleModalCenter7" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLongTitle">Pioneers</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <p>We build a complete understanding of every child’s ideal learning environment, and use this knowledge to create customized lesson plans for them. These personalized experiences help them become more creative, and inspire a love of learning from an early age. At four years old, our students should understand math and English at preschool (or higher) level, reaching Grade 1 (US Common Core) or Year 1 (UK national curriculum) level by the time they are five. Along the way, we also introduce coding through apps, photography, video editing, writing stories and much more. Weeks are broken into three Skills Days and two Explorer Days. Every day incorporates indoor and outdoor play, dance, music and yoga. Children typically begin preschool at two years old (though some may start earlier) and continue until the age of six through our four levels: Experimenters, Pathfinders, Seekers and Pioneers.</p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>

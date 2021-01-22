@@ -49,6 +49,19 @@ a {color: #444; text-decoration: none;  transition: 0.3s;}
     font-weight: 600;
   }
 
+  .table thead th {
+    vertical-align: bottom;
+    border-bottom: 1px solid #000;
+}
+
+.table-bordered td, .table-bordered th {
+    border: 1px solid #000;
+}
+
+.table td{
+  color: #444;
+  font-size: 15px;
+}
 
 /*--------section header start---------*/
 
@@ -303,6 +316,63 @@ a.faq-link{
  text-decoration: none;
  color: #1d73c9;
  font-weight: 600;
+}
+
+.faq-select select {
+  width: auto;
+  padding: 5px 30px 5px 10px;
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.bg-light-blue{
+  background-color: #e8f0fb;
+}
+
+.blog-img{
+  background-repeat: no-repeat;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  height: 200px;
+}
+
+.blog-info-img{
+  width: 100%;
+  height: 600px;
+}
+
+.news-plain-text-box h2 {
+  font-family: "Montserrat",sans-serif;
+  font-size: 19px;
+  line-height: 1.79;
+  font-weight: 500;
+  letter-spacing: .5px;
+  margin-bottom: 20px;
+}
+
+.blog-info-title{
+  font-size: 45px;
+  font-weight: 800;
+  letter-spacing: .5px;
+  font-family: "Montserrat" ,sans-serif;
+}
+
+.privacy-head-text{
+  font-family: "Montserrat" ,sans-serif;
+  font-size: 19px;
+  letter-spacing: 1px;
+  color: #444;
+}
+
+a.privacy-rights{
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+}
+
+.rights-list li{
+  padding-top: 18px;
 }
 
 /*--------our centers area start---------*/

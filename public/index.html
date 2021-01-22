@@ -30,6 +30,13 @@
         request.send(null);
         request.status === 200 ? localStorage.setItem("cities",request.responseText) : false;
       }
+      if (localStorage.getItem("blogs") == null) {
+        var request = new XMLHttpRequest();
+        request.open('GET', 'https://kido-school-new-default-rtdb.firebaseio.com/blogs.json', false);  // `false` makes the request synchronous
+        request.send(null);
+        request.status === 200 ? localStorage.setItem("blogs",request.responseText) : false;
+      }
+      
 
     </script>
   </head>
