@@ -44,11 +44,8 @@ function Faq(props) {
                 <div className="row justify-content-center py-3">
                     <div className="col-lg-10 bg-light border p-5">
 
-                    <div class="faq-filters d-flex justify-content-between pb-4">
-                        <div class="search-box"> 
-                            <span class="clear-search"></span> 
-                            <input type="text" className="form-control" id="search-faqs" placeholder="Search..."/>
-                        </div> 
+                    <div class="faq-filters d-flex flex-wrap justify-content-between pb-4">
+                        <h1>FAQ</h1>
                         <label class="faq-select font-h1" for="filter-faqs ">View By 
                         <select id="filter-faqs" class="filter-select form-control">
                             <option value="card1" selected>All</option>

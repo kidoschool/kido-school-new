@@ -1,18 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.59ef8df7.chunk.css",
-    "main.js": "/static/js/main.bc17487d.chunk.js",
-    "main.js.map": "/static/js/main.bc17487d.chunk.js.map",
+    "main.css": "/static/css/main.73f7fd20.chunk.css",
+    "main.js": "/static/js/main.883d0380.chunk.js",
+    "main.js.map": "/static/js/main.883d0380.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.e795c4c4.js",
     "runtime-main.js.map": "/static/js/runtime-main.e795c4c4.js.map",
-    "static/js/2.6d0842d7.chunk.js": "/static/js/2.6d0842d7.chunk.js",
-    "static/js/2.6d0842d7.chunk.js.map": "/static/js/2.6d0842d7.chunk.js.map",
+    "static/js/2.81c5609e.chunk.js": "/static/js/2.81c5609e.chunk.js",
+    "static/js/2.81c5609e.chunk.js.map": "/static/js/2.81c5609e.chunk.js.map",
     "static/js/3.1a99f2a8.chunk.js": "/static/js/3.1a99f2a8.chunk.js",
     "static/js/3.1a99f2a8.chunk.js.map": "/static/js/3.1a99f2a8.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.59ef8df7.chunk.css.map": "/static/css/main.59ef8df7.chunk.css.map",
-    "static/js/2.6d0842d7.chunk.js.LICENSE.txt": "/static/js/2.6d0842d7.chunk.js.LICENSE.txt",
+    "static/css/main.73f7fd20.chunk.css.map": "/static/css/main.73f7fd20.chunk.css.map",
+    "static/js/2.81c5609e.chunk.js.LICENSE.txt": "/static/js/2.81c5609e.chunk.js.LICENSE.txt",
     "static/media/About-banner.039e7197.jpg": "/static/media/About-banner.039e7197.jpg",
+    "static/media/Career-banner1.9cbf0514.jpg": "/static/media/Career-banner1.9cbf0514.jpg",
+    "static/media/Career-banner2.b298dca0.jpg": "/static/media/Career-banner2.b298dca0.jpg",
+    "static/media/Career-banner3.322ec6e9.jpg": "/static/media/Career-banner3.322ec6e9.jpg",
+    "static/media/Career-banner4.a07b89dd.jpg": "/static/media/Career-banner4.a07b89dd.jpg",
     "static/media/Contact-banner.da8c9ec1.jpg": "/static/media/Contact-banner.da8c9ec1.jpg",
     "static/media/Cookie-Policy-Banner.7ec39cb5.jpg": "/static/media/Cookie-Policy-Banner.7ec39cb5.jpg",
     "static/media/Faq-banner.36739a20.jpg": "/static/media/Faq-banner.36739a20.jpg",
@@ -40,6 +44,10 @@
     "static/media/banner-video-Mp4.e13abe66.mp4": "/static/media/banner-video-Mp4.e13abe66.mp4",
     "static/media/blog-banner.e071ef1f.jpg": "/static/media/blog-banner.e071ef1f.jpg",
     "static/media/blog-card1.a2200f83.jpg": "/static/media/blog-card1.a2200f83.jpg",
+    "static/media/career-about1.afefdf43.jpg": "/static/media/career-about1.afefdf43.jpg",
+    "static/media/career-about2.0f5eaa52.jpg": "/static/media/career-about2.0f5eaa52.jpg",
+    "static/media/career-about3.f1a37a07.jpg": "/static/media/career-about3.f1a37a07.jpg",
+    "static/media/career-about4.f48b2252.jpg": "/static/media/career-about4.f48b2252.jpg",
     "static/media/centerareaaccentorangeoption2.3ac96a9a.svg": "/static/media/centerareaaccentorangeoption2.3ac96a9a.svg",
     "static/media/kido-home-banner.4a606746.jpg": "/static/media/kido-home-banner.4a606746.jpg",
     "static/media/kido-home-card-img1.a00dcbf3.jpg": "/static/media/kido-home-card-img1.a00dcbf3.jpg",
@@ -62,8 +70,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.e795c4c4.js",
-    "static/js/2.6d0842d7.chunk.js",
-    "static/css/main.59ef8df7.chunk.css",
-    "static/js/main.bc17487d.chunk.js"
+    "static/js/2.81c5609e.chunk.js",
+    "static/css/main.73f7fd20.chunk.css",
+    "static/js/main.883d0380.chunk.js"
   ]
 }

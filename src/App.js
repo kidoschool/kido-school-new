@@ -8,7 +8,7 @@ import AboutUs from "./pages/AboutUs/AboutUs";
 import OurPrograms from "./pages/OurPrograms/OurPrograms";
 import KidoHome from "./pages/KidoHome/KidoHome";
 import Contact from "./pages/Contact/Contact";
-import Carrers from "./pages/Carrers/Carrers";
+import Careers from "./pages/Careers/Careers";
 import Blog from "./pages/Blog/Blog";
 import BlogInfo from "./pages/Blog/BlogInfo";
 import Faq from "./pages/Faq/Faq";
@@ -35,7 +35,7 @@ function App() {
           <Route path='/programs' component={OurPrograms} />
           <Route path='/kido-home' component={KidoHome} />
           <Route path='/contact-us' component={Contact} />
-          <Route path='/carrers' component={Carrers} />
+          <Route path='/careers' component={Careers} />
           <Route path='/news-events' component={Blog} />
           <Route path='/news/:title' component={BlogInfo} />
           <Route path='/faq' component={Faq} />
