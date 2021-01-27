@@ -18,6 +18,7 @@ import {Link} from "react-router-dom";
 
 function Home(props) {
   
+  const allBlogs = JSON.parse(localStorage.getItem("blogs"));
 
 
   return(
@@ -209,26 +210,20 @@ function Home(props) {
             <p>Find out how we’ve been making headlines all over the world or read about the latest updates to our schools and programs. You can also check out our blog, and get helpful parenting tips from our teachers, hub team and contributors.</p>
           </div>
           </div>
-          <div className="col-lg-4">
-              <div className="card">
-                <img className="card-img-top blog-img" src={LatestNews1} alt="latest news"/>
-                <div className="card-body">
-                  <p className="card-text">March 27th</p>
-                  <h5 className="card-title pb-5">Tips For Preschool Home-Schooling</h5>
-                  <a href="http://localhost:3000/en/news/tips-for-preschool-home-schooling/" className="btn btn-outline-primary">Read more</a>
+          {Object.entries(allBlogs.slice(2, 4)).map((item,k) => {
+            return( <>
+            <div className="col-lg-4">
+                <div className="card">
+                    <div style={{backgroundImage: `url(${item[1].img})`}} className="card-img-top blog-img"></div>
+                    <div className="card-body">
+                    <p className="card-text">{item[1].date}</p>
+                    <h5 className="card-title pb-4 pr-4">{item[1].name}</h5>
+                    <Link to={{ pathname: "/news/" + item[1].slug +"/"}} className="btn btn-outline-primary">Read more</Link>
+                    </div>
                 </div>
-              </div>
-          </div>
-          <div className="col-lg-4">
-          <div className="card">
-                <img className="card-img-top blog-img" src={LatestNews2} alt="latest news"/>
-                <div className="card-body">
-                  <p className="card-text">March 27th</p>
-                  <h5 className="card-title pb-5">Supporting Children During A School Closure</h5>
-                  <a href="http://localhost:3000/en/news/supporting-children-during-a-school-closure/" className="btn btn-outline-primary">Read more</a>
-                </div>
-              </div>
-          </div>
+            </div>
+            </>)
+            })}
        </div>
        </div>
        </div>

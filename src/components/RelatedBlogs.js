@@ -10,7 +10,7 @@ function RelatedBlogs(props) {
         <>
         <section className="latest-news py-5">
         <div className="container">
-            <h2 className="pl-5">Related Blogs</h2>
+            <h2 className="pl-5">Related News</h2>
             <div className="row justify-content-center py-3">
             <div className="col-lg-11">
                 <div className="row">

@@ -24,9 +24,9 @@ function BlogInfo(props) {
     return(
         <>
           <section className="main-banner bg-light-blue py-5">
-            <div className="container">
-                <div className="row">
-                    <div className="col-lg-12 text-center">
+            <div className="container-fluid">
+                <div className="row justify-content-center">
+                    <div className="col-lg-9 text-center">
                         <h1 className="blog-info-title py-5">{selectedBlog.name}</h1>
                         <img src={selectedBlog.img} className="blog-info-img img-fluid"/>
                     </div>
