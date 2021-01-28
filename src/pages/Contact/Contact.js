@@ -39,8 +39,8 @@ function Contact(props) {
                 <div className="row">
                     <div className="form-group col-lg-12">
                         <label htmlFor="select-team">Please select the team you would like to contact *</label>
-                        <select className="form-control" name="select-team" id="select-team" >
-                            <option defaultValue="Select Disease">Select Team</option>
+                        <select className="form-control" name="select_team" id="select_team" >
+                            <option Value="">Select Team</option>
                             <option value="People Team">People Team</option>
                             <option value="General Enquiries">General Enquiries</option>
                             <option value="Unites States (Houston) - Rice Village Preschool">Unites States (Houston) - Rice Village Preschool</option>
@@ -62,8 +62,8 @@ function Contact(props) {
                         </div>
                     <div className="form-group col-lg-12 pt-3">
                         <label htmlFor="select-country">Please select your country *</label>
-                        <select className="form-control" name="select-country" id="select-country">
-                          <option defaultValue="Select Country">Select Country</option>
+                        <select className="form-control" name="select_country" id="select_country">
+                          <option Value="">Select Country</option>
                           <option value="United Kingdom">United Kingdom</option>
                           <option value="USA">USA</option>
                           <option value="Hong Kong">Hong Kong</option>
@@ -85,8 +85,8 @@ function Contact(props) {
                     </div>
                     <div className="form-group col-lg-12 pt-3">
                         <label htmlFor="message">How did you find out about us? *</label>
-                        <select className="form-control" name="find-out" id="find-out">
-                            <option defaultValue="please select">Please Select</option>
+                        <select className="form-control" name="find_out" id="find_out">
+                            <option Value="">Please Select</option>
                             <option value="Advertisement (print ads, outdoor ads, tv ads etc.)">Advertisement (print ads, outdoor ads, tv ads etc.)</option>
                             <option value="Friend or colleague">Friend or colleague</option>
                             <option value="Event">Event</option>
@@ -97,6 +97,13 @@ function Contact(props) {
                     <div className="form-group col-lg-12 pt-3">
                         <label htmlFor="message">Message *</label>
                         <textarea id="message" type="text" name="message" className="form-control" placeholder="Enter your Message"></textarea>
+                    </div>
+                    <div className="form-group col-lg-12 pt-3">
+                    <label htmlFor="tcheck">Consent</label>
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" name="tcheck" id="tcheck"/>
+                      <label class="form-check-label" for="tcheck"><small>Yes, I would like to receive relevant marketing material. I can opt out at privacy@kido.school anytime.</small></label>
+                    </div>
                     </div>
                     <div className="form-group col-lg-4 pt-3">
                         <button type="submit" name="submit" className="btn btn-outline-primary w-100">Submit</button>

@@ -20,7 +20,7 @@ function OurCentersInfo(props) {
     }
   });
 
-  console.log(selectCentre)
+  // console.log(selectCentre)
   
   return(
     <>
@@ -58,7 +58,7 @@ function OurCentersInfo(props) {
                     <div className="row py-5">
                       {Object.entries(selectCentre.features.slice(0, 4)).map((feat,k1) => {
                         return( <>
-                          <div className="col-lg-3 col-6 text-center" key={feat[0]}><img src={iconInfo} width="30"/><p className="img-title-paragraph img-paragraph pt-3">{feat[1].feature.description}</p><p className="img-paragraph">{feat[1].feature_information}</p></div>
+                          <div className="col-lg-3 col-6 text-center" key={feat[0]}><img src={'/images/'+(feat[1].feature.slug) +".svg"} width="30"/><p className="img-title-paragraph img-paragraph pt-3">{feat[1].feature.description}</p><p className="img-paragraph">{feat[1].feature_information}</p></div>
                         </>)
                       })}
                     </div>
@@ -69,13 +69,13 @@ function OurCentersInfo(props) {
 
                     <div className="basics basics-border-bottom">
                         <h2 className="basics-subtitle text-align-left pb-3">School details</h2>
-                        <p className="basics-title-paragraph">Curriculum<span className="basics-answer-paragraph"> EYFS, Kïdo</span></p>
-                        <p className="basics-title-paragraph">Hours<span className="basics-answer-paragraph"> 9:00am to 7:00 pm</span></p>
-                        <p className="basics-title-paragraph">Schedule<span className="basics-answer-paragraph"> Full Day and Half Day</span></p>
-                        <p className="basics-title-paragraph">Nutrition<span className="basics-answer-paragraph"> No</span></p>
-                        <p className="basics-title-paragraph">Outdoor Space<span className="basics-answer-paragraph"> Yes</span></p>
+                        {
+                          Object.keys(selectCentre.school_details).map(function(key) {
+                            return (<><p className="basics-title-paragraph">{key}<span className="basics-answer-paragraph"> {selectCentre.school_details[key]}</span></p> </>)
+                        })
+                        }
                     </div>
-                    </div>
+                  </div>
                 <hr/>
             </div>
             
@@ -104,54 +104,26 @@ function OurCentersInfo(props) {
                   <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                 </ol>
                 <div className="carousel-inner">
+                {Object.entries(selectCentre.team).map((testiteam,k1) => {
+                    return( <>
                     <div className="carousel-item active">
                         <div className="testimonial">
                               <div className="testimonial-review shadow">
                                   <p>
-                                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse a erat sit amet augue aliquet rutrum. Proin maximus purus purus, eu porta lorem imperdiet ultrices. Integer non nisl at leo sagittis tincidunt vel non odio. Nam luctus nisl commodo cursus cursus. Duis quis lobortis urna, a ultricies."
+                                      {testiteam[1].desc}
                                   </p>
                               </div>
                               <div className="pic">
-                                  <img src={testiProfile} alt=""/>
+                                  <img src={testiteam[1].image} className="img-fluid" width="60" alt=""/>
                                   <div className="testimonial-title">
-                                      <h4>williamson</h4>
-                                      <small>Web Developer</small>
+                                      <h4>{testiteam[1].name}</h4>
+                                      <small>{testiteam[1].title}</small>
                                   </div>
                               </div>
                           </div>
                      </div>
-                    <div className="carousel-item">
-                    <div className="testimonial">
-                          <div className="testimonial-review shadow">
-                              <p>
-                                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse a erat sit amet augue aliquet rutrum. Proin maximus purus purus, eu porta lorem imperdiet ultrices. Integer non nisl at leo sagittis tincidunt vel non odio. Nam luctus nisl commodo cursus cursus. Duis quis lobortis urna, a ultricies."
-                              </p>
-                          </div>
-                          <div className="pic">
-                              <img src={testiProfile} alt=""/>
-                              <div className="testimonial-title">
-                                  <h4>williamson</h4>
-                                  <small>Web Developer</small>
-                              </div>
-                          </div>
-                      </div>
-                    </div>
-                    <div className="carousel-item">
-                    <div className="testimonial">
-                          <div className="testimonial-review shadow">
-                              <p>
-                                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse a erat sit amet augue aliquet rutrum. Proin maximus purus purus, eu porta lorem imperdiet ultrices. Integer non nisl at leo sagittis tincidunt vel non odio. Nam luctus nisl commodo cursus cursus. Duis quis lobortis urna, a ultricies."
-                              </p>
-                          </div>
-                          <div className="pic">
-                              <img src={testiProfile} alt=""/>
-                              <div className="testimonial-title">
-                                  <h4>williamson</h4>
-                                  <small>Web Developer</small>
-                              </div>
-                          </div>
-                      </div>
-                    </div>
+                     </>)
+                      })}
                 </div>
                 <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                     <span className="carousel-control-prev-icon" aria-hidden="true"></span>

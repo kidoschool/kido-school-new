@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.d03deafb.chunk.css",
-    "main.js": "/static/js/main.5cc1dbeb.chunk.js",
-    "main.js.map": "/static/js/main.5cc1dbeb.chunk.js.map",
+    "main.css": "/static/css/main.97c7186b.chunk.css",
+    "main.js": "/static/js/main.04cc1da8.chunk.js",
+    "main.js.map": "/static/js/main.04cc1da8.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.e795c4c4.js",
     "runtime-main.js.map": "/static/js/runtime-main.e795c4c4.js.map",
     "static/js/2.81c5609e.chunk.js": "/static/js/2.81c5609e.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.1a99f2a8.chunk.js": "/static/js/3.1a99f2a8.chunk.js",
     "static/js/3.1a99f2a8.chunk.js.map": "/static/js/3.1a99f2a8.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.d03deafb.chunk.css.map": "/static/css/main.d03deafb.chunk.css.map",
+    "static/css/main.97c7186b.chunk.css.map": "/static/css/main.97c7186b.chunk.css.map",
     "static/js/2.81c5609e.chunk.js.LICENSE.txt": "/static/js/2.81c5609e.chunk.js.LICENSE.txt",
     "static/media/About-banner.039e7197.jpg": "/static/media/About-banner.039e7197.jpg",
     "static/media/Career-banner1.9cbf0514.jpg": "/static/media/Career-banner1.9cbf0514.jpg",
@@ -71,7 +71,7 @@
   "entrypoints": [
     "static/js/runtime-main.e795c4c4.js",
     "static/js/2.81c5609e.chunk.js",
-    "static/css/main.d03deafb.chunk.css",
-    "static/js/main.5cc1dbeb.chunk.js"
+    "static/css/main.97c7186b.chunk.css",
+    "static/js/main.04cc1da8.chunk.js"
   ]
 }

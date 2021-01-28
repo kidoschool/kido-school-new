@@ -170,7 +170,7 @@ const filterFaq = () => {
                 <td></td>
                 <td>
                   <div className="text-center">
-                    <a href="" className="btn btn-primary btn-sm">Read More</a>
+                    <a href="https://apply.workable.com/kidoschools/j/EC48C386F7" target='_blank' rel="noreferrer" className="btn btn-primary btn-sm">Read More</a>
                   </div>
                 </td>
               </tr>
@@ -179,7 +179,7 @@ const filterFaq = () => {
                 <td></td>
                 <td>
                   <div className="text-center">
-                    <a href="" className="btn btn-primary btn-sm">Read More</a>
+                    <a href="https://apply.workable.com/kidoschools/j/3257B70CB2/" target='_blank' rel="noreferrer" className="btn btn-primary btn-sm">Read More</a>
                   </div>
                 </td>
               </tr>
@@ -188,7 +188,7 @@ const filterFaq = () => {
                 <td></td>
                 <td>
                   <div className="text-center">
-                    <a href="" className="btn btn-primary btn-sm">Read More</a>
+                    <a href="https://apply.workable.com/kidoschools/j/97A1676976" target='_blank' rel="noreferrer" className="btn btn-primary btn-sm">Read More</a>
                   </div>
                 </td>
               </tr>
@@ -197,7 +197,7 @@ const filterFaq = () => {
                 <td></td>
                 <td>
                   <div className="text-center">
-                    <a href="" className="btn btn-primary btn-sm">Read More</a>
+                    <a href="https://apply.workable.com/kidoschools/j/016CEBB635" target='_blank' rel="noreferrer" className="btn btn-primary btn-sm">Read More</a>
                   </div>
                 </td>
               </tr>
@@ -206,7 +206,7 @@ const filterFaq = () => {
                 <td>Austin</td>
                 <td>
                   <div className="text-center">
-                    <a href="" className="btn btn-primary btn-sm">Read More</a>
+                    <a href="https://apply.workable.com/kidoschools/j/494D66570C" target='_blank' rel="noreferrer" className="btn btn-primary btn-sm">Read More</a>
                   </div>
                 </td>
               </tr>
@@ -215,7 +215,7 @@ const filterFaq = () => {
                 <td>Austin</td>
                 <td>
                   <div className="text-center">
-                    <a href="" className="btn btn-primary btn-sm">Read More</a>
+                    <a href="https://apply.workable.com/kidoschools/j/FC02D7A1C3" target='_blank' rel="noreferrer" className="btn btn-primary btn-sm">Read More</a>
                   </div>
                 </td>
               </tr>
@@ -224,7 +224,7 @@ const filterFaq = () => {
                 <td>Bengaluru</td>
                 <td>
                   <div className="text-center">
-                    <a href="" className="btn btn-primary btn-sm">Read More</a>
+                    <a href="https://apply.workable.com/kidoschools/j/5DC1AE4712/" target='_blank' rel="noreferrer" className="btn btn-primary btn-sm">Read More</a>
                   </div>
                 </td>
               </tr>
@@ -233,7 +233,7 @@ const filterFaq = () => {
                 <td>Bengaluru</td>
                 <td>
                   <div className="text-center">
-                    <a href="" className="btn btn-primary btn-sm">Read More</a>
+                    <a href="https://apply.workable.com/kidoschools/j/7043B318B9/" target='_blank' rel="noreferrer" className="btn btn-primary btn-sm">Read More</a>
                   </div>
                 </td>
               </tr>
@@ -242,7 +242,7 @@ const filterFaq = () => {
                 <td>Chennai</td>
                 <td>
                   <div className="text-center">
-                    <a href="" className="btn btn-primary btn-sm">Read More</a>
+                    <a href="https://apply.workable.com/kidoschools/j/B8D36FF5C2/" target='_blank' rel="noreferrer" className="btn btn-primary btn-sm">Read More</a>
                   </div>
                 </td>
               </tr>
@@ -251,7 +251,7 @@ const filterFaq = () => {
                 <td>Dubai</td>
                 <td>
                   <div className="text-center">
-                    <a href="" className="btn btn-primary btn-sm">Read More</a>
+                    <a href="https://apply.workable.com/kidoschools/j/253D922440/" target='_blank' rel="noreferrer" className="btn btn-primary btn-sm">Read More</a>
                   </div>
                 </td>
               </tr>
@@ -260,7 +260,7 @@ const filterFaq = () => {
                 <td>Dubai</td>
                 <td>
                   <div className="text-center">
-                    <a href="" className="btn btn-primary btn-sm">Read More</a>
+                    <a href="https://apply.workable.com/kidoschools/j/FE553E97ED/" target='_blank' rel="noreferrer" className="btn btn-primary btn-sm">Read More</a>
                   </div>
                 </td>
               </tr>
@@ -269,7 +269,7 @@ const filterFaq = () => {
                 <td>Dubai</td>
                 <td>
                   <div className="text-center">
-                    <a href="" className="btn btn-primary btn-sm">Read More</a>
+                    <a href="https://apply.workable.com/kidoschools/j/79ACC12562/" target='_blank' rel="noreferrer" className="btn btn-primary btn-sm">Read More</a>
                   </div>
                 </td>
               </tr>
@@ -278,7 +278,7 @@ const filterFaq = () => {
                 <td>Dubai</td>
                 <td>
                   <div className="text-center">
-                    <a href="" className="btn btn-primary btn-sm">Read More</a>
+                    <a href="https://apply.workable.com/kidoschools/j/524689D5A0/" target='_blank' rel="noreferrer" className="btn btn-primary btn-sm">Read More</a>
                   </div>
                 </td>
               </tr>
@@ -287,7 +287,7 @@ const filterFaq = () => {
                 <td>Houston</td>
                 <td>
                   <div className="text-center">
-                    <a href="" className="btn btn-primary btn-sm">Read More</a>
+                    <a href="https://apply.workable.com/kidoschools/j/9CDB9223FF/" target='_blank' rel="noreferrer" className="btn btn-primary btn-sm">Read More</a>
                   </div>
                 </td>
               </tr>
@@ -296,7 +296,7 @@ const filterFaq = () => {
                 <td>Hyderabad</td>
                 <td>
                   <div className="text-center">
-                    <a href="" className="btn btn-primary btn-sm">Read More</a>
+                    <a href="https://apply.workable.com/kidoschools/j/14D5A343FB/" target='_blank' rel="noreferrer" className="btn btn-primary btn-sm">Read More</a>
                   </div>
                 </td>
               </tr>
@@ -305,7 +305,7 @@ const filterFaq = () => {
                 <td>Kharadi</td>
                 <td>
                   <div className="text-center">
-                    <a href="" className="btn btn-primary btn-sm">Read More</a>
+                    <a href="https://apply.workable.com/kidoschools/j/FB6A08A523/" target='_blank' rel="noreferrer" className="btn btn-primary btn-sm">Read More</a>
                   </div>
                 </td>
               </tr>
@@ -314,7 +314,7 @@ const filterFaq = () => {
                 <td>London</td>
                 <td>
                   <div className="text-center">
-                    <a href="" className="btn btn-primary btn-sm">Read More</a>
+                    <a href="https://apply.workable.com/kidoschools/j/D23D66F0C3/" target='_blank' rel="noreferrer" className="btn btn-primary btn-sm">Read More</a>
                   </div>
                 </td>
               </tr>
@@ -323,7 +323,7 @@ const filterFaq = () => {
                 <td>London</td>
                 <td>
                   <div className="text-center">
-                    <a href="" className="btn btn-primary btn-sm">Read More</a>
+                    <a href="https://apply.workable.com/kidoschools/j/93B5D43FA8/" target='_blank' rel="noreferrer" className="btn btn-primary btn-sm">Read More</a>
                   </div>
                 </td>
               </tr>
@@ -332,7 +332,7 @@ const filterFaq = () => {
                 <td>London</td>
                 <td>
                   <div className="text-center">
-                    <a href="" className="btn btn-primary btn-sm">Read More</a>
+                    <a href="https://apply.workable.com/kidoschools/j/C06BBB9733/" target='_blank' rel="noreferrer" className="btn btn-primary btn-sm">Read More</a>
                   </div>
                 </td>
               </tr>
@@ -341,7 +341,7 @@ const filterFaq = () => {
                 <td>London</td>
                 <td>
                   <div className="text-center">
-                    <a href="" className="btn btn-primary btn-sm">Read More</a>
+                    <a href="https://apply.workable.com/kidoschools/j/AA2F1341CA/" target='_blank' rel="noreferrer" className="btn btn-primary btn-sm">Read More</a>
                   </div>
                 </td>
               </tr>
@@ -350,7 +350,7 @@ const filterFaq = () => {
                 <td>London</td>
                 <td>
                   <div className="text-center">
-                    <a href="" className="btn btn-primary btn-sm">Read More</a>
+                    <a href="https://apply.workable.com/kidoschools/j/261DF95817/" target='_blank' rel="noreferrer" className="btn btn-primary btn-sm">Read More</a>
                   </div>
                 </td>
               </tr>
@@ -359,7 +359,7 @@ const filterFaq = () => {
                 <td>London</td>
                 <td>
                   <div className="text-center">
-                    <a href="" className="btn btn-primary btn-sm">Read More</a>
+                    <a href="https://apply.workable.com/kidoschools/j/CD798F768F/" target='_blank' rel="noreferrer" className="btn btn-primary btn-sm">Read More</a>
                   </div>
                 </td>
               </tr>
@@ -368,25 +368,34 @@ const filterFaq = () => {
                 <td>London</td>
                 <td>
                   <div className="text-center">
-                    <a href="" className="btn btn-primary btn-sm">Read More</a>
+                    <a href="https://apply.workable.com/kidoschools/j/93DEF7A024/" target='_blank' rel="noreferrer" className="btn btn-primary btn-sm">Read More</a>
                   </div>
                 </td>
               </tr>
               <tr className="job-open london">
-                <td>Baby Room Leader - Clerkenwell Nursery - 22K- 25K</td>
+                <td>Baby Room Leader - Clerkenwell Nursery - £22,000 - £25,000 - 100% FREE childcare</td>
                 <td>London</td>
                 <td>
                   <div className="text-center">
-                    <a href="" className="btn btn-primary btn-sm">Read More</a>
+                    <a href="https://apply.workable.com/kidoschools/j/DBA149A0FC/" target='_blank' rel="noreferrer" className="btn btn-primary btn-sm">Read More</a>
                   </div>
                 </td>
               </tr>
               <tr className="job-open london">
-                <td>Mandarin Teacher Role for Nursery in Clerkenwell</td>
+                <td>Mandarin Teacher- International Preschool - City of London</td>
                 <td>London</td>
                 <td>
                   <div className="text-center">
-                    <a href="" className="btn btn-primary btn-sm">Read More</a>
+                    <a href="https://apply.workable.com/kidoschools/j/1AE6E97B71/" target='_blank' rel="noreferrer" className="btn btn-primary btn-sm">Read More</a>
+                  </div>
+                </td>
+              </tr>
+              <tr className="job-open london">
+                <td>Pre-School Room Leader - Clerkenwell</td>
+                <td>London</td>
+                <td>
+                  <div className="text-center">
+                    <a href="https://apply.workable.com/kidoschools/j/8B31ACD0B2/" target='_blank' rel="noreferrer" className="btn btn-primary btn-sm">Read More</a>
                   </div>
                 </td>
               </tr>
@@ -395,7 +404,7 @@ const filterFaq = () => {
                 <td>London</td>
                 <td>
                   <div className="text-center">
-                    <a href="" className="btn btn-primary btn-sm">Read More</a>
+                    <a href="https://apply.workable.com/kidoschools/j/0FE99A3166" target='_blank' rel="noreferrer" className="btn btn-primary btn-sm">Read More</a>
                   </div>
                 </td>
               </tr>
@@ -404,7 +413,7 @@ const filterFaq = () => {
                 <td>London</td>
                 <td>
                   <div className="text-center">
-                    <a href="" className="btn btn-primary btn-sm">Read More</a>
+                    <a href="https://apply.workable.com/kidoschools/j/B3CE28E612/" target='_blank' rel="noreferrer" className="btn btn-primary btn-sm">Read More</a>
                   </div>
                 </td>
               </tr>
@@ -413,7 +422,7 @@ const filterFaq = () => {
                 <td>London</td>
                 <td>
                   <div className="text-center">
-                    <a href="" className="btn btn-primary btn-sm">Read More</a>
+                    <a href="https://apply.workable.com/kidoschools/j/AB669AA7B8/" target='_blank' rel="noreferrer" className="btn btn-primary btn-sm">Read More</a>
                   </div>
                 </td>
               </tr>
@@ -422,7 +431,7 @@ const filterFaq = () => {
                 <td>London</td>
                 <td>
                   <div className="text-center">
-                    <a href="" className="btn btn-primary btn-sm">Read More</a>
+                    <a href="https://apply.workable.com/kidoschools/j/01CDE8BB57/" target='_blank' rel="noreferrer" className="btn btn-primary btn-sm">Read More</a>
                   </div>
                 </td>
               </tr>
@@ -431,7 +440,7 @@ const filterFaq = () => {
                 <td>London</td>
                 <td>
                   <div className="text-center">
-                    <a href="" className="btn btn-primary btn-sm">Read More</a>
+                    <a href="https://apply.workable.com/kidoschools/j/1B4A681406/" target='_blank' rel="noreferrer" className="btn btn-primary btn-sm">Read More</a>
                   </div>
                 </td>
               </tr>
@@ -440,7 +449,7 @@ const filterFaq = () => {
                 <td>London</td>
                 <td>
                   <div className="text-center">
-                    <a href="" className="btn btn-primary btn-sm">Read More</a>
+                    <a href="https://apply.workable.com/kidoschools/j/BDC903E92A/" target='_blank' rel="noreferrer" className="btn btn-primary btn-sm">Read More</a>
                   </div>
                 </td>
               </tr>
@@ -449,7 +458,7 @@ const filterFaq = () => {
                 <td>London</td>
                 <td>
                   <div className="text-center">
-                    <a href="" className="btn btn-primary btn-sm">Read More</a>
+                    <a href="https://apply.workable.com/kidoschools/j/0DFDA04CF7/" target='_blank' rel="noreferrer" className="btn btn-primary btn-sm">Read More</a>
                   </div>
                 </td>
               </tr>
@@ -458,7 +467,7 @@ const filterFaq = () => {
                 <td>London</td>
                 <td>
                   <div className="text-center">
-                    <a href="" className="btn btn-primary btn-sm">Read More</a>
+                    <a href="https://apply.workable.com/kidoschools/j/DAFE3F7658" target='_blank' rel="noreferrer" className="btn btn-primary btn-sm">Read More</a>
                   </div>
                 </td>
               </tr>
@@ -467,7 +476,7 @@ const filterFaq = () => {
                 <td>London</td>
                 <td>
                   <div className="text-center">
-                    <a href="" className="btn btn-primary btn-sm">Read More</a>
+                    <a href="https://apply.workable.com/kidoschools/j/6564A4B2D9/" target='_blank' rel="noreferrer" className="btn btn-primary btn-sm">Read More</a>
                   </div>
                 </td>
               </tr>
@@ -476,7 +485,7 @@ const filterFaq = () => {
                 <td>London</td>
                 <td>
                   <div className="text-center">
-                    <a href="" className="btn btn-primary btn-sm">Read More</a>
+                    <a href="https://apply.workable.com/kidoschools/j/7E30939534/" target='_blank' rel="noreferrer" className="btn btn-primary btn-sm">Read More</a>
                   </div>
                 </td>
               </tr>
@@ -485,7 +494,7 @@ const filterFaq = () => {
                 <td>London</td>
                 <td>
                   <div className="text-center">
-                    <a href="" className="btn btn-primary btn-sm">Read More</a>
+                    <a href="https://apply.workable.com/kidoschools/j/A6D884CD7A/" target='_blank' rel="noreferrer" className="btn btn-primary btn-sm">Read More</a>
                   </div>
                 </td>
               </tr>
@@ -494,7 +503,16 @@ const filterFaq = () => {
                 <td>Lucknow</td>
                 <td>
                   <div className="text-center">
-                    <a href="" className="btn btn-primary btn-sm">Read More</a>
+                    <a href="https://apply.workable.com/kidoschools/j/D5177D0950/" target='_blank' rel="noreferrer" className="btn btn-primary btn-sm">Read More</a>
+                  </div>
+                </td>
+              </tr>
+              <tr className="job-open mumbai">
+                <td>Freelance Teacher</td>
+                <td>Mumbai</td>
+                <td>
+                  <div className="text-center">
+                    <a href="https://apply.workable.com/kidoschools/j/959F3C37BA/" target='_blank' rel="noreferrer" className="btn btn-primary btn-sm">Read More</a>
                   </div>
                 </td>
               </tr>
@@ -503,7 +521,7 @@ const filterFaq = () => {
                 <td>Mumbai</td>
                 <td>
                   <div className="text-center">
-                    <a href="" className="btn btn-primary btn-sm">Read More</a>
+                    <a href="https://apply.workable.com/kidoschools/j/FE898490A2/" target='_blank' rel="noreferrer" className="btn btn-primary btn-sm">Read More</a>
                   </div>
                 </td>
               </tr>
@@ -512,7 +530,7 @@ const filterFaq = () => {
                 <td>Mumbai</td>
                 <td>
                   <div className="text-center">
-                    <a href="" className="btn btn-primary btn-sm">Read More</a>
+                    <a href="https://apply.workable.com/kidoschools/j/51E4F6D1B8/" target='_blank' rel="noreferrer" className="btn btn-primary btn-sm">Read More</a>
                   </div>
                 </td>
               </tr>
@@ -521,7 +539,7 @@ const filterFaq = () => {
                 <td>Mumbai</td>
                 <td>
                   <div className="text-center">
-                    <a href="" className="btn btn-primary btn-sm">Read More</a>
+                    <a href="https://apply.workable.com/kidoschools/j/9753FAA775/" target='_blank' rel="noreferrer" className="btn btn-primary btn-sm">Read More</a>
                   </div>
                 </td>
               </tr>
@@ -530,7 +548,7 @@ const filterFaq = () => {
                 <td>Mumbai</td>
                 <td>
                   <div className="text-center">
-                    <a href="" className="btn btn-primary btn-sm">Read More</a>
+                    <a href="https://apply.workable.com/kidoschools/j/9A1FE63736/" target='_blank' rel="noreferrer" className="btn btn-primary btn-sm">Read More</a>
                   </div>
                 </td>
               </tr>
@@ -539,7 +557,7 @@ const filterFaq = () => {
                 <td>Mumbai</td>
                 <td>
                   <div className="text-center">
-                    <a href="" className="btn btn-primary btn-sm">Read More</a>
+                    <a href="https://apply.workable.com/kidoschools/j/91557641DE/" target='_blank' rel="noreferrer" className="btn btn-primary btn-sm">Read More</a>
                   </div>
                 </td>
               </tr>
@@ -548,7 +566,7 @@ const filterFaq = () => {
                 <td>Mumbai</td>
                 <td>
                   <div className="text-center">
-                    <a href="" className="btn btn-primary btn-sm">Read More</a>
+                    <a href="https://apply.workable.com/kidoschools/j/943E5E86CF/" target='_blank' rel="noreferrer" className="btn btn-primary btn-sm">Read More</a>
                   </div>
                 </td>
               </tr>
@@ -557,7 +575,7 @@ const filterFaq = () => {
                 <td>Mumbai</td>
                 <td>
                   <div className="text-center">
-                    <a href="" className="btn btn-primary btn-sm">Read More</a>
+                    <a href="https://apply.workable.com/kidoschools/j/483DE6AD10/" target='_blank' rel="noreferrer" className="btn btn-primary btn-sm">Read More</a>
                   </div>
                 </td>
               </tr>
@@ -566,7 +584,7 @@ const filterFaq = () => {
                 <td>Mumbai</td>
                 <td>
                   <div className="text-center">
-                    <a href="" className="btn btn-primary btn-sm">Read More</a>
+                    <a href="https://apply.workable.com/kidoschools/j/EE97BF8566/" target='_blank' rel="noreferrer" className="btn btn-primary btn-sm">Read More</a>
                   </div>
                 </td>
               </tr>
@@ -575,7 +593,7 @@ const filterFaq = () => {
                 <td>Noida</td>
                 <td>
                   <div className="text-center">
-                    <a href="" className="btn btn-primary btn-sm">Read More</a>
+                    <a href="https://apply.workable.com/kidoschools/j/2132111816/" target='_blank' rel="noreferrer" className="btn btn-primary btn-sm">Read More</a>
                   </div>
                 </td>
               </tr>
@@ -584,7 +602,7 @@ const filterFaq = () => {
                 <td>Thiruvananthapuram</td>
                 <td>
                   <div className="text-center">
-                    <a href="" className="btn btn-primary btn-sm">Read More</a>
+                    <a href="https://apply.workable.com/kidoschools/j/0ADF6DA80F/" target='_blank' rel="noreferrer" className="btn btn-primary btn-sm">Read More</a>
                   </div>
                 </td>
               </tr>
@@ -593,7 +611,7 @@ const filterFaq = () => {
                 <td>Windsor</td>
                 <td>
                   <div className="text-center">
-                    <a href="" className="btn btn-primary btn-sm">Read More</a>
+                    <a href="https://apply.workable.com/kidoschools/j/0B633AABAC/" target='_blank' rel="noreferrer" className="btn btn-primary btn-sm">Read More</a>
                   </div>
                 </td>
               </tr>
