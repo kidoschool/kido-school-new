@@ -9,10 +9,11 @@ import RelatedBlogs from "../../components/RelatedBlogs";
 function BlogInfo(props) {
 
     const blogContents = JSON.parse(localStorage.getItem("blogs"));
-    console.log(blogContents);
+    // console.log(blogContents);
 
     const name = props.match.params.title;
-    console.log(name);
+    // console.log(name);
+    
     var selectedBlog = {};
     $.each(blogContents, function (k, v) {
       if(name == v.slug){

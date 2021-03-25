@@ -3,7 +3,7 @@ body{
     font-size: 16px;
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
-    padding-top: 60px;
+    padding-top: 30px;
     line-height: 1.5;
     background-color: #fff;
 }
@@ -92,6 +92,10 @@ a {color: #444; text-decoration: none;  transition: 0.3s;}
     .home_nav{padding-left: 8px;}
 }
 
+
+.goog-te-banner-frame {
+  visibility: hidden !important;
+}
 /*--------section header end---------*/
 
 .banner-tarea{

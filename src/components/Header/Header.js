@@ -37,6 +37,10 @@ function Header(props){
               <li className="nav-item">
                 <NavLink className="nav-link pl-4" to="/careers">Careers</NavLink>
               </li>
+              <li className="nav-item">
+              <div id="google_translate_element"></div>
+
+              </li>
             </ul>
           </div>
         </nav>

@@ -24,7 +24,7 @@ function App() {
   
   return (
   <>
-       <Router basename={'/en'}>
+       <Router basename={'/cn'}>
        <ScrollToTop>
         <Header />
         <Switch>
