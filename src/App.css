@@ -79,6 +79,10 @@ a {color: #444; text-decoration: none;  transition: 0.3s;}
   background-color: #00356b
 }
 
+.navbar{
+  z-index: 1;
+}
+
 #search select {font-size: 14px;}
 
 @media all and (min-width: 992px) {
@@ -102,9 +106,21 @@ a {color: #444; text-decoration: none;  transition: 0.3s;}
 }
 
 #goog-gt-tt{
-  visibility: hidden!important;
+  visibility: hidden !important;
 }
 
+.css-42igfv {
+  margin-top: 25vh !important;
+}
+.css-1cqpty3{
+  top: 0;
+  position: fixed !important;
+  background-color: #00356b !important;
+
+}
+
+.css-79elbk {
+}
 
 /*--------section header end---------*/
 

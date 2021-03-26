@@ -15,7 +15,7 @@ ReactDOM.render(
         active={true}
         fadeSpeed = {1000}
         spinner
-        text='Loading your content...'
+        text='正在加載您的內容.....'
         >
              <App />
      </LoadingOverlay>
