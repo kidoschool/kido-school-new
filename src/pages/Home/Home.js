@@ -23,6 +23,7 @@ function Home(props) {
 
   return(
     <>
+  
     <section className="main-banner">
       <div className="container-fluid">
         <div className="row justify-content-center">
@@ -229,7 +230,7 @@ function Home(props) {
        </div>
       </div>
     </section>
-  
+
     </>
   );
 

@@ -96,6 +96,16 @@ a {color: #444; text-decoration: none;  transition: 0.3s;}
 .goog-te-banner-frame {
   visibility: hidden !important;
 }
+
+#google_translate_element{
+  display: none;
+}
+
+#goog-gt-tt{
+  visibility: hidden!important;
+}
+
+
 /*--------section header end---------*/
 
 .banner-tarea{

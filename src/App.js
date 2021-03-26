@@ -19,8 +19,10 @@ import ScrollToTop from "./ScrollToTop"
 import './App.css';
 
 
-
 function App() {
+
+  // const isActive = true;
+  // const isFadeSpeed = 100
   
   return (
   <>

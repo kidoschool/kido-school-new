@@ -4,10 +4,22 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import * as serviceWorker from './serviceWorker';
+import LoadingOverlay from 'react-loading-overlay';
+
 
 ReactDOM.render(
+
+
   <React.StrictMode>
-    <App />
+    <LoadingOverlay
+        active={true}
+        fadeSpeed = {1000}
+        spinner
+        text='Loading your content...'
+        >
+             <App />
+     </LoadingOverlay>
+
   </React.StrictMode>,
   document.getElementById('root')
 );
