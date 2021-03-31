@@ -64,7 +64,7 @@ function Footer(props) {
                 <div className="container py-3">
                   <div className="d-flex justify-content-between">
                     <div className="terms"><Link to="/">Terms and conditions</Link></div>
-                    <div className="all-rights"><Link to="/">Ⓒ2021 Kïdo | All rights reserved</Link></div>
+                    <div className="all-rights"><Link to="/">&copy;2021 Kïdo | All rights reserved</Link></div>
                   </div>
                 </div>
         </section>
