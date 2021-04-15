@@ -30,56 +30,56 @@ function Home(props) {
         <div id="carouselExampleControls" className="carousel slide" data-ride="carousel">
           <div className="carousel-inner">
             <div className="carousel-item active">
-              <div className="banner-tarea"><h2 className="banner-text">early years, reimagined</h2>
-                <Link to="ourcentres" className="btn-banner">Find a center near you</Link>
+              <div className="banner-tarea"><h2 className="banner-text">早年，重新構想</h2>
+                <Link to="ourcentres" className="btn-banner">尋找您附近的中心</Link>
               </div>
               <img className="main-banner-img d-block w-100" src={Banner1} alt="First slide"/>
             </div>
             <div className="carousel-item">
-                <div className="banner-tarea"><h2 className="banner-text">early years, reimagined</h2>
-                  <Link to="ourcentres" className="btn-banner">Find a center near you</Link>
+                <div className="banner-tarea"><h2 className="banner-text">早年，重新構想</h2>
+                  <Link to="ourcentres" className="btn-banner">尋找您附近的中心</Link>
                 </div>
               <img className="main-banner-img d-block w-100" src={Banner2} alt="Second slide"/>
             </div>
             <div className="carousel-item">
-                <div className="banner-tarea"><h2 className="banner-text">early years, reimagined</h2>
-                  <Link to="ourcentres" className="btn-banner">Find a center near you</Link>
+                <div className="banner-tarea"><h2 className="banner-text">早年，重新構想</h2>
+                  <Link to="ourcentres" className="btn-banner">尋找您附近的中心</Link>
                 </div>
               <img className="main-banner-img d-block w-100" src={Banner3} alt="Third slide"/>
             </div>
             <div className="carousel-item">
-                <div className="banner-tarea"><h2 className="banner-text">early years, reimagined</h2>
-                  <Link to="ourcentres" className="btn-banner">Find a center near you</Link>
+                <div className="banner-tarea"><h2 className="banner-text">早年，重新構想</h2>
+                  <Link to="ourcentres" className="btn-banner">尋找您附近的中心</Link>
                 </div>
               <img className="main-banner-img d-block w-100" src={Banner4} alt="Fourth slide"/>
             </div>
             <div className="carousel-item">
-                <div className="banner-tarea"><h2 className="banner-text">early years, reimagined</h2>
-                  <Link to="ourcentres" className="btn-banner">Find a center near you</Link>
+                <div className="banner-tarea"><h2 className="banner-text">早年，重新構想</h2>
+                  <Link to="ourcentres" className="btn-banner">尋找您附近的中心</Link>
                 </div>
               <img className="main-banner-img d-block w-100" src={Banner5} alt="Fifth slide"/>
             </div>
             <div className="carousel-item">
-                <div className="banner-tarea"><h2 className="banner-text">early years, reimagined</h2>
-                  <Link to="ourcentres" className="btn-banner">Find a center near you</Link>
+                <div className="banner-tarea"><h2 className="banner-text">早年，重新構想</h2>
+                  <Link to="ourcentres" className="btn-banner">尋找您附近的中心</Link>
                 </div>
               <img className="main-banner-img d-block w-100" src={Banner6} alt="Sixth slide"/>
             </div>
             <div className="carousel-item">
-                <div className="banner-tarea"><h2 className="banner-text">early years, reimagined</h2>
-                  <Link to="ourcentres" className="btn-banner">Find a center near you</Link>
+                <div className="banner-tarea"><h2 className="banner-text">早年，重新構想</h2>
+                  <Link to="ourcentres" className="btn-banner">尋找您附近的中心</Link>
                 </div>
               <img className="main-banner-img d-block w-100" src={Banner7} alt="Seventh slide"/>
             </div>
             <div className="carousel-item">
-                <div className="banner-tarea"><h2 className="banner-text">early years, reimagined</h2>
-                  <Link to="ourcentres" className="btn-banner">Find a center near you</Link>
+                <div className="banner-tarea"><h2 className="banner-text">早年，重新構想</h2>
+                  <Link to="ourcentres" className="btn-banner">尋找您附近的中心</Link>
                 </div>
               <img className="main-banner-img d-block w-100" src={Banner8} alt="Eight slide"/>
             </div>
             <div className="carousel-item">
-                <div className="banner-tarea"><h2 className="banner-text">early years, reimagined</h2>
-                  <Link to="ourcentres" className="btn-banner">Find a center near you</Link>
+                <div className="banner-tarea"><h2 className="banner-text">早年，重新構想</h2>
+                  <Link to="ourcentres" className="btn-banner">尋找您附近的中心</Link>
                 </div>
               <img className="main-banner-img d-block w-100" src={Banner9} alt="Nine slide"/>
             </div>
@@ -101,9 +101,9 @@ function Home(props) {
       <div className="container">
         <div className="row justify-content-center py-3">
           <div className="col-lg-10">
-            <h1>Welcome to Kïdo</h1>
-            <p className="subtitle subtitle-smaller">Lighting up your child's early years</p>
-            <p className="description">We are dedicated to providing the highest quality early years education and care in the world. We are creating magical and engaging learning spaces infused with cutting edge pedagogy and great teachers to nurture and enhance every child’s innate curiosity, creativity and ability to be a lifelong learner.</p>
+            <h1>歡迎來到奇道</h1>
+            <p className="subtitle subtitle-smaller">照亮孩子的早年</p>
+            <p className="description">我們致力於提供世界上最高質量的早期教育和護理。我們正在創造充滿魔力和引人入勝的學習空間，融合了先進的教學法和出色的老師，以培養和增強每個孩子與生俱來的好奇心，創造力和成為終身學習者的能力。</p>
             </div>
        </div>
       </div>
@@ -115,8 +115,8 @@ function Home(props) {
           <div className="col-lg-10">
             <div className="row">
               <div className="col-lg-5">
-                <h1>Our philosophy</h1>
-                <p className="description pt-4">We believe that a combination of free and structured play, an engaging and interactive learning environment, and an abundance of love, care and attention provide the most solid foundation for children in the early years.</p>
+                <h1>我們的理念</h1>
+                <p className="description pt-4">我們相信，自由和結構化的遊戲，引人入勝的互動學習環境以及豐富的愛，關懷和關注相結合，為幼兒提供了最堅實的基礎。</p>
               </div>
               <div className="col-lg-5 offset-lg-1">
               <video width="450" id="vid" controls autoPlay loop muted>
@@ -133,23 +133,23 @@ function Home(props) {
     <section className="find-centers py-5">
       <div className="container">
         <div className="row justify-content-center py-3">
-        <h1>Where to find our centres</h1>
+        <h1>在哪裡可以找到我們的中心</h1>
           <div className="col-lg-12">
             <div className="getlocation-btn">
             <ul className="list-inline d-flex justify-content-center py-5">
-              <li className="list-inline-item pr-3"><Link className="btn btn-outline-primary" to="/ourcentres?srch-trm=austin">Austin</Link></li>
-              <li className="list-inline-item pr-3"><Link className="btn btn-outline-primary" to="/ourcentres?srch-trm=houston">Houston</Link></li>
-              <li className="list-inline-item pr-3"><Link className="btn btn-outline-primary" to="/ourcentres?srch-trm=greater-london">Greater London</Link></li>
-              <li className="list-inline-item pr-3"><Link className="btn btn-outline-primary" to="/ourcentres?srch-trm=dubai">Dubai</Link></li>
-              <li className="list-inline-item pr-3"><Link className="btn btn-outline-primary" to="/ourcentres?srch-trm=india">India</Link></li>
-              <li className="list-inline-item"><Link className="btn btn-outline-primary" to="/ourcentres?srch-trm=hong-kong">Hong kong</Link></li>
+              <li className="list-inline-item pr-3"><Link className="btn btn-outline-primary" to="/ourcentres?srch-trm=austin">奧斯丁</Link></li>
+              <li className="list-inline-item pr-3"><Link className="btn btn-outline-primary" to="/ourcentres?srch-trm=houston">休斯敦</Link></li>
+              <li className="list-inline-item pr-3"><Link className="btn btn-outline-primary" to="/ourcentres?srch-trm=greater-london">大倫敦</Link></li>
+              <li className="list-inline-item pr-3"><Link className="btn btn-outline-primary" to="/ourcentres?srch-trm=dubai">迪拜</Link></li>
+              <li className="list-inline-item pr-3"><Link className="btn btn-outline-primary" to="/ourcentres?srch-trm=india">印度</Link></li>
+              <li className="list-inline-item"><Link className="btn btn-outline-primary" to="/ourcentres?srch-trm=hong-kong">香港</Link></li>
             </ul>
             </div>
             <div className="find-our-centers">
             <RelatedCenters/>
             </div>
             <div className="text-center pt-5">
-            <Link to="ourcentres" className="my-btn center">Find a centre</Link>
+            <Link to="ourcentres" className="my-btn center">尋找中心</Link>
             </div>
           </div>
        </div>
@@ -159,7 +159,7 @@ function Home(props) {
     <section className="parent-testi bg-light py-5">
         <div className="container">
           <div className="row justify-content-center">
-          <h1 className="pb-4">What our parents say about our schools</h1>
+          <h1 className="pb-4">父母對我們學校的評價</h1>
             <div className="col-md-10">
             <div id="carouselExampleControls1" className="carousel slide" data-ride="carousel">
             <ol className="carousel-indicators">
@@ -171,8 +171,8 @@ function Home(props) {
                   <div className="parent_testimonial">
                     <div className="pics"><img src={TestiParent1} alt=""/></div>
                     <div className="parent_testimonial-content">
-                    <p className="description">Both my children go to nursery and are very happy there</p>
-                    <h3 className="parent_testimonial-title">Parent<small className="post">Parent, Chiswick</small></h3>
+                    <p className="description">我兩個孩子都去托兒所，在那裡很開心</p>
+                    <h3 className="parent_testimonial-title">父級<small className="post">父級, 奇斯威克</small></h3>
                     </div>
                   </div>
                   </div>
@@ -180,8 +180,8 @@ function Home(props) {
                   <div className="parent_testimonial">
                     <div className="pics"><img src={TestiParent2} alt=""/></div>
                     <div className="parent_testimonial-content">
-                    <p className="description">Both my children go to nursery and are very happy there</p>
-                    <h3 className="parent_testimonial-title">Parent<small className="post">Parent, Windsor</small></h3>
+                    <p className="description">我兩個孩子都去托兒所，在那裡很開心</p>
+                    <h3 className="parent_testimonial-title">父級<small className="post">父級, 溫莎</small></h3>
                     </div>
                   </div>
                   </div>
@@ -207,8 +207,8 @@ function Home(props) {
           <div className="row">
           <div className="col-lg-4">
           <div className="latest-news-text-blue">
-            <h1 className="subtitle">Latest News</h1>
-            <p>Find out how we’ve been making headlines all over the world or read about the latest updates to our schools and programs. You can also check out our blog, and get helpful parenting tips from our teachers, hub team and contributors.</p>
+            <h1 className="subtitle">最新消息</h1>
+            <p>了解我們如何在世界各地成為頭條新聞，或閱讀有關我們學校和課程的最新更新。您還可以查看我們的博客，並從我們的老師，中心團隊和貢獻者那裡獲得有用的育兒技巧。</p>
           </div>
           </div>
           {Object.entries(allBlogs.slice(2, 4)).map((item,k) => {
@@ -219,7 +219,7 @@ function Home(props) {
                     <div className="card-body">
                     <p className="card-text">{item[1].date}</p>
                     <h5 className="card-title pb-4 pr-4">{item[1].name}</h5>
-                    <Link to={{ pathname: "/news/" + item[1].slug +"/"}} className="btn btn-outline-primary">Read more</Link>
+                    <Link to={{ pathname: "/news/" + item[1].slug +"/"}} className="btn btn-outline-primary">閱讀更多</Link>
                     </div>
                 </div>
             </div>
