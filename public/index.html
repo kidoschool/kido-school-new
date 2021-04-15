@@ -10,11 +10,11 @@
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://china.kido.school/assets/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/css/bootstrap-datepicker.min.css" />
+    <link href="https://china.kido.school/assets/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://china.kido.school/assets/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://china.kido.school/assets/bootstrap-datepicker.min.css" />
     <title>kido-school</title>
     <script>
 
@@ -26,19 +26,19 @@
       // console.log(localStorage.getItem("centres") == null);
       if (localStorage.getItem("centres") == null) {
         var request = new XMLHttpRequest();
-        request.open('GET', 'https://kido-school-new-default-rtdb.firebaseio.com/centers.json', false);  // `false` makes the request synchronous
+        request.open('GET', 'https://china.kido.school/assets/centers.json', false);  // `false` makes the request synchronous
         request.send(null);
         request.status === 200 ? localStorage.setItem("centres",request.responseText) : false;
       }
       if (localStorage.getItem("cities") == null) {
         var request = new XMLHttpRequest();
-        request.open('GET', 'https://kido-school-new-default-rtdb.firebaseio.com/cities.json', false);  // `false` makes the request synchronous
+        request.open('GET', 'https://china.kido.school/assets/cities.json', false);  // `false` makes the request synchronous
         request.send(null);
         request.status === 200 ? localStorage.setItem("cities",request.responseText) : false;
       }
       if (localStorage.getItem("blogs") == null) {
         var request = new XMLHttpRequest();
-        request.open('GET', 'https://kido-school-new-default-rtdb.firebaseio.com/blogs.json', false);  // `false` makes the request synchronous
+        request.open('GET', 'https://china.kido.school/assets/blogs.json', false);  // `false` makes the request synchronous
         request.send(null);
         request.status === 200 ? localStorage.setItem("blogs",request.responseText) : false;
       }
@@ -55,12 +55,12 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    <script src="https://jqueryvalidation.org/files/dist/jquery.validate.min.js"></script>
-    <script src="https://jqueryvalidation.org/files/dist/additional-methods.min.js"></script>
-    <script crossorigin src="https://unpkg.com/universal-cookie@3/umd/universalCookie.min.js"></script>
+    <script src="https://china.kido.school/assets/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://china.kido.school/assets/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://china.kido.school/assets/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://china.kido.school/assets/jquery.validate.min.js"></script>
+    <script src="https://china.kido.school/assets/additional-methods.min.js"></script>
+    <script crossorigin src="https://china.kido.school/assets/universalCookie.min.js"></script>
    <script type="text/javascript">
       function googleTranslateElementInit() {
           new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
