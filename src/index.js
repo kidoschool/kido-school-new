@@ -4,21 +4,21 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import * as serviceWorker from './serviceWorker';
-import LoadingOverlay from 'react-loading-overlay';
+// import LoadingOverlay from 'react-loading-overlay';
 
 
 ReactDOM.render(
 
 
   <React.StrictMode>
-    <LoadingOverlay
+    {/* <LoadingOverlay
         active={true}
         fadeSpeed = {1000}
         spinner
         text='正在加載您的內容.....'
-        >
+        > */}
              <App />
-     </LoadingOverlay>
+     {/* </LoadingOverlay> */}
 
   </React.StrictMode>,
   document.getElementById('root')
