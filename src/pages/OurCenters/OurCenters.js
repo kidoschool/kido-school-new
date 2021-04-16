@@ -191,9 +191,9 @@ const handleOnChange = (e) => {
       <div className="container">
         <div className="row">
           <div className="col-lg-8">
-          <p className="text no-margin pt-4"> Explore Our centres across the globe</p>
+          <p className="text no-margin pt-4"> 探索我们遍布全球的中心</p>
           <div className="d-flex">
-          <p id="number" className="text no-margin">We found 32 centres</p>
+          <p id="number" className="text no-margin">我们找到了32个中心</p>
           <SearchFilter
               selectedOption={selectedOption}
               onChange={handleOnChange}
