@@ -270,6 +270,10 @@ a.my-btn:hover {
   height: 450px;
 }
 
+.carousel-control-next{
+  z-index: -1;
+}
+
 @media only screen and (max-width: 480px){
   .parent_testimonial{
       margin: 0 10px;
