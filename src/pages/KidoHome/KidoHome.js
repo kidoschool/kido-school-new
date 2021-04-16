@@ -24,11 +24,11 @@ function KidoHome(props) {
       <div className="container">
         <div className="row justify-content-center py-3">
           <div className="col-lg-10">
-            <h1>Virtual Preschool</h1>
-            <p className="subtitle subtitle-smaller">Customised preschool, for everyone, everywhere</p>
-            <p className="description">Kïdo Home is our virtual preschool and kindergarten program, where we deliver our curriculum, international network of teachers and multiple languages to children anywhere in the world. All at a fraction of the price of a regular preschool. High quality pedagogy and teaching, accessible to anyone, without the need for a physical presence. Available initially in four timezones - USA, the UAE, India and Hong Kong. Visit the Kïdo Home website to learn more, and book a free trial class!</p>
+            <h1>虚拟学前班</h1>
+            <p className="subtitle subtitle-smaller">量身定制的学前班，适合所有人</p>
+            <p className="description">KïdoHome是我们的虚拟学前班和幼儿园计划，我们在这里为世界各地的孩子们提供我们的课程，国际教师网络和多种语言。所有这一切都只是普通学前班的价格的一小部分。高质量的教学法和教学，任何人都可以使用，而无需实际参与。最初在四个时区可用-美国，阿联酋，印度和香港。访问KïdoHome网站以了解更多信息，并预订免费试听课！</p>
             <div className="kido-home-website text-center pt-5">
-              <a href="https://www.kidohome.net/" target='_blank' rel="noreferrer" className="my-btn center">Visit Kido Home Website</a>
+              <a href="https://www.kidohome.net/" target='_blank' rel="noreferrer" className="my-btn center">访问Kido主页网站</a>
             </div>
             </div>
        </div>
@@ -42,8 +42,8 @@ function KidoHome(props) {
           <div className="col-lg-10">
             <div className="row">
               <div className="col-lg-5">
-                <h1>How it Works</h1>
-                <p className="description pt-4">Teacher led activities and lesson plans, delivered via live video sessions in small groups are complemented by touch screen interactive modules and home activities. One on one time with parents and teachers and an ability to move children within groups, unconstrained by age, ensure customisation to the child's abilities. ​ Watch the video to see a class in action</p>
+                <h1>这个怎么运作</h1>
+                <p className="description pt-4">通过小组的现场视频会议进行的教师主导的活动和课程计划得到了触摸屏互动模块和家庭活动的补充。与父母和老师进行一对一的交流，并能够不受年龄限制地将儿童带到小组中，以确保根据孩子的能力进行个性化设置。观看视频以观看课堂活动</p>
               </div>
               <div className="col-lg-6 offset-lg-1">
               <video width="550" id="vid" controls autoPlay loop muted>
@@ -61,9 +61,9 @@ function KidoHome(props) {
       <div className="container">
         <div className="row justify-content-center">
         <div className="col-lg-10">
-          <h1>Highlights</h1>
+          <h1>强调</h1>
             <div className="highlights-para pt-3">
-                <p>Kïdo Home is a complete preschool program for 2-6 year olds, based on our curriculum, with a tested and effective means of delivery. Minimal parental support is required in most instances, and the program runs for two hours a day, with breaks. All at a fraction of the cost of a comparable international preschool.</p>
+                <p>根据我们的课程，KïdoHome是一个针对2-6岁儿童的完整的学前班计划，并提供经过测试的有效交付方式。在大多数情况下，需要最少的父母支持，并且该程序每天运行两个小时，有时会中断。所有这些仅是可比的国际学前班的一小部分费用。</p>
             </div>
 
             <div className="row pt-5">
@@ -71,8 +71,8 @@ function KidoHome(props) {
                 <div className="card khome-card">
                   <img className="card-img-top-khome img-fluid" src={KidoCard1} alt="kido highlights"/>
                   <div className="card-body">
-                    <h4 className="card-title pb-2">Small Groups</h4>
-                    <p className="card-text">Ratios 1:6 or 1:8 for live interactive video sessions ensure engagement and personal attention</p>
+                    <h4 className="card-title pb-2">小团体</h4>
+                    <p className="card-text">实时互动视频会议的比例为1：6或1：8，可确保参与度和个人关注度</p>
                   </div>
                 </div>
               </div>
@@ -80,8 +80,8 @@ function KidoHome(props) {
                 <div className="card khome-card">
                   <img className="card-img-top-khome img-fluid" src={KidoCard2} alt="kido highlights"/>
                   <div className="card-body">
-                    <h4 className="card-title pb-2">Touchscreen Interactive</h4>
-                    <p className="card-text">Literacy and math modules taught via interactive touchscreen technology, with a teacher present at all times</p>
+                    <h4 className="card-title pb-2">触摸屏互动</h4>
+                    <p className="card-text">通过交互式触摸屏技术教授的识字和数学模块，始终有一位老师在场</p>
                   </div>
                 </div>
               </div>
@@ -89,8 +89,8 @@ function KidoHome(props) {
                 <div className="card khome-card">
                   <img className="card-img-top-khome img-fluid" src={KidoCard3} alt="kido highlights"/>
                   <div className="card-body">
-                    <h4 className="card-title pb-2">Complete Program</h4>
-                    <p className="card-text">Encompassing literacy, math, art, STEM, physical development and life skills, so children are more than school ready</p>
+                    <h4 className="card-title pb-2">完成程序</h4>
+                    <p className="card-text">涵盖识字，数学，艺术，STEM，身体发育和生活技能，因此孩子们比上学还要更充分</p>
                   </div>
                 </div>
               </div>
@@ -98,8 +98,8 @@ function KidoHome(props) {
                 <div className="card khome-card">
                   <img className="card-img-top-khome img-fluid" src={KidoCard4} alt="kido highlights"/>
                   <div className="card-body">
-                    <h4 className="card-title pb-2">International Teachers</h4>
-                    <p className="card-text">Our global teacher network ensures best in class teaching and language support</p>
+                    <h4 className="card-title pb-2">国际教师</h4>
+                    <p className="card-text">我们的全球教师网络可确保提供最佳的课堂教学和语言支持</p>
                   </div>
                 </div>
               </div>
@@ -107,8 +107,8 @@ function KidoHome(props) {
                 <div className="card khome-card">
                   <img className="card-img-top-khome img-fluid" src={KidoCard5} alt="kido highlights"/>
                   <div className="card-body">
-                    <h4 className="card-title pb-2">Home Activities</h4>
-                    <p className="card-text">Monthly engagement kits and video based lesson plans for home activities to complement the online learning.</p>
+                    <h4 className="card-title pb-2">家庭活动</h4>
+                    <p className="card-text">针对家庭活动的每月参与工具包和基于视频的课程计划，以补充在线学习。</p>
                   </div>
                 </div>
               </div>
@@ -116,8 +116,8 @@ function KidoHome(props) {
                 <div className="card khome-card">
                   <img className="card-img-top-khome img-fluid" src={KidoCard6} alt="kido highlights"/>
                   <div className="card-body">
-                    <h4 className="card-title pb-2">And More</h4>
-                    <p className="card-text">Specialist, yoga, mindfulness, music and other classes. Onsite add ons for project based learning and more</p>
+                    <h4 className="card-title pb-2">和更多</h4>
+                    <p className="card-text">专科，瑜伽，正念，音乐等课。现场附加项目，用于基于项目的学习等</p>
                   </div>
                 </div>
               </div>

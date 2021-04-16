@@ -35,10 +35,10 @@ function AboutUs(props) {
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-lg-10">
-          <h1>About Us</h1>
+          <h1>关于我们</h1>
             <div className="about-para pt-3">
-                <p>We are owned and operated by a group of parents from all over the world. Our founders were unhappy with the quality of the early childhood education available in their cities, so they got together to build a truly 21st century program.</p>
-                <p>We now have schools around the globe, which bring together the world’s best early years practices to deliver the finest preschool experience for children and parents alike.</p>
+                <p>我们由来自世界各地的一群父母所有和经营。我们的创始人对所在城市提供的早期儿童教育的质量不满意，因此他们聚在一起建立了一个真正的21世纪计划。</p>
+                <p>现在，我们在全球各地都有学校，这些学校汇集了世界上最好的早年实践，为孩子和父母提供了最好的学前教育体验。</p>
             </div>
           </div>
        </div>
@@ -50,9 +50,9 @@ function AboutUs(props) {
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-lg-10">
-          <h1>Our Pedagogical Leadership</h1>
+          <h1>我们的教学领导</h1>
             <div className="about-para pt-3">
-                <p>Our curriculum is developed in house and supported by a world renowned panel of advisors. Our pedagogical leadership team has over 200 years of combined experience in early years teaching, research and pedagogy across more than ten countries, and in multiple languages.</p>
+                <p>我们的课程是在内部开发的，并得到了世界知名的顾问小组的支持。我们的教学领导团队在20多个国家/地区的多种语言的早期教学，研究和教学法领域拥有200多年的综合经验。</p>
             </div>
 
             <div className="row justify-content-center pt-5">
@@ -60,7 +60,7 @@ function AboutUs(props) {
                 <div class="card" style={size}>
                   <img class="card-img-top" src={Aboutperson1} alt="pedagogical leaders"/>
                   <div class="card-body text-center">
-                    <p class="card-title">Dr Robert Swartz, Advisor</p>
+                    <p class="card-title">顾问Robert Swartz博士</p>
                   </div>
                 </div>
               </div>
@@ -68,7 +68,7 @@ function AboutUs(props) {
                 <div class="card" style={size}>
                   <img class="card-img-top" src={Aboutperson2} alt="pedagogical leaders"/>
                   <div class="card-body text-center">
-                    <p class="card-title">Dr Yuuko Tonkovich, Advisor</p>
+                    <p class="card-title">顾问Yuuko Tonkovich博士</p>
                   </div>
                 </div>
               </div>
@@ -76,7 +76,7 @@ function AboutUs(props) {
                 <div class="card" style={size}>
                   <img class="card-img-top" src={Aboutperson3} alt="pedagogical leaders"/>
                   <div class="card-body text-center">
-                    <p class="card-title">Fruzsina Benyei, Curriculum &amp; Training, Asia</p>
+                    <p class="card-title">Fruzsina Benyei，亚洲课程与培训</p>
                   </div>
                 </div>
               </div>
@@ -84,7 +84,7 @@ function AboutUs(props) {
                 <div class="card" style={size}>
                   <img class="card-img-top" src={Aboutperson4} alt="pedagogical leaders"/>
                   <div class="card-body text-center">
-                    <p class="card-title">Emma Phillips, Curriculum &amp; Operations, UK</p>
+                    <p class="card-title">艾玛·菲利普斯（Emma Phillips），课程与运营，英国</p>
                   </div>
                 </div>
               </div>
@@ -92,7 +92,7 @@ function AboutUs(props) {
                 <div class="card" style={size}>
                   <img class="card-img-top" src={Aboutperson5} alt="pedagogical leaders"/>
                   <div class="card-body text-center">
-                    <p class="card-title">Azah Rahman, Curriculum Coordinator, UAE</p>
+                    <p class="card-title">阿联酋课程协调员Azah Rahman</p>
                   </div>
                 </div>
               </div>
@@ -100,7 +100,7 @@ function AboutUs(props) {
                 <div class="card" style={size}>
                   <img class="card-img-top" src={Aboutperson6} alt="pedagogical leaders"/>
                   <div class="card-body text-center">
-                    <p class="card-title">Karen Norris, Curriculum Coordinator, Hong Kong</p>
+                    <p class="card-title">香港课程协调员Karen Norrisg</p>
                   </div>
                 </div>
               </div>
@@ -108,7 +108,7 @@ function AboutUs(props) {
                 <div class="card" style={size}>
                   <img class="card-img-top" src={Aboutperson7} alt="pedagogical leaders"/>
                   <div class="card-body text-center">
-                    <p class="card-title">Tez Razzaq, Curriculum &amp; Training, UK</p>
+                    <p class="card-title">Tez Razzaq，课程与培训，英国</p>
                   </div>
                 </div>
               </div>
@@ -116,7 +116,7 @@ function AboutUs(props) {
                 <div class="card" style={size}>
                   <img class="card-img-top" src={Aboutperson8} alt="pedagogical leaders"/>
                   <div class="card-body text-center">
-                    <p class="card-title">Anjali Motiani, Curriculum Coordinator, India</p>
+                    <p class="card-title">印度课程协调员Anjali Motiani</p>
                   </div>
                 </div>
               </div>
@@ -129,13 +129,13 @@ function AboutUs(props) {
 
     <section className="our-program bg-light py-5">
       <div className="container">
-      <h1 className="text-center">Our programs</h1>
+      <h1 className="text-center">我们的节目</h1>
         <div className="row justify-content-center">
           <div className="col-lg-8 text-center">
             <div className="about-para py-4">
-                <p>We tailor our offering to each local community that we serve. Depending on the location, we offer programs for children from six weeks to six years, rooted in our curriculum.</p>
+                <p>我们针对我们所服务的每个本地社区量身定制我们的产品。根据不同的位置，我们会根据课程设置为六周到六年的儿童提供课程。</p>
             </div>
-            <Link to="ourcentres" className="my-btn center">Find out More</Link>
+            <Link to="ourcentres" className="my-btn center">找到更多</Link>
 
           </div>
        </div>
